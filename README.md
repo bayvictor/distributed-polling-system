@@ -10,7 +10,7 @@ The public open source experiments and evaluated notes will be noted by date in 
 12/9/2016:<br>
 We are focusing on only mocking data-stream generating here!<br>
 1) search here in github for "tenant", ranked by stars, found top 10 worth further experiments.<br>
-2) Is it working? If several of top 20 of them be added with "masks" for mocking a data-source of "mocking multitenant" source? This is safe and economic for prototyping any analytic engine or advisor system as smoke test before real-data stream swimming.<br>
+2) Is it working? If several of top 20 of them be added with "masks" for mocking a data-source of "mocking multitenant" source? This is opensource, safe and economic touch-stone for prototyping (may be proprietary) any analytic engine or advisor system as smoke test before real-data stream swimming.<br>
 3) What elemments can be added to make tenant system "real"? (3.1) time-freq pattern trigger certain random push; (3.2) some geo-distributed random LBS added; (3.3) some PC t-shirt auto-tayloring; (3.4) some consuming pattern generated for (bandwidth, storage, load balance ); (3.5)list continue, added later for benefiting the community.<br>
 4) Consuming resource simulation(CRS). (CPU core number, RAM size, ssd storage, hd storage, cloud-nas storage, time, network heat-map, micro-service kubenetes number, pod number, load balance iRule number; <any-pair>:D=="any keyword":"any random in ANY-RANGE" -pairing generator ).<br>
 With above CRS in mind, smoothen out the better behavor (algorthm, curve-masks ) to generate the mocking tenant data.<br>
