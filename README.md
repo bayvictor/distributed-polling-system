@@ -18,3 +18,5 @@ Later we can even generate specific "Mocking" CRS in any industrial domain, like
 We believe above "mocking" system data will nenefit the human being, and speed up innovations! So we calling full domain volunteers  adding his "mocking data water cocks" here!<br>
 <br><br>
 
+In any above "tenant" search hit branches, for modification meeting "mocking function", we have to add rest API, universal, simple "push data adapters" and "land-lord convention" for it qualified a "mocking tenant system" to act ! -- with a good API to the eco system!
+<br><br>
