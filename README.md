@@ -1,7 +1,7 @@
 # MOCKING DATA STREAM GENERATION<br>
 try to put all opensource codes found here in github together -- which polls, and indexes distributed item on the cloud.
 <br><br>
-A lot of existing codes here but we differs:<br>
+A lot of existing codes here but our collections differ in below:<br>
 1. Put all relevant codes together here, keep the original license and IP notes.<br>
 2. When experimenting different branches, notes will be put for bugs, to do, or core value of certain branches here.<br>
 <br><br>
