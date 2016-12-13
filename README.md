@@ -35,6 +35,8 @@ By reading through of it, this work can be used for any-nature "network simulati
 
 So with this success story, we put a reading note here to point out, the design of cloud can be automated like CHIP/IC design, on the same scale (node numbers, data flow), as well as time-to-market, which is mature and comparable!<br><br>
 
-So far with above study of open-source works, any domain from the anology with "network simulation" mentioned above can simply POC!
+So far with above study of open-source works, any domain from the anology with "network simulation" mentioned above can simplify POC in a grate variety of domain modeling!<br>
+As result, this "mocking network" by simulation, it can be nothing on IP, but a sharping stone for your IP, where all intelligence and labor on and being protected!<br>
+
 
 
