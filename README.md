@@ -20,3 +20,21 @@ We believe above "mocking" system data will nenefit the human being, and speed u
 
 In any above "tenant" search hit branches, for modification meeting "mocking function", we have to add rest API, universal, simple "push data adapters" and "land-lord convention" for it qualified a "mocking tenant system" to act ! -- with a good API to the eco system!
 <br><br>
+<br><br>
+
+Dec 12/2016:<br><br>
+One of the answers for the above said open source "NETWORK SIMULATOR" is ns-3. <br><br>
+On ns-3 a lot of simulation studies are done like ( a 24-hour Scenario of Luxembourg City for SUMO
+Traffic simulations {https://www.researchgate.net/profile/Lara_Codeca/publication/276063017_LuST_a_24-hour_Scenario_of_Luxembourg_City_for_SUMO_Traffic_simulations/links/555080f608ae12808b381148.pdf}, which is using open source ns-3 to simulate a mid-size city, real traffic in a whole day).<br><br>
+By reading through of it, this work can be used for any-nature "network simulation". While it's in node size 1k-10k network simulation, whether it's nodes and edges mapped to "high way shoulders" and "local roads", it can be mapped into any nodes/edges models, image those couples can be:<br><br>
+1. in IC design automation (EDA), it can be : nodes = gates; edges = wires;<br>
+2. In P2P mobile network design, it can be: nodes = cellphone-peers; edges = wifi connection;<br>
+3. in drone IoT network, nodes = drones; edge01's = wifi; edge02's = cellular connection on 3G or 4G network.<br>
+4. ...<br><br>
+5. On "back bone network" for ISP, the "ns-3" teamplate can be sure to emulate when: nodes = switches and gateways; edges = wifi and cable connections.<br><br>
+
+So with this success story, we put a reading note here to point out, the design of cloud can be automated like CHIP/IC design, on the same scale (node numbers, data flow), as well as time-to-market, which is mature and comparable!<br><br>
+
+So far with above study of open-source works, any domain from the anology with "network simulation" mentioned above can simply POC!
+
+
