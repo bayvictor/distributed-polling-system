@@ -38,9 +38,9 @@ So with this success story, we put a reading note here to point out, the design 
 So far with above study of open-source works, any domain from the anology with "network simulation" mentioned above can simplify POC in a grate variety of domain modeling!<br>
 As result, this "mocking network" by simulation, it can be nothing on IP, but a sharping stone for your IP, where all intelligence and labor on and being protected!<br>
 <br><br>
-Notes on setting up open source python scikit:<br>
+Notes on setting up open source python scikit, -- the random-forest-algorithm:<br>
 Install python pip, best practice:<br>
 wget https://bootstrap.pypa.io/get-pip.py<br>
-python 3 get-pip.py<br>
+python 3 get-pip.py ## better on win7 use c:\Python27, instead of cygwin python.<br>
 git clone git://github.com/scikit-learn/scikit-learn.git<br>
-
+Refs:http://www.analyticsvidhya.com/blog/2015/09/random-forest-algorithm-multiple-challenges/
