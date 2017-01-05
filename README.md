@@ -43,4 +43,14 @@ Install python pip, best practice:<br>
 wget https://bootstrap.pypa.io/get-pip.py<br>
 python 3 get-pip.py ## better on win7 use c:\Python27, instead of cygwin python.<br>
 git clone git://github.com/scikit-learn/scikit-learn.git<br>
-Refs:http://www.analyticsvidhya.com/blog/2015/09/random-forest-algorithm-multiple-challenges/
+Refs:http://www.analyticsvidhya.com/blog/2<br>015/09/random-forest-algorithm-multiple-challenges/
+<br><br>
+Jan/05/2017:<br><br>
+(1) Notes: data samples for tensorflow trainings from MIT: (79M pages, The 79 million images are stored in one giant binary file, 227Gb in size.):<br>
+<br><br>
+
+
+ 1. Image bina
+ry (227Gb)   Download ( 1. Image binary (227Gb)   Download source: http://horatio.cs.nyu.edu/mit/tiny/data/index.html).
+<br><br>
+
