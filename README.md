@@ -53,4 +53,10 @@ ry (227Gb)   Download ( 1. Image binary (227Gb)   Download source: http://horati
 <br><br>
 (2) http://wiki.dbpedia.org/data-set-20: DBpedia: data generated from 2007 wikiPedia data dump. <br>
 
+Jan 06, 2017<br>
+For machine learning, there is a data collecting website:https://data.world/. It is so called social networking by dataset collectors, <br>
+we see here there are a lot of public data sources (demographic data, etc), which can be used for training prototypes of machine learning model, <br>
+like scikit-learn, spark, mahout, tensorflow, etc. Strongly recommended!  <br><br>
+Because it's also a circle of data scientists, good for probling here! :) <br><br>
+
 
