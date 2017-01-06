@@ -48,9 +48,9 @@ Refs:http://www.analyticsvidhya.com/blog/2<br>015/09/random-forest-algorithm-mul
 Jan/05/2017:<br><br>
 (1) Notes: data samples for tensorflow trainings from MIT: (79M pages, The 79 million images are stored in one giant binary file, 227Gb in size.):<br>
 <br><br>
-
-
  1. Image bina
 ry (227Gb)   Download ( 1. Image binary (227Gb)   Download source: http://horatio.cs.nyu.edu/mit/tiny/data/index.html).
 <br><br>
+(2) http://wiki.dbpedia.org/data-set-20: DBpedia: data generated from 2007 wikiPedia data dump. <br>
+
 
