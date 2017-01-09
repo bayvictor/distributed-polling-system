@@ -59,4 +59,12 @@ we see here there are a lot of public data sources (demographic data, etc), whic
 like scikit-learn, spark, mahout, tensorflow, etc. Strongly recommended!  <br><br>
 Because it's also a circle of data scientists, good for probling here! :) <br><br>
 
+Jan 9, 2017<br>
+Notes for interesting machine learning topics & advances:
+1. Gan; 2. CNN+RNN innovation; 3. TensorFlow based conceptual revolution; 4. Search & ML; 5. GPU-oriented ML frame; 
+
+Reading notes:
+A. Thread： 我眼中的未来：视频、AI、个性化、传统企业和AR  , Posted：2016-11-28 07:51, source:http://www.huxiu.com/article/172387.html <br>
+
+
 
