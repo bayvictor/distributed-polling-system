@@ -67,4 +67,7 @@ Reading notes:
 A. Thread： 我眼中的未来：视频、AI、个性化、传统企业和AR  , Posted：2016-11-28 07:51, source:http://www.huxiu.com/article/172387.html <br>
 
 
+Jan 12, 2017<br>
+“What I cannot create, I do not understand.” —Richard Feynman <br>
+Above quotation is best one for goal of GAN !<br>
 
