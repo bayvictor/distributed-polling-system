@@ -71,3 +71,5 @@ Jan 12, 2017<br>
 “What I cannot create, I do not understand.” —Richard Feynman <br>
 Above quotation is best one for goal of GAN !<br>
 
+Notes on 3d shape trainning data: shapenet:https://shapenet.org/taxonomy-viewer <br>
+A public article dealing with aboveShapeNet: https://arxiv.org/pdf/1607.00662.pdf, titled as :"Unsupervised Learning of 3D Structure from Images" <br>
