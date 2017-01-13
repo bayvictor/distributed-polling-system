@@ -73,3 +73,10 @@ Above quotation is best one for goal of GAN !<br>
 
 Notes on 3d shape trainning data: shapenet:https://shapenet.org/taxonomy-viewer <br>
 A public article dealing with aboveShapeNet: https://arxiv.org/pdf/1607.00662.pdf, titled as :"Unsupervised Learning of 3D Structure from Images" <br>
+
+Jan 13, 2017. Readings in a article: The Neuroscience of Trust - Harvard Business Review: https://hbr.org/2017/01/the-neuroscience-of-trust, Paul J. Zak, FROM THE JANUARY–FEBRUARY 2017 ISSUE, 1. <br>
+Compared with people at low-trust comp. Below is reading abstract:<br>
+anies, people at high-trust companies report: 74% less stress, 106% more energy at work, 50% higher productivity, 13% fewer sick days, 76% more engagement, 29% more satisfaction with their lives, 40% less burnout.<br>
+How to manage trust? (1)Recognize excellence; (2) Induce "challenge stress" with team goal; (3) push self motivatior, especially <br>
+the younger and the inexperienced innovates more; (4). enable job crafting; trust employee work selection; (5) share info broadly; <br>
+(6) intentional building relationship; (7) facilitate whole-person bonding progress; (8) show vulnerability;  <br><br>
