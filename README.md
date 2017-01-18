@@ -82,7 +82,7 @@ How to manage trust? (1)Recognize excellence; (2) Induce "challenge stress" with
 the younger and the inexperienced innovates more; (4). enable job crafting; trust employee work selection; (5) share info broadly; <br>
 (6) intentional building relationship; (7) facilitate whole-person bonding progress; (8) show vulnerability;  <br><br>
 
-B. Everyone is a dataset producer -- thus the era of machine learning is coming. <br>
+B. Everyone is a dataset producer -- thus https://medium.com/@ilblackdragon/tensorflow-tutorial-part-1-c559c63c0cb1#.rnonq38mwthe era of machine learning is coming. <br>
 <br><br>
 Classical datasets: source:http://www.bigfastblog.com/how-to-get-experience-working-with-large-datasets <br>
 Here’s a list of places that have data available, provided by  Geoff Webb.<br>
@@ -99,4 +99,14 @@ http://data.worldbank.org <br>
 Some others I think are worth looking at are Wikipedia, Freebase and DBpedia. Freebase pulls its data from Wikipedia on a regular basis, as well as from TVRage, Metacritic, Bloomberg and CorpWatch. DBpedia also pulls data from Wikipedia, as well as YAGO, Wordnet and other sources.<br><br>
 <br><br>
 You can download a dump of the Freebase dataset here(http://download.freebase.com/datadumps/). More information on the these dump files can be found here(http://wiki.freebase.com/wiki/Data_dumps).<br><br><br><br>
+
+Why tensorflow? <br><br> 
+source:https://medium.com/@ilblackdragon/tensorf<br> low-tutorial-part-1-c559c63c0cb1#.rnonq38mw  <br>
+Summary from above source, for "why tensorflow"?<br>    <br>
+1. Stack a number of multiple models in one and <br> learn<br>  them together; <br>
+2. text, images, cc(categorical & continues) variable<br> s in one model. <br> 
+3. multi-target & multi-loss at the same time; <br> 
+T.F. pipeline benefits: <br> 
+My add-ons, train once (in powerful computer like GPU grid), run everywhere (including embedded devices). <br> 
+<br> <br> 
 
