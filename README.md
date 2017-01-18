@@ -107,6 +107,7 @@ Summary from above source, for "why tensorflow"?<br>    <br>
 2. text, images, cc(categorical & continues) variable<br> s in one model. <br> 
 3. multi-target & multi-loss at the same time; <br> 
 T.F. pipeline benefits: <br> 
-My add-ons, train once (in powerful computer like GPU grid), run everywhere (including embedded devices). <br> 
+My add-ons: train once (in powerful computer like GPU grid), run everywhere (including embedded devices). <br> 
 <br> <br> 
+<br> 
 
