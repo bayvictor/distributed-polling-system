@@ -111,3 +111,7 @@ My add-ons: train once (in powerful computer like GPU grid), run everywhere (inc
 <br> <br> 
 <br> 
 
+Jan 19, 2017. Notes in Simplicity in machine learning (crawler example, less OR, less NOT, but core-UNIQUE): <br> 
+reading "In 2016, Googling Simpler is Better"(source:www.recruitingblogs.com/profiles/blogs/in-2016-googling-simpler-is-better
+):<br>
+resume "full stack" engineer node.js "san francisco" "gmail" , better than "old style" operators like inxxx(inanchor, inurl).<br>
