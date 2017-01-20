@@ -115,3 +115,15 @@ Jan 19, 2017. Notes in Simplicity in machine learning (crawler example, less OR,
 reading "In 2016, Googling Simpler is Better"(source:www.recruitingblogs.com/profiles/blogs/in-2016-googling-simpler-is-better
 ):<br>
 resume "full stack" engineer node.js "san francisco" "gmail" , better than "old style" operators like inxxx(inanchor, inurl).<br>
+<br><br> better machine learner keywords that must appear within:<br>
+Email address details – gmail.com hotmail.com <br> 
+Phone numbers including area codes or words like cell, mobile or Skype. <br> 
+Phrases like – “reason for leaving” “references available” “home address” “work history” “dates of employment.” <br> 
+ <br> 
+ 
+ On Twitter, use “I work for” followed by the name of the company or “at [name of company]” such as “at Deloitte” to find employees who work there.<br>
+On Google, type “top engineers to follow” and Twitter lists will show up.<br>
+On Bing, type “contains:” to find pages hosting documents like word docs, PDFs and PowerPoint slide decks. “Those PDFs might be resumes. PowerPoints might have signatures and contact information,” he said.<br>
+A critical tip: Don’t try to create the perfect search string <br>
+
+
