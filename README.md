@@ -126,4 +126,25 @@ On Google, type “top engineers to follow” and Twitter lists will show up.<br
 On Bing, type “contains:” to find pages hosting documents like word docs, PDFs and PowerPoint slide decks. “Those PDFs might be resumes. PowerPoints might have signatures and contact information,” he said.<br>
 A critical tip: Don’t try to create the perfect search string <br>
 
+Jan 24, 2017 <br>
+Reading Notes on Feature Engineering use case on CPU: <br>
+Public available source: https://www.researchgate.net/publication/266273948_Enhancing_Regression_Models_for_Complex_Systems_Using_Evolutionary_Techniques_for_Feature_Engineering <br> 
+7 feature variables for power consumption of CPU: (U:usage%, T, freq, Volt, age, 
+RAM access per cycle, T of RAM, Fan-speed) <br>
+perf: CPU+RAM usage; IPMI (cpu+RAM T); 
+cpufreq-utils:(CPU:fr+Vt); <br>
+Details: Power consumption is measured with a current clamp
+with the aim of validating our approach. CPU and main
+memory utilization are monitored using hardware coun-
+ters collected with perf monitoring tool. On board sen-
+sors are checked via IPMI to get both CPU and mem-
+ory temperatures and fan speed. CPU frequency and
+voltage are monitored via cpufreq-utils Linux package.
+To build a model that includes power dependance with
+these variables, we use this software tool to modify
+CPU DVFS modes during workload execution. Also
+room temperature has been modifed in run-time with
+the goal of finding non-traditional consumption sources
+that are influenced by this variable. <br><br>
+
 
