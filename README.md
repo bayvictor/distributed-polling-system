@@ -148,5 +148,6 @@ the goal of finding non-traditional consumption sources
 that are influenced by this variable. <br><br>
 
 Jan 30, 2017<br>
-source:http://3ms.huawei.com/hi/group/2894399/thread_5194253.html<br>
+(1)source:http://3ms.huawei.com/hi/group/2894399/thread_5194253.html<br>
 谷歌正在与OpenPower Foundation合作，就是为了扩大选择范围。OpenPower Foundation的芯片设计任何人都可以使用和修改。<br>
+(2) https://github.com/floydhub/dl-docker.git, good, it has all machine learning tools in one docker images. <br><br>
