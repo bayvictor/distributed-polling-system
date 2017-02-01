@@ -151,3 +151,9 @@ Jan 30, 2017<br>
 (1)source:http://3ms.huawei.com/hi/group/2894399/thread_5194253.html<br>
 谷歌正在与OpenPower Foundation合作，就是为了扩大选择范围。OpenPower Foundation的芯片设计任何人都可以使用和修改。<br>
 (2) https://github.com/floydhub/dl-docker.git, good, it has all machine learning tools in one docker images. <br><br>
+
+Feb 1, 2017 <br>
+source:http://searchdatamanagement.techtarget.com/definition/Apache-Hadoop-YARN-Yet-Another-Resource-Negotiator <br>
+Apache YARN is now characterized as a large-scale, distributed operating system for big data applications. <br>
+
+
