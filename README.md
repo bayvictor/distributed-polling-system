@@ -156,4 +156,5 @@ Feb 1, 2017 <br>
 source:http://searchdatamanagement.techtarget.com/definition/Apache-Hadoop-YARN-Yet-Another-Resource-Negotiator <br>
 Apache YARN is now characterized as a large-scale, distributed operating system for big data applications. <br>
 Separating HDFS from MapReduce with YARN makes the Hadoop environment more suitable for operational applications that can't wait for batch jobs to finish. <br>
+YARN offers a world beyond MapReduce: less-encumbered by complex programming protocols, faster, and at a lower cost.<br>
 
