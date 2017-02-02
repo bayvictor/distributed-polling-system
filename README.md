@@ -153,8 +153,13 @@ Jan 30, 2017<br>
 (2) https://github.com/floydhub/dl-docker.git, good, it has all machine learning tools in one docker images. <br><br>
 
 Feb 1, 2017 <br>
+(1)YARN<br>
 source:http://searchdatamanagement.techtarget.com/definition/Apache-Hadoop-YARN-Yet-Another-Resource-Negotiator <br>
 Apache YARN is now characterized as a large-scale, distributed operating system for big data applications. <br>
 Separating HDFS from MapReduce with YARN makes the Hadoop environment more suitable for operational applications that can't wait for batch jobs to finish. <br>
 YARN offers a world beyond MapReduce: less-encumbered by complex programming protocols, faster, and at a lower cost.<br>
+<br><br>
+(2) Public dataset source is the jumpstart point for all machine learning. Google "datasets downloads" we get: <br>
+2.1. http://www.data.world/data-sets,  besides data, it claims itself "The Data Social Network".<br>
+
 
