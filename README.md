@@ -162,7 +162,7 @@ YARN offers a world beyond MapReduce: less-encumbered by complex programming pro
 (2) Public dataset source is the jumpstart point for all machine learning. Google "datasets downloads" we get: <br>
 2.1. http://www.data.world/data-sets,  besides data, it claims itself "The Data Social Network".<br>
 <br><br>
-Reading notes: <br>
+Feb 6, 2017: Reading notes: <br>
 GPU Hardware Powers MapD Big Data Management <br>
 source: http://www.informationweek.com/infrastructure/pc-and-servers/gpu-hardware-powers-mapd-big-data-management/d/d-id/1327755?
 When it comes to clickstream data, server log analysis or machine learning, there's a likely GPU-based system in IT's future.
@@ -172,5 +172,9 @@ Intel and AMD CPUs can move data at an optimum rate of 50-75 GB per second. The 
 Quantum computing: <br>
 source:https://www.wired.com/2017/01/d-wave-turns-open-source-democratize-quantum-computing/ <br>
 D-Wave’s machines are designed for a single purpose: solving optimization problems. The classic example is known as the traveling salesman problem: calculating the shortest route that passes through a list of specific locations. <br>
+
+Predicting the end of cloud computing: This Andreesen Horowitz VC believes the cloud will be replaced by edge computing.<br>
+source:http://www.networkworld.com/article/3152800/cloud-computing/predicting-the-end-of-cloud-computing.html <br>
+<br>
 
 
