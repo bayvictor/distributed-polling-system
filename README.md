@@ -177,4 +177,6 @@ Predicting the end of cloud computing: This Andreesen Horowitz VC believes the c
 source:http://www.networkworld.com/article/3152800/cloud-computing/predicting-the-end-of-cloud-computing.html <br>
 <br>
 
+source:http://www.networkworld.com/article/3153047/internet-of-things/iot-product-development-is-broken-6-ways-developers-and-manufacturers-can-fix-it.html#tk.revfun_feat <br>
+more than $868 billion in this year 2017 alone, the impact – and risks – of IoT adoption are already becoming apparent. <br>
 
