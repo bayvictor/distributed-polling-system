@@ -168,5 +168,9 @@ source: http://www.informationweek.com/infrastructure/pc-and-servers/gpu-hardwar
 When it comes to clickstream data, server log analysis or machine learning, there's a likely GPU-based system in IT's future.
 <br>
 Intel and AMD CPUs can move data at an optimum rate of 50-75 GB per second. The Nvidia and other brand GPUs can move it at 300-750 GB per second, The GPU hardware beneath the Core system can scan 6-8 TB per second. <br>
+<br><br>
+Quantum computing: <br>
+source:https://www.wired.com/2017/01/d-wave-turns-open-source-democratize-quantum-computing/ <br>
+D-Wave’s machines are designed for a single purpose: solving optimization problems. The classic example is known as the traveling salesman problem: calculating the shortest route that passes through a list of specific locations. <br>
 
 
