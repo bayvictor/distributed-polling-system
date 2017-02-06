@@ -1,4 +1,4 @@
-# MOCKING DATA STREAM GENERATION<br>
+# Diary: MOCKING DATA STREAM GENERATION<br>
 try to put all opensource codes found here in github together -- which polls, and indexes distributed item on the cloud.
 <br><br>
 A lot of existing codes here but our collections differ in below:<br>
