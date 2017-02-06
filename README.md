@@ -161,5 +161,12 @@ YARN offers a world beyond MapReduce: less-encumbered by complex programming pro
 <br><br>
 (2) Public dataset source is the jumpstart point for all machine learning. Google "datasets downloads" we get: <br>
 2.1. http://www.data.world/data-sets,  besides data, it claims itself "The Data Social Network".<br>
+<br><br>
+Reading notes: <br>
+GPU Hardware Powers MapD Big Data Management <br>
+source: http://www.informationweek.com/infrastructure/pc-and-servers/gpu-hardware-powers-mapd-big-data-management/d/d-id/1327755?
+When it comes to clickstream data, server log analysis or machine learning, there's a likely GPU-based system in IT's future.
+<br>
+Intel and AMD CPUs can move data at an optimum rate of 50-75 GB per second. The Nvidia and other brand GPUs can move it at 300-750 GB per second, The GPU hardware beneath the Core system can scan 6-8 TB per second. <br>
 
 
