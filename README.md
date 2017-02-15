@@ -180,3 +180,7 @@ source:http://www.networkworld.com/article/3152800/cloud-computing/predicting-th
 source:http://www.networkworld.com/article/3153047/internet-of-things/iot-product-development-is-broken-6-ways-developers-and-manufacturers-can-fix-it.html#tk.revfun_feat <br>
 more than $868 billion in this year 2017 alone, the impact – and risks – of IoT adoption are already becoming apparent. <br>
 
+Feb 14, 2017: Notes at reading : <br>
+public source:https://msdn.microsoft.com/en-us/library/mt634286.aspx , "Create Data Features (Data Science End-to-End Walkthrough), example caculate Distant rather than GPS(x,y)". <br>
+For this modeling task, rather than using the raw latitude and longitude values of the pickup and drop-off location, you'd like to have the distance in miles between the two locations. To create this feature, you'll compute the direct linear distance between two points, by using the haversine formula. <br>
+
