@@ -184,3 +184,7 @@ Feb 14, 2017: Notes at reading : <br>
 public source:https://msdn.microsoft.com/en-us/library/mt634286.aspx , "Create Data Features (Data Science End-to-End Walkthrough), example caculate Distant rather than GPS(x,y)". <br>
 For this modeling task, rather than using the raw latitude and longitude values of the pickup and drop-off location, you'd like to have the distance in miles between the two locations. To create this feature, you'll compute the direct linear distance between two points, by using the haversine formula. <br>
 
+--------------
+March 14, 2017 <br>
+Search in google for the reference code in opensource:<br>
+time series matplotlib "__main__" predict filetype:py <br>
