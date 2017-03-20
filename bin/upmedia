@@ -1,0 +1,8 @@
+cd /home/vhuang/src/cling/release-1.0-beta7/mediarenderer
+rm TAGS -fr
+mvn install
+find | grep -e "\.java$" | xargs etags -a
+cd target
+java -jar cling-mediarenderer-1.0-beta7-standalone.jar & 
+emacs -T PLAYER & 
+

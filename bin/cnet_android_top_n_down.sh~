@@ -1,0 +1,18 @@
+#!/bin/bash -x 
+echo "android download number=(5118)?"
+unset readline
+read readline
+python -c "for x in xrange(1,"${readline}"):print x" |sed 's|^|<a href="http://download.cnet.com/android/most-popular/3101-20_4-0-|g;s|$|.html">1</a>|g'>android_down.html
+
+echo "ios download number=(5118)?"
+unset readline
+read readline
+
+python -c "for x in xrange(1,"${readline}"):print x" |sed 's|^|<a href="http://download.cnet.com/ios/most-popular/3101-20_4-0-|g;s|$|.html">1</a>|g'>ios_down.html
+
+
+firefox android_down.html &
+firefox ios_down.html &
+
+
+

@@ -1,0 +1,32 @@
+    1  cd bin
+    2  ls
+    3  vi bashrc
+    4  ls -l
+    5  cd ..
+    6  sudo visudo
+    7  pwd
+    8  ls
+    9  sudo chown vhuang ~ -R
+   10  cd bin
+   11  vi bashrc
+   12  vi cleanupall.sh
+   13  cat cleanupall.sh 
+   14  ls /var/lib/mlocate/
+   15  ls /var/lib/mlocate/ -l
+   16  ls /var/lib/mlocate/ -lh
+   17  vi ./cleanupall.sh 
+   18  ./install-all.sh
+   19  cp bashrc ~/.bashrc
+   20  source ~/.bashrc
+   21  pwd
+   22  aptseek.sh google-pinyin
+   23  aptseek.sh pinyin|grep google
+   24  aptseek.sh fcitx
+   25  aptseek.sh fcitx |grep pinyin
+   26  vi fcitxsetup.sh
+   27  chmod +x fcitxsetup.sh 
+   28  im-config
+   29  ./fcitxsetup.sh 
+   30  vi ./fcitxsetup.sh 
+   31  im-config
+   32  hiscap

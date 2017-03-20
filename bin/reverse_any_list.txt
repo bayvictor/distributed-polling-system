@@ -1,0 +1,1 @@
+cat mvlist.txt -n | sort -g -k 1 -r|sed 's|mv .|@mv .|g'|cut -d'@' -f2 

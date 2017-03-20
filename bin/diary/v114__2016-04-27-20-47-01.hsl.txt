@@ -1,0 +1,500 @@
+  100  cd down20160419-/
+  101  ls -lt|less
+  102  ls -lt >~/test.txt
+  103  cat ~/test.txt -n|grep all.sh
+  104  cat ~/test.txt |tail -n 400 > defectlist2.txt 
+  105  ls *.sh
+  106  ./rescript_commoncrawler_defectfiles.sh defectlist2.txt 
+  107  ls
+  108  ls -lt|less
+  109  ls -lt >~/test.txt
+  110  cat ~/test.txt -n | grep all.sh
+  111  cat ~/test.txt -n | head -n 407 > defectlist2.txt 
+  112  vi defectlist2.txt 
+  113  ./rescript_commoncrawler_defectfiles.sh defectlist2.txt 
+  114  vi ./rescript_commoncrawler_defectfiles.sh 
+  115  vi redown.sh 
+  116  vi ./rescript_commoncrawler_defectfiles.sh 
+  117  vi redown.sh 
+  118  ls -lt
+  119  ls -lt *.sh
+  120  vi rescript.sh 
+  121  vi ./rescript_commoncrawler_defectfiles.sh 
+  122  cat ~/test.txt -n | grep all.sh
+  123  cat ~/test.txt -n | grep all.sh|head -n 1|cut -d"-" -f1
+  124  cat ~/test.txt -n | grep all.sh|head -n 1|cut -d"-" -f1|sed 's/ //g'
+  125  cat ~/test.txt -n | grep all.sh|head -n 1|cut -d"-" -f1|sed 's/ //g;s/\s//g'
+  126  kk=`cat ~/test.txt -n | grep all.sh|head -n 1|cut -d"-" -f1|sed 's/ //g;s/\s//g'`
+  127  echo $kk
+  128  gedit rescript_commoncrawler_defectfiles.sh 
+  129  cat ~/test.txt -n | grep all.sh|head -n 1|cut -d"-" -f1|sed 's/ //g;s/\s//g'|less
+  130  kk=`cat ~/test.txt -n | grep all.sh|head -n 1|cut -d"-" -f1|sed 's/ //g;s/\s//g'`
+  131  echo $kk
+  132  cat ~/test.txt|head -n $kk
+  133  cat ~/test.txt|head -n $kk> test2.txt
+  134  vi test2.txt
+  135  cat ~/test.txt|head -n $kk|s '1d'> test2.txt
+  136  cat ~/test.txt|head -n $kk|sed '1d'> test2.txt
+  137  vi test2.txt
+  138  cat ~/test.txt|head -n $kk|grep -v '\.warc\.gz'> test2.txt
+  139  vi test2.txt
+  140  cat ~/test.txt|head -n $kk|grep -e '\.warc\.gz'> test2.txt
+  141  vi test2.txt
+  142  gedit rescript_commoncrawler_defectfiles.sh 
+  143  ./rescript_commoncrawler_defectfiles.sh 
+  144  vi ./rescript_commoncrawler_defectfiles.sh 
+  145  ls -lt
+  146  ls -lt|head
+  147  vi ./rescript_commoncrawler_defectfiles.sh 
+  148  cat rescript_commoncrawler_defectfiles.sh 
+  149  ls -lt > ~/test.txt
+  150  lines_later_than_all_sh=`cat ~/test.txt -n | grep all.sh|head -n 1|cut -d"-" -f1|sed 's/ //g;s/\s//g;1d'`
+  151  echo $lines_later_than_all_sh
+  152  cat ~/test.txt -n | grep all.sh|head -n 1|cut -d"-" -f1
+  153  cat ~/test.txt -n | grep all.sh|head -n 1|cut -d"-" -f1|sed 's/ //g;s/\s//g;1d'
+  154  cat ~/test.txt -n | grep all.sh|head -n 1|cut -d"-" -f1|sed 's/ //g;s/\s//g'
+  155  vi  rescript_commoncrawler_defectfiles.sh 
+  156  ./rescript_commoncrawler_defectfiles.sh 
+  157  vi ./rescript_commoncrawler_defectfiles.sh 
+  158  last_line=cat $defect_list | cut -d":" -f2|cut -d" " -f2 | grep -e '\.warc\.gz' | head -n 1
+  159  last_line=cat defect_list2.txt | cut -d":" -f2|cut -d" " -f2 | grep -e '\.warc\.gz' | head -n 1
+  160  pwd
+  161  ls
+  162  ls *.txt
+  163  last_line=cat defectlist2.txt | cut -d":" -f2|cut -d" " -f2 | grep -e '\.warc\.gz' | head -n 1
+  164  ls *.txt -lt
+  165  last_line=`cat defectlist2.txt | cut -d":" -f2|cut -d" " -f2 | grep -e '\.warc\.gz' | head -n 1`
+  166  echo $last_line
+  167  vi ./rescript_commoncrawler_defectfiles.sh 
+  168  df . -h
+  169  ls -lt *.sh
+  170  ./redown.sh 
+  171  ls 1454701163729.14__warc__CC-MAIN-20160205193923-00077-ip-10-236-182-209.ec2.internal.warc.gz -lht
+  172  sudo chown vhuang * 
+  173  sudo chown vhuang 1454701163729.14__warc__CC-MAIN-20160205193923-00077-ip-10-236-182-209.ec2.internal.warc.gz
+  174  sudo chown vhuang *.warc.gz
+  175  ./redown.sh 
+  176  df . -h
+  177  ls
+  178  ./all.sh 
+  179  cat all.sh
+  180  ls -lt *.sh
+  181  cat redown.sh |head -n 1
+  182  cat redown.sh |head -n 2
+  183  cp  all0.sh all.sh
+  184  cat all.sh -n|grep 1454701168998.49__warc__CC-MAIN-20160205193928-00114-ip-10-236-182-209.ec2.internal.warc.gz
+  185  vi all.sh
+  186  ls
+  187  ls -l|wc -l
+  188  mkdir downok2
+  189  rm -fr downok2
+  190  mv *.gz downok
+  191  ls *.gz -lt|head
+  192  ls downok/ -lt|head
+  193  sudo chown vhuang *
+  194  sudo chown vhuang *.gz
+  195  find|grep -e "\.warc\.gz$"|sed 's|^|mv \"|g;s|$|\" downok/ |g' >mvall.sh
+  196  vi mvall.sh 
+  197  chmod +x *.sh
+  198  ./mvall.sh 
+  199  ls -last ./1454701167599.48__warc__CC-MAIN-20160205193927-00331-ip-10-236-182-209.ec2.internal.warc.gz
+  200  ls downok -lst
+  201  ls  -lst | grep downok
+  202  sudo chown vhuang * -R
+  203  sudo chown vhuang downok -R
+  204  sudo chown vhuang downok/ -R
+  205  sudo chown vhuang downok/* -R
+  206  ./mvall.sh 
+  207  ls
+  208  find downok/|wc -l
+  209  ./all.sh 
+  210  rm 1454701174607.44__warc__CC-MAIN-20160205193934-00002-ip-10-236-182-209.ec2.internal.warc.gz
+  211  ls -lt *.sh
+  212  ./rescript_commoncrawler_defectfiles.sh 
+  213  ./redown.sh 
+  214  cat redown.sh 
+  215  ./rescript_commoncrawler_defectfiles.sh 
+  216  pwd
+  217  ls
+  218  pwd
+  219  ls
+  220  mv *.gz downok
+  221  ls
+  222  df -h|grep 7.3
+  223  ls all* -l
+  224  cat redown.sh 
+  225  cp /sdn/down20160426-/all.sh .
+  226  ls
+  227  ls -lt all*
+  228  cat all0.sh|wc -l
+  229  cat all.sh|wc -l
+  230  cat /etc/resolv.conf 
+  231  cd ~/bin
+  232  ./generate_manual_UUID_mount_all_script.sh 
+  233  df -h
+  234  cd /sdb
+  235  ls
+  236  ls1
+  237  sudo gparted &
+  238  df -h
+  239  cd /sdao
+  240  ls
+  241  df -h
+  242  df -h|grep media
+  243  cd /media
+  244  ls
+  245  cd vhuang/
+  246  ls
+  247  cd ubu1404/
+  248  ls
+  249  touch test.txt
+  250  sudo -s
+  251  cd /sdao1
+  252  touch test2.txt
+  253  sudo touch test2.txt
+  254  sudo rm test*.txt
+  255  sudo mkdir Downloads
+  256  sudo chown vhuang Downloads
+  257  ls -lst
+  258  sudo -s
+  259  df . -h
+  260  cat /etc/resolv.conf 
+  261  cat /etc/resolv.conf |grep -i option
+  262  vi ~/bin/resolv.conf
+  263  cd ~/Downloads
+  264  ls
+  265  ls *.deb
+  266  sudo dpkg -i sogoupinyin_2.0.0.0072_amd64.deb 
+  267  sudo apt-get install -f 
+  268  sudo apt-get install -f sogoupinyin 
+  269  sudo apt autoremove
+  270  sudo dpkg -i sogoupinyin_2.0.0.0072_amd64.deb 
+  271  sudo apt-get -f
+  272  sudo apt-get install -f
+  273  sudo apt autoremove -y
+  274  sudo apt-get install -f
+  275  sudo dpkg -i sogoupinyin_2.0.0.0072_amd64.deb 
+  276  find '/sdm/Downloads_fast' |grep -e "\.part"|xargs ls -last
+  277  find '/sdl/Downloads_fast' |grep -e "\.part"|xargs ls -last
+  278  find '/sdl/Downloads_fast' |grep -e "\.part$"
+  279  find '/sdl/ |grep -e "\.part$"
+  280  find '/sdl/failed_and_ecrypted_db/" |grep -e "\.part$"
+  281  find '/sdl/failed_and_ecrypted_db/' |grep -e "\.part$"
+  282  find '/sdl/bigdata_db__from_baidu_cloud/' |grep -e "\.part$"
+  283  find '/sdl/bigdata_db__from_baidu_cloud/' |grep -e "\.part$"|sed 's/^/cp \"/g;s/$/\" \. /g' > cpall.sh
+  284  cat cpall
+  285  cat cpall.sh 
+  286  find '/sdl/bigdata_db__from_baidu_cloud/' |grep -e "\.part$"|sed 's/^/cp \"/g;s/$/\" partial_down /g' > cpall.sh
+  287  cat cpall.sh 
+  288  chmod +x *.sh
+  289  ./cpall.sh 
+  290  cd partial_down/
+  291  ls -lSh
+  292  cd ..
+  293  ls -lt
+  294  touch Win7-X64-ylmf.iso2.part 
+  295  ls -lt|head
+  296  locate ylmf
+  297  ls yl*
+  298  ls YLMF*
+  299  ls *YLMF*
+  300  ls *ylmf*
+  301  cd /
+  302  cat /etc/resolv.conf |grep option
+  303  cd ~/bin
+  304  cat resolv.conf|grep opti
+  305  sudo cp resolv.conf /etc/
+  306  cd ~/src/ok/translate
+  307  ls
+  308  cd data2
+  309  ls
+  310  cd ok
+  311  ls
+  312  ls -lt
+  313  cp go7.sh go8.sh
+  314  vi go8.sh 
+  315  cp 7.sh 8.sh
+  316  cat 7.sh.en2zh.out|tail
+  317  cat 7.sh.en2zh.out|tail -n 30
+  318  cat 7.sh -n|grep vetta -A 4 -B 4
+  319  cat 7.sh -n|grep vetta -A 4 -B 4|head
+  320  cat 7.sh -n|grep vetta -A 4 -B 4|head -n 30
+  321  cat 7.sh|8.sh
+  322  cat 7.sh >8.sh
+  323  vi 8.sh
+  324  ./go8.sh 
+  325  cd ..
+  326  ls
+  327  sudo make install
+  328  cd data2/ok
+  329  ls
+  330  ./go8.sh 
+  331  sudo apt-get install -y gawk
+  332  sudo apt-get -f install
+  333  sudo apt-get install -y gawk
+  334  ./go8.sh 
+  335  df -h
+  336  sudo mkdir /sdf2/Downloads_fast
+  337  sudo chown vhuang /sdf2 -R
+  338  sudo chown vhuang /sdf2/Downloads_fast/ -R
+  339  sudo chown vhuang /sdf2/Downloads_fast -R
+  340  sudo chown vhuang /sdf2/* 
+  341  cd ~/Downloads
+  342  ls
+  343  cd ~
+  344  cd Downloads 
+  345  df -h
+  346  df -h .
+  347  cd ~
+  348  rm Downloads
+  349  ln -s /sdf2/Downloads_fast/ ~/Downloads
+  350  df -h|head
+  351  cd ~/Downloads
+  352  ls
+  353  strings QunInfo2_Data.MDF |less
+  354  sudo dpkg -i bcloud_3.8.1-1_all.deb 
+  355  bcloud &
+  356  which blcoud
+  357  which bcloud
+  358  locate bcloud
+  359  cat /usr/lib/python3.4/site-packages/bcloud/auth.py
+  360  cat /usr/lib/python3/site-packages/bcloud/auth.py
+  361  locate "bcloud/auth.py"
+  362  find /usr/lib/python3.5|grep "bcloud/auth.py"
+  363  find /usr/lib/python3.5|grep "auth.py"
+  364  find /usr/lib/python3|grep "auth.py"
+  365  find /usr/lib/python2.7|grep "auth.py"
+  366  sudo gedit  /usr/lib/python3/dist-packages/bcloud/auth.py &
+  367  cd ~/src
+  368  ls
+  369  cd data2
+  370  ls
+  371  cd ..
+  372  mkdir baidu
+  373  cd baidu/
+  374  vi gitdown.sh
+  375  chmod +x *.sh
+  376  ./gitdown.sh 
+  377  ls
+  378  cd BaiduExporter/
+  379  ls
+  380  cd firefox/
+  381  ls
+  382  cd ..
+  383  ls
+  384  vi README.md &
+  385  fg
+  386  ps -ef|grep gpartedbin
+  387  kill -9 3603
+  388  gparted &
+  389  exit
+  390  cd /tmp
+  391  ls
+  392  du -h
+  393  cd /
+  394  gparted &
+  395  hiscap
+  396  exit
+  397  cat /sdi/down20160308-/all.sh|head
+  398  cat /sdj/down20160403-/all.sh|head
+  399  hiscap
+  400  exit
+  401  gparted
+  402  umount /dev/sdap
+  403  umount /dev/sdap1
+  404  hiscap
+  405  exit
+  406  sudo grub-update
+  407  update-grub >~/test.txt
+  408  sudo update-grub >~/test.txt
+  409  cd ~/bin
+  410  ls umou*
+  411  ./umount_dir_4_UUID.sh 
+  412  which label
+  413  man label
+  414  label
+  415  sudo vi /etc/default/grub
+  416  ls
+  417  ./generate_manual_UUID_mount_all_script.sh 
+  418  cd ~/Downloads
+  419  ls
+  420  ls -lt
+  421  ls /sdf2/Downloads_fast
+  422  cd ~/bin
+  423  ls *ssh*
+  424  ./setup_ssh-server_ubuntu.sh 
+  425  cat /etc/resolv.conf 
+  426  cat resolv.conf|grep opt
+  427  sudo cp resolv.conf /etc
+  428  ls *tar*
+  429  ./tarbin 
+  430  ./bintar.sh 
+  431  cd ..
+  432  ls -lt
+  433  ls -lt bin.tgz
+  434  ssh localhost
+  435  ls
+  436  df -h
+  437  df -h|grep -i potty
+  438  cd bin
+  439  ./generate_manual_UUID_mount_all_script.sh 
+  440  df -h|grep -i potty
+  441  sudo -s
+  442  hiscap
+  443  exit
+  444  cd bin
+  445  ls
+  446  ./bintar.sh 
+  447  exit
+  448  ls bin/bintar*
+  449  pwd
+  450  cd bin
+  451  ./bintar.sh 
+  452  vi bintar.sh
+  453  ./bintar.sh 
+  454  cd ..
+  455  ls
+  456  ls bin*
+  457  ls bin*.tg
+  458  ls bin*.tgz
+  459  ls bin*.tgz -l
+  460  exixt
+  461  exit
+  462  cd ~
+  463  sudo chown vhuang bin -R
+  464  cd bin
+  465  ./bintar.sh 
+  466  cd ..
+  467  exit
+  468  cd /
+  469  umount /dev/sdap1
+  470  cd /sdas1
+  471  ls
+  472  exit
+  473  cd /sdk
+  474  ls
+  475  cd bigdata_qiyeminglu/
+  476  ftp localhost
+  477  exit
+  478  cd /sdj
+  479  ls
+  480  cd /sdi
+  481  ls
+  482  cd /sdh
+  483  ls
+  484  cd /sdk
+  485  ls
+  486  cd bigdata_qiyeminglu/
+  487  ls
+  488  cd qyml_2nd_downed/
+  489  ls
+  490  cd qyml/
+  491  ls
+  492  cd converted_xls/
+  493  ls
+  494  cd 5133xls/
+  495  ls
+  496  umount /dev/sda1
+  497  umount /dev/sdas1
+  498  umount /dev/sdas
+  499  exit
+  500  pwd
+  501  ls
+  502  ls -lt|less
+  503  cd /sdk
+  504  ls
+  505  cd down20160412-/
+  506  ls
+  507  ls -lt|less
+  508  echo "">test.txt
+  509  vi test.txt
+  510  vi ~/bin/mv_ls_lt_filelist_to_newdrive.sh
+  511  chmod +x ~/bin/ -R
+  512  ~/bin/mv_ls_lt_filelist_to_newdrive.sh test.txt  /sdn/new_sdk_defect/ 
+  513  vi ~/bin/mv_ls_lt_filelist_to_newdrive.sh 
+  514  ~/bin/mv_ls_lt_filelist_to_newdrive.sh test.txt  /sdn/new_sdk_defect/ 
+  515  vi ~/bin/mv_ls_lt_filelist_to_newdrive.sh 
+  516  ~/bin/mv_ls_lt_filelist_to_newdrive.sh test.txt  /sdn/new_sdk_defect/ 
+  517  vi ~/bin/mv_ls_lt_filelist_to_newdrive.sh 
+  518  cat test.txt
+  519*  ~/bin/mv_ls_lt_filelist_to_newdrive.sh 
+  520  ~/bin/mv_ls_lt_filelist_to_newdrive.sh test.txt  /sdn/new_sdk_defect/ 
+  521  ！vi
+  522  history|grep vi
+  523  vi ~/bin/mv_ls_lt_filelist_to_newdrive.sh
+  524  ~/bin/mv_ls_lt_filelist_to_newdrive.sh test.txt  /sdn/new_sdk_defect/ 
+  525  vi ~/bin/mv_ls_lt_filelist_to_newdrive.sh
+  526  ~/bin/mv_ls_lt_filelist_to_newdrive.sh test.txt  /sdn/new_sdk_defect/ 
+  527  ls
+  528  cat mvall.sh 
+  529  ls
+  530  vi ~/bin/mv_ls_lt_filelist_to_newdrive.sh
+  531  vi test.txt
+  532  ls 1454701161942.67__warc__CC-MAIN-20160205193921-00
+  533  120-ip-10-236-182-209.ec2.internal.warc.gz
+  534  ls 1454701161942.67__warc__CC-MAIN-20160205193921-00
+  535  120-ip-10-236-182-209.ec2.internal.warc.gz
+  536  vi test.txt
+  537  ls -lt|less
+  538  echo "">test.txt
+  539  vi test.txt
+  540  history|grep newsdn
+  541  history|grep new
+  542  ~/bin/mv_ls_lt_filelist_to_newdrive.sh test.txt  /sdn/new_sdk_defect/ 
+  543  ls -lt|less
+  544  cd downok/
+  545  ls -lt|less
+  546  ls -lt > test.txt
+  547  vi test.txt
+  548  mv test.txt defectlist.txt
+  549  ls
+  550  ls ~/bin/ -lt|head
+  551  ~/bin/mv_ls_lt_filelist_to_newdrive.sh 
+  552  /home/vhuang/bin/mv_ls_lt_filelist_to_newdrive.sh defect_list.txt /sdn/new_sdk_defect/
+  553  /home/vhuang/bin/mv_ls_lt_filelist_to_newdrive.sh defectlist.txt /sdn/new_sdk_defect/
+  554  ls -lt|less
+  555  cd ..
+  556  ls -lt|less
+  557  ls
+  558  ls -lt|less
+  559  cd downok/
+  560  ls -lt|less
+  561  cd ..
+  562  cd /sdj
+  563  ls
+  564  cd down20160403-/
+  565  ls
+  566  cd down_ok/
+  567  ls
+  568  ls -lt|head
+  569  ls -lt|less
+  570  ls -lt >test.txt
+  571  vi test.txt
+  572  cat test.txt |sed 's/^/rm -fr /g' >rmzerofiles.sh
+  573  chmod +x *.sh
+  574  vi ./rmzerofiles.sh 
+  575  cat test.txt |cut -d":" -f2|cut -d" " -f2 |sed 's/^/rm -fr /g' >rmzerofiles.sh
+  576  vi ./rmzerofiles.sh 
+  577  rm rmzerofiles.sh 
+  578  ls
+  579  ls -lt >test.txt
+  580  vi test.txt
+  581  mv test.txt defect_list.txt
+  582  ls ~/bin/mv*
+  583  ls -lt|less
+  584  ls
+  585  cd ..
+  586  ls
+  587  cd /sdi
+  588  ls
+  589  cd down20160308-/
+  590  ls -lt|less
+  591  cd down_ok/
+  592  ls
+  593  ls -lt|less
+  594  ls -lt > test.txt
+  595  vi test.txt
+  596  cp test.txt defect_list.txt
+  597  /home/vhuang/bin/mv_ls_lt_filelist_to_newdrive.sh defect_list.txt /sdn/new_sdk_defect/ 
+  598  hiscap\
+  599  hiscap

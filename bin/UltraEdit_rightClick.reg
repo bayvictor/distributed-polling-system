@@ -1,0 +1,7 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\*\shell\UltraEdit]
+@="Open With UltraEdit-32"
+
+[HKEY_CLASSES_ROOT\*\shell\UltraEdit\command]
+@="\"C:\\Program Files (x86)\\UltraEdit\\uedit32.exe\" %1" 

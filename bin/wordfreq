@@ -1,0 +1,4 @@
+
+
+cat $1 | tr -c 'A-Za-z0-9-\.' '\n' | sort  | uniq -c |  sort -g -r
+#cat $1 | tr -c 'A-Za-z' '\n' | sort  | uniq -c |  sort -g -r | sed '1d'

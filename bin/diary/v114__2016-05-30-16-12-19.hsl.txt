@@ -1,0 +1,500 @@
+   19  ls *.sh -lt
+   20  nohup ./redown.sh 
+   21  cd /sdu
+   22  ls
+   23  df . -h
+   24  cd new_ccrawl_nov2015/
+   25  cat redown.sh |wc -l
+   26  pwd
+   27  ls
+   28  cat redown.sh |wc -l
+   29  cat redown.sh -n | grep 1448398465089.29__warc__CC-MAIN-20151124205425-00161-ip-10-71-132-137.ec2.internal.warc.gz
+   30  cat redown.sh -n | grep '1448398465089.29__warc__CC-MAIN-20151124205425-00001-ip-10-71-132-137.ec2.internal.warc.gz'
+   31  pwd
+   32  rdesk.sh 
+   33  exit
+   34  df /sdu -h
+   35  cd /sdu
+   36  df . -h
+   37  ls -lt
+   38  cd new_ccrawl_nov2015/
+   39  ls
+   40  mkdir backup02
+   41  cp *.sh backup02/
+   42  cp *.txt backup02/
+   43  ls -lt|head
+   44  ls -lt > defect_list.txt 
+   45  vi defect_list.txt 
+   46  cat defect_list.txt |wc -l
+   47  ls ~/bin/*defect*
+   48  /home/vhuang/bin/ccrawl_only_defect_list.sh defect_list.txt 
+   49  ls -lt *.sh
+   50  nohup ./redown.sh 
+   51  exit
+   52  locate NLP|grep -e "\.mp3$"
+   53  df -h
+   54  cd /media/vhuang
+   55  ls
+   56  cd NTFS733/
+   57  ls
+   58  cd ..
+   59  cd data2t
+   60  ls
+   61  exit
+   62  pwd
+   63  ls
+   64  df -h | grep 7.3
+   65  cd /sdu
+   66  ls
+   67  mkdir /sdv/new_ccrawl_nov2015
+   68  sudo mkdir /sdv/new_ccrawl_nov2015
+   69  sudo chown vhuang /sdv/new_ccrawl_nov2015
+   70  cp new_ccrawl_nov2015/all0.sh /sdv/new_ccrawl_nov2015/
+   71  cd new_ccrawl_nov2015/
+   72  cat sdu.sh |wc -l
+   73  find |grep -e "gz$"|wc -l
+   74  cat sdu.sh |tail
+   75  cd /sdv/new_ccrawl_nov2015/
+   76  ls
+   77  cp all0.sh sdv.sh
+   78  vi sdv.sh
+   79  cp all0.sh sdv.sh
+   80  vi sdv.sh
+   81  cd /sdo
+   82  ls
+   83  cd /
+   84  cd /sdj
+   85  ls
+   86  cd /sdn
+   87  ls
+   88  cd /sdm
+   89  ls
+   90  cd /sdl
+   91  ls
+   92  cd /sdk
+   93  ls
+   94  ls /sdj
+   95  ls /sdi
+   96  ls /sdh
+   97  df -h
+   98  ls /dr
+   99  ls /sdr
+  100  ls /sds
+  101  ls /sdt
+  102  ls /sdo
+  103  cd /sdo
+  104  ls
+  105  cd last20_warc_cclist/
+  106  ls
+  107  cat commoncrawl-all-downscript-from-warc-paths.sh 
+  108  cd ok
+  109  ls
+  110  ls -lt
+  111  df -h
+  112  df -h|grep 7.3|wc -l
+  113  df -h|grep 7.3|grep 6.9|wc -l
+  114  df -h|grep 7.3|grep 6.9
+  115  ls
+  116  cat wgetallgz.sh 
+  117  df -h|grep -v 7.3
+  118  ls /sda1
+  119  ls /sda1/down12302013-/
+  120  ls /sda1/down12302013-/down12302013-
+  121  df -h|grep -v 7.3 | grep T
+  122  ls /sdc1
+  123  ls /sdd1
+  124  cd /sdd1
+  125  ls
+  126  ls /sdg1
+  127  ls
+  128  cd common_crawler_data_201508/
+  129  ls
+  130  cd 201508/
+  131  ls -lt
+  132  ls
+  133  cd ..
+  134  ls
+  135  cd ..
+  136  ls
+  137  cd common_crawler_data_201512/
+  138  ls
+  139  cd 006315-/
+  140  ls
+  141  cd ..
+  142  ls
+  143  pwd
+  144  ls
+  145  df -h|grep 7.3
+  146  ls /sdi
+  147  ls /sdk
+  148  ls /sdq
+  149  ls /sdn
+  150  ls /sdm
+  151  ls /sdo
+  152  ls /sdp
+  153  ls /sdq
+  154  ls /sdr
+  155  ls /sds
+  156  ls /sdt
+  157  ls /sdu
+  158  ls /sdv
+  159  df -h
+  160  df -h|grep T
+  161  ls /sdc1
+  162  ls /sdd1
+  163  cd ..
+  164  cd common_crawler_data_201508/
+  165  find|grep -e "\.gz$"|wc -l
+  166  ls
+  167  find
+  168  tree
+  169  cd ..
+  170  ls
+  171  cd common_crawler_data_201512/
+  172  ls
+  173  find|grep -e "\.gz$"|wc -l
+  174  ls *.sh
+  175  find|grep -e "\.gz$"|less
+  176  df -h|grep T
+  177  ls /sdg1
+  178  ls /sdi
+  179  cd /sdi/down20160308-/
+  180  ls
+  181  ls -lt
+  182  cat makeall.sh 
+  183  cat make-urllist.sh 
+  184  cat cc-down.list.txt|less
+  185  cd ..
+  186  ls
+  187  cd down20160308-/
+  188  ls
+  189  find down_ok/|wc -l
+  190  sudo mkdir /sdv/step0
+  191  sudo chown vhuang /sdv/step0
+  192  cp *.sh /sdv/step0
+  193  ls /sdd1
+  194  history
+  195  ls /sdo
+  196  cp /sdo/last20_warc_cclist /sdv -fr
+  197  sudo cp /sdo/last20_warc_cclist /sdv -fr
+  198  sudo chown vhuang /sdv -R
+  199  cd /sdv
+  200  ls
+  201  cd last20_warc_cclist/
+  202  ls -lt
+  203  cd ok
+  204  ls
+  205  ls -lt
+  206  cat downgz_from__yyyy-mm.txt.sh 
+  207  cat wgetallgz.sh 
+  208  ls
+  209  cp 2015-40.gz /sdv/step0
+  210  cd /sdv/step0
+  211  ls
+  212  vi init.sh
+  213  chmod +x init.sh 
+  214  ./init.sh 
+  215  ls
+  216  cat 2015-40 |less
+  217  ls -ltl
+  218  cat makeall.sh 
+  219  vi init.sh 
+  220  ./init.sh 
+  221  cd /sdu
+  222  ls
+  223  ls -lt
+  224  cd new_ccrawl_nov2015/
+  225  ls
+  226  ls *.sh -lt
+  227  ./redown.sh 
+  228  tree -d
+  229  mkdir backup03
+  230  cp *.txt backup03
+  231  cp *.sh backup03
+  232  ls -lt >defect_list.txt 
+  233  vi defect_list.txt 
+  234  ls ~/bin/*defect*
+  235  /home/vhuang/bin/ccrawl_only_defect_list.sh   defect_list.txt 
+  236  df -h .
+  237  pwd
+  238  lsl
+  239  cd ..
+  240  ls
+  241  ls /sdv
+  242  ls /sdv/step0/
+  243  ls /sdv/step0/|tail
+  244  ls /sdv/step0/|head
+  245  df -h
+  246  df -h|grep sdv
+  247  df -h|grep sdu
+  248  cd /sdv
+  249  ls
+  250  cd step0/
+  251  ls
+  252  ls -lt
+  253  cat makeall.sh 
+  254  cp 2015-40.runall.sh all0.sh
+  255  lfm
+  256  ls -l *.sh
+  257  rm all.sh
+  258  rm cc-down.list.txt.runall.sh 
+  259  ls
+  260  ls -lt
+  261  cat go.sh
+  262  cat wg.sh 
+  263  ls ..
+  264  ls ../last20_warc_cclist/
+  265  ls ../last20_warc_cclist/ok
+  266  vi init.sh 
+  267  ls *.sh
+  268  vi init.sh 
+  269  cat go.sh
+  270  cat make-urllist.sh 
+  271  mkdir backup
+  272  ls
+  273  mv go.sh backup
+  274  mv make-urllist.sh backup
+  275  ls
+  276  mv wg.sh backup
+  277  ls
+  278  cat makeall.sh 
+  279  cat init.sh 
+  280  vi go.sh
+  281  ls
+  282  ls *.sh
+  283  ls -lt
+  284  chmod +x *.sh
+  285  ls
+  286  cat go.sh
+  287  ls
+  288  cat all0.sh |head
+  289  cat /sdu/new_ccrawl_nov2015/sdu.sh |head
+  290  vi makeall.sh 
+  291  chmod +x *.sh
+  292  ./go.sh 
+  293  cat all0.sh |head
+  294  cat 2015-40.runall.sh |head
+  295  vi go.sh
+  296  vi init.sh 
+  297  vi makeall.sh 
+  298  vi init.sh 
+  299  ls
+  300  ./go.sh 
+  301  cat all0.sh |head
+  302  cat 2015-40.runall.sh |head -n 1
+  303  df -h|grep sdu
+  304  df -h|grep sdv
+  305  df -h|grep sdu
+  306  blkid
+  307  df -h
+  308  cd /medis
+  309  ls
+  310  pwd
+  311  locate src/py | grep mproc
+  312  rdesk.sh &
+  313  df -h|grep 4
+  314  df -h|grep 3.6
+  315  fdisk
+  316  sudo -s
+  317  cd /sdv
+  318  ls
+  319  cd last20_warc_cclist/
+  320  ls
+  321  cat commoncrawl-all-downscript-from-warc-paths.sh 
+  322  ls
+  323  cd ok
+  324  ls
+  325  cat wgetallgz.sh 
+  326  cat wgetallgz.sh >last.sh
+  327  vi last.sh
+  328  chmod +x last.sh
+  329  ./last.sh 
+  330  vi ./last.sh 
+  331  ./last.sh 
+  332  ls -lt
+  333  cat last.sh |head
+  334  cat last.sh 
+  335  vi ./last.sh 
+  336  ls -lt
+  337  cd /sdw
+  338  ls
+  339  cd /sdv
+  340  ls
+  341  cp step0/*.sh 2016-18-step0/
+  342  cd 2016-18-step0/
+  343  ls
+  344  cat makeall.sh 
+  345  ls
+  346  cat go.sh
+  347  ls
+  348  cat go.sh 
+  349  ls
+  350  cat makeall.sh 
+  351  gunzip 2016-18.gz 
+  352  ls
+  353  cat go.sh
+  354  mv go.sh mvall.sh
+  355  ls
+  356  echo "gunzip 2016-18.gz ">go.sh
+  357  vi go.sh
+  358  chmod +x go.sh
+  359  cp go.sh > runall.sh
+  360  cp go.sh runall.sh
+  361  chmod +x *.sh
+  362  ./go.sh 
+  363  ./go.sh 2016-18
+  364  ./go.sh 2016-18hiscap
+  365  hiscap
+  366  exit
+  367  df . -h
+  368  hiscap
+  369  exit
+  370  cat defect_list.txt -n|wc -l
+  371  find /sdu/|wc 0l
+  372  find /sdu/|wc -l
+  373  find /sdu/2015-40-02/ |wc -l
+  374  df . /sdu
+  375  df . /sdu -h
+  376  df -h
+  377  ls /sdw
+  378  cd /sdu
+  379  ls
+  380  cd new_ccrawl_nov2015/
+  381  ls
+  382  find|wc -l
+  383  cat sdu.sh |wc -l
+  384  cd ..
+  385  ls
+  386  mkdir /sdw/2015-40-022
+  387  sudo mkdir /sdw/2015-40-022
+  388  sudo chown vhuang /sdw/2015-40-022
+  389  ls /sdv
+  390  ls /sdv/step0/*.sh
+  391  ls /sdv/step0/*.sh -lt
+  392  cp  /sdv/step0/*.sh /sdw/2015-40-022/
+  393  cd /sdw/2015-40-022/
+  394  split -l 7179 all0.sh 
+  395  ls
+  396  cat xaa|wc -l
+  397  cat xab|wc -l
+  398  cat xac|wc -l
+  399  cat xad|wc -l
+  400  cat ~/defect_list.txt 
+  401  cp  ~/defect_list.txt .
+  402  cat defect_list.txt |head
+  403  grep 1443736682773.27__warc__CC-MAIN-20151001215802-00178-ip-10-137-6-227.ec2.internal.warc.gz *
+  404  grep 1443736682773.27__warc__CC-MAIN-20151001215802-00178-ip-10-137-6-227.ec2.internal.warc.gz * -n
+  405  cp xab sdw.sh
+  406  vi sdw.sh 
+  407  cat sdw.sh |wc -l
+  408  chmod +x sdw.sh 
+  409  find /sdu/2015-40-02/|wc -l
+  410  cd /sdu
+  411  df . -h
+  412  cd 2015-40-02/
+  413  ls
+  414  ls -lt >defect_list.txt
+  415  vi defect_list.txt 
+  416  ls ~/bin/*defect*
+  417  ccrawl_only_defect_list.sh defect_list.txt 
+  418  cp /sdv/step0/all0.sh .
+  419  ccrawl_only_defect_list.sh defect_list.txt 
+  420  ls *.sh -lt
+  421  nohup ./redown.sh 
+  422  pws
+  423  ls -lt|head
+  424  ls *.sh -lt
+  425  ls  -lt|head
+  426  ls
+  427  ps -ef|grep wget
+  428  vi nohup.out 
+  429  tail nohup.out 
+  430  ps -ef|grep redown
+  431  cd /sdw
+  432  ls
+  433  cd 2015-40-022/
+  434  find|wc -l
+  435  cd /sdu/2015-40-02/
+  436  find|wc -l
+  437  ls -lt
+  438  ls -lt|less
+  439  pwd
+  440  cd /sdw
+  441  ls
+  442  sudo mkdir 2015-40-023
+  443  sudo chown vhuang 2015-40-023
+  444  cp 2015-40-022/*.sh 2015-40-023
+  445  cd 2015-40-023
+  446  ls
+  447  pwd
+  448  ls
+  449  cat all0.sh -n |grep 1443736682773.27__warc__CC-MAIN-20151001215802-00178-ip-10-137-6-227.ec2.internal.warc.gz
+  450  cat all0.sh|wc -l
+  451  ls
+  452  ls ../2015-40-022/a*
+  453  ls ../2015-40-022/*b*
+  454  cat ../2015-40-022/xaa | wc -l 
+  455  cat ../2015-40-022/xab -n | grep 1443736682773.27__warc__CC-MAIN-20151001215802-00178-ip-10-137-6-227.ec2.internal.warc.gz 
+  456  python
+  457  df -h|grep sdv
+  458  cd /sdv
+  459  ls
+  460  ls -lt
+  461  cd step0
+  462  ls -lt|less
+  463  ls -lt >~/defect_list.txt
+  464  vi ~/defect_list.txt 
+  465  pwd
+  466  ls
+  467  pwd
+  468  cat ~/defect_list.txt |cut -d":" -f2|cut -d" " -f2|sed 's|^|mv /sdv/step0/|g;s|$| /sdu/2015-40-02/g'
+  469  cat ~/defect_list.txt |cut -d":" -f2|cut -d" " -f2|sed 's|^|mv /sdv/step0/|g;s|$| /sdu/2015-40-02|g'
+  470  mkdir /sdu/2015-40-02
+  471  sudo mkdir /sdu/2015-40-02
+  472  sudo chown vhuang /sdu/2015-40-02
+  473  cat ~/defect_list.txt |cut -d":" -f2|cut -d" " -f2|sed 's|^|mv /sdv/step0/|g;s|$| /sdu/2015-40-02|g' >/sdu/2015-40-02/mvallhere.sh
+  474  chmod +x /sdu/2015-40-02/mvallhere.sh 
+  475  pwd
+  476  ls
+  477  cat /sdu/2015-40-02/mvallhere.sh 
+  478  vi  /sdu/2015-40-02/mvallhere.sh 
+  479  cat  /sdu/2015-40-02/mvallhere.sh |sed 's/^/echo \"/g;s/$/\";/g' > ~/test01.txt
+  480  paste ~/test01.txt /sdu/2015-40-02/mvallhere.sh >~/go.sh
+  481  cat ~/go.sh
+  482  cat ~/go.sh /sdu/2015-40-02/
+  483  cp ~/go.sh /sdu/2015-40-02/
+  484  go.sh /s
+  485  ~/go.sh 
+  486  chmod +x ~/go.sh 
+  487  cp ~/go.sh /sdu/2015-40-02/
+  488  ~/go.sh 
+  489  cp ~/go.sh . 
+  490  vi go.sh
+  491  df . -h
+  492  ./go.sh
+  493  vi ./go.sh
+  494  ./go.sh
+  495  ls /sdw/2015-40-022/
+  496  ./go.sh
+  497  cat ./go.sh
+  498  pwd
+  499  ls
+  500  cd /sdu
+  501  ls
+  502  ls -lt
+  503  cd 2015-40-02/
+  504  ls *.gz -l|wc -l
+  505  ls -lt|less
+  506  cd /sdw
+  507  ls
+  508  cd 2015-40-023
+  509  ls *.gz -l|wc -l
+  510  ls -lth|less
+  511  cd /sdx
+  512  ls
+  513  cd 2016-18-step0/
+  514  ls
+  515  ls -l|wc -l
+  516  ls -lt|less
+  517  df . -h
+  518  hiscap

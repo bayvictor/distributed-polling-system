@@ -1,0 +1,13 @@
+#!/bin/bash
+
+frame=`echo \"$1\" |sed 's/[ :\\\/\"›,\(\)]/_/g;s/^_+/_/g;s/_$//g;s/\&/_n_/g;s/^_//g'|sed 's/\(.*\)/\L\1/' `
+
+echo "frame=\"${frame}\""
+
+#read read_line
+mkdir $frame
+cd $frame
+initread
+cd ..
+
+

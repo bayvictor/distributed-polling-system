@@ -1,0 +1,501 @@
+    2  ls
+    3  vi bashrc
+    4  ls -l
+    5  cd ..
+    6  sudo visudo
+    7  pwd
+    8  ls
+    9  sudo chown vhuang ~ -R
+   10  cd bin
+   11  vi bashrc
+   12  vi cleanupall.sh
+   13  cat cleanupall.sh 
+   14  ls /var/lib/mlocate/
+   15  ls /var/lib/mlocate/ -l
+   16  ls /var/lib/mlocate/ -lh
+   17  vi ./cleanupall.sh 
+   18  ./install-all.sh
+   19  cp bashrc ~/.bashrc
+   20  source ~/.bashrc
+   21  pwd
+   22  aptseek.sh google-pinyin
+   23  aptseek.sh pinyin|grep google
+   24  aptseek.sh fcitx
+   25  aptseek.sh fcitx |grep pinyin
+   26  vi fcitxsetup.sh
+   27  chmod +x fcitxsetup.sh 
+   28  im-config
+   29  ./fcitxsetup.sh 
+   30  vi ./fcitxsetup.sh 
+   31  im-config
+   32  hiscap
+   33  exit
+   34  ls bin*
+   35  ./bintar.sh
+   36  cp dot_emacs ~/.emacs
+   37  diff bashrc ~/.bashrc
+   38  ./bintar.sh
+   39  aptseek.sh gimp
+   40  aptseek.sh gimp|grep gimp
+   41  aptseek.sh xournal
+   42  gedit bintar.sh &
+   43  aptseek.sh mirage
+   44  aptseek.sh sogou
+   45  sudo cp resolv.conf /etc
+   46  vi resolv.conf
+   47  sudo cp resolv.conf /etc
+   48  ./bintar.sh 
+   49  cd ~
+   50  ls -lt
+   51  cat *.sh|grep fcitx
+   52  cat ~/bin/*.sh|grep fcitx
+   53  cd bin
+   54  fcitxsetup.sh 
+   55  vi fcitxsetup.sh 
+   56  aptseek.sh "im-switch"
+   57  vi fcitxsetup.sh 
+   58  echo $USER
+   59  bintar.sh
+   60  ls -lt
+   61  ls -lt|head
+   62  ./fcitxsetup.sh 
+   63  ls -lt *sogou*
+   64  chmod +x sogou-matlab-setup.sh 
+   65  gdit  sogou-matlab-setup.sh &
+   66  ./sogou-matlab-setup.sh &
+   67  fg
+   68  bintar.sh
+   69  cd ~
+   70  ls
+   71  ls -lth
+   72  lsb_release -a
+   73  cd bin
+   74  ./generate_manual_UUID_mount_all_script.sh 
+   75  sudo gparted
+   76  aptseek.sh sogou
+   77  vi ~/bin/install-all.sh 
+   78  sodo ~/bin/install-all.sh 
+   79  sudo ~/bin/install-all.sh 
+   80  vi ~/bin/install-all.sh 
+   81  cd bin
+   82  ls
+   83  cat gbgo.sh 
+   84  sudo cp zh /var/lib/locale/supported.d/zh
+   85  sudo locale-gen
+   86  sudo apt-get install catdoc -y --force-yes 
+   87  ls zh
+   88  vi gbgo.sh 
+   89  ./gbgo.sh 
+   90  ls *docker*
+   91  cat install.docker.sh
+   92  cat install.docker.sh|less
+   93  vi install.docker.sh
+   94  ./install.docker.sh
+   95  ls
+   96  history
+   97  hiscap
+   98  ls
+   99  cd ..
+  100  ls
+  101  ls -lt
+  102  cd bin
+  103  vi bintar.sh
+  104  chmod +x *.sh
+  105  history
+  106  aptseek.sh switch|grep im
+  107  aptseek.sh switch|grep -e \bim\b
+  108  cat ~/.vimsrc
+  109  cat ~/.vimrc
+  110  ls *dev*
+  111  cat centos_dev_init.sh 
+  112  grep essential *.sh
+  113  sudo sudo apt-get install -y git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev ia32-libs x11proto-core-dev libx11-dev  lib32z-dev
+  114  sudo sudo apt-get install -y git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev  x11proto-core-dev libx11-dev  lib32z-dev
+  115  grep essential *.sh | grep ia32
+  116  sudo apt-get install -y git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev ia32-libs x11proto-core-dev libx11-dev  lib32z-dev
+  117  cat *.sh|grep oldstr
+  118  cat *.sh|grep old
+  119  grep oldstr *.sh
+  120  grep -rl ia32-libs . | xargs sed -i 's/ ia32-libs /  lib32ncurses5 lib32z1 /g'
+  121  grep -rl ia32-libs *
+  122  grep -r *
+  123  grep  ia32-libs *
+  124  grep  ia32-libs * -R
+  125  grep  ia32\-libs * -R
+  126  grep -e  ia32\-libs * -R
+  127  grep -e ess * -r
+  128  grep -rl ia32\-libs . | xargs sed -i 's/ ia32\-libs /  lib32ncurses5 lib32z1 /g'
+  129  find|xargs grep ia32
+  130  grep essent *
+  131  find|xargs grep essential
+  132  aptseek.sh openjdk
+  133  grep -rl sun\-java5\-jdk . | xargs sed -i 's/ sun\-java5\-jdk /  default-jdk /g'
+  134  find|xargs grep sun\-java5
+  135  find|xargs grep essential
+  136  sudo apt-get install -y --force-yes git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev  lib32ncurses5 lib32z1 x11proto-core-dev libx11-dev  lib32z-dev
+  137  sudo apt-get install -y --force-yes git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev  lib32ncurses5 lib32z1 x11proto-core-dev libx11-dev  lib32z-dev  build-essential git fakeroot realpath automake libglib2.0-dev g++-multilib zlib1g-dev libglib2.0-dev git
+  138  vi install-all.sh
+  139  ./install-all.sh
+  140  vi ./install-all.sh
+  141  cat *.sh|grep anykey
+  142  vi ./install-all.sh
+  143  sudo ./install-all.sh
+  144  ls *yum*
+  145  cp install-all.sh yum-install-all.sh
+  146  v install-all.sh
+  147  vi install-all.sh
+  148  ./install-all.sh
+  149  cd bin
+  150  vi /etc/default/grub
+  151  vi /etc/fstab
+  152  cat /etc/fstab|grep swap
+  153  blkid|grep swap
+  154  blkid|grep sda
+  155  vi /etc/fstab
+  156  ./refresh_initramfs.sh 
+  157  sudo apt-get update -y;sudo apt-get upgrade -y
+  158  sudo apt-get install -y
+  159  sudo apt-get install -f 
+  160  dpkg --help
+  161  dpkg --configure
+  162  dpkg -configure
+  163  dpkg configure
+  164  dpkg |grep auto
+  165  dpkg --help |grep auto
+  166  dpkg --help |grep fix
+  167  dpkg --help |grep conf
+  168  reboot
+  169  df -h
+  170  sudo -s
+  171  df -h
+  172  sudo reboot
+  173  cat defect_list.txt |wc -l
+  174  cd ..
+  175  ls
+  176  cd new_craw_nov2015/
+  177  ls -lt|less
+  178  ls -lt >test.txt
+  179  vi test.txt
+  180  cp test.txt defect-list.txt 
+  181  ls *.sh
+  182  ~/bin/rescript_commoncrawler_defectfiles.sh defect-list.txt 
+  183  cp ~/bin/rescript_commoncrawler_defectfiles.sh ~/bin/ccrawl_only_defect_list.sh 
+  184  ls -lt|head
+  185  vi rescript.sh 
+  186  vi ~/bin/ccrawl_only_defect_list.sh 
+  187  ls
+  188  cd ..
+  189  ls
+  190  ls -l
+  191  ls -l|sed '$d'
+  192  ls -l|sed '$d,$d'
+  193  ls -l|sed '$d;$d'
+  194  ls -l|sed '$d'|sed '$d'
+  195  cd new_craw_nov2015/
+  196  ls
+  197  ls -lt|head
+  198  vi rescript.sh 
+  199  cat defect-list.txt |wc -l
+  200  cat rescript.sh |wc -l
+  201  ./rescript.sh 
+  202  ls -lt|head
+  203  ls all*.sh
+  204  cat all0.sh|wc -l
+  205  diff all.sh all0.sh>test.txt
+  206  cat test.txt|wc -l
+  207  cat all.sh|wc -l
+  208  python
+  209  cat redown.sh 
+  210  grep 1443736672328.14__warc__CC-MAIN-20151001215752-00059-ip-10-137-6-227.ec2.internal.warc.gz *
+  211  grep 1443736672328.14__warc__CC-MAIN-20151001215752-00059-ip-10-137-6-227.ec2.internal.warc.gz all*.sh
+  212  cat all.sh|head
+  213  grep 0059 all.sh
+  214  grep 00059\- all.sh>test2.txt
+  215  cat test2.txt|wc -l
+  216  grep 1443736672328.14__warc__CC-MAIN-20151001215752-00059-ip-10-137-6-227.ec2.internal.warc.gz test2.txt
+  217  grep 00059\- all0.sh>test2.txt
+  218  grep 1443736672328.14__warc__CC-MAIN-20151001215752-00059-ip-10-137-6-227.ec2.internal.warc.gz test2.txt
+  219  ls ../
+  220  grep 1443736672328.14__warc__CC-MAIN-20151001215752-00059-ip-10-137-6-227.ec2.internal.warc.gz ../down20160426-/all0.sh 
+  221  ls /sdar
+  222  ls /sdar1
+  223  cd  /sdar1/craw-sept2015/
+  224  ls
+  225  cd downok_0-2926/
+  226  ls
+  227  ls *.sh
+  228  ls -lt|tail -n 30
+  229  ls -lt|head  -n 30
+  230  cd /sdn
+  231  ls
+  232  df . -h
+  233  vi get_last_10_for_cc.sh
+  234  vi last10_warc_cclist.txt
+  235  sudo vi last10_warc_cclist.txt
+  236  cat last10_warc_cclist.txt |cut -d"/" -f5-9
+  237  cat last10_warc_cclist.txt |cut -d"/" -f6-9
+  238  cat last10_warc_cclist.txt |cut -d"/" -f6-7
+  239  cat last10_warc_cclist.txt |cut -d"/" -f6-6
+  240  history|grep cclist
+  241  ls
+  242  sudo mkdir  last20_warc_cclist
+  243  sudo chown vhuang  last20_warc_cclist
+  244  cd last20_warc_cclist
+  245  vi warclist.txt
+  246  vi go.sh
+  247  ls
+  248  cat warclist.txt |cat -d"<" -f1-9
+  249  cat warclist.txt |cut -d"<" -f1-9
+  250  cat warclist.txt |cut -d'"' -f1-9
+  251  cat warclist.txt |cut -d"=" -f1-9
+  252  cat warclist.txt |cut -d"=" -f2-9
+  253  cat warclist.txt |cut -d'"' -f2-9
+  254  cat warclist.txt |cut -d'"' -f2-9|cut -d'"' -f1
+  255  cat warclist.txt |cut -d'"' -f2-9|cut -d'"' -f1 >test_url.txt
+  256  cat warclist.txt |cut -d'/' -f4-5|sed 's/\/_/g' > test_date_fn.txt
+  257  cat warclist.txt |cut -d'/' -f4-5|sed 's/\//_/g' > test_date_fn.txt
+  258  cat test_date_fn.txt 
+  259  cat warclist.txt |cut -d'/' -f5-6|sed 's/\//_/g' > test_date_fn.txt
+  260  cat test_date_fn.txt 
+  261  cat warclist.txt |cut -d'/' -f3-4|sed 's/\//_/g' > test_date_fn.txt
+  262  cat test_date_fn.txt 
+  263  cat warclist.txt |cut -d'/' -f4-5|sed 's/\//_/g' > test_date_fn.txt
+  264  cat test_date_fn.txt 
+  265  cp warclist.txt test.txt
+  266  vi test.txt
+  267  cat test.txt |cut -d'/' -f4-5|sed 's/\//_/g' > test_date_fn.txt
+  268  cat test.txt |cut -d'/' -f4-5|sed 's/\//_/g' 
+  269  cat test.txt |cut -d'/' -f5-5|sed 's/\//_/g' 
+  270  cat test.txt |cut -d'/' -f6-7|sed 's/\//_/g' 
+  271  cat test.txt |cut -d'/' -f6-7|cut -d"_" -f1|sed 's/\//_/g' 
+  272  cat test.txt |cut -d'/' -f6-7|cut -d"_" -f1 | sed 's/\//_/g' 
+  273  cat test.txt |cut -d'/' -f6-7| sed 's/\//_/g' |cut -d"_" -f1
+  274  cat test.txt |cut -d'/' -f6-7| sed 's/\//_/g' |cut -d"_" -f1|cut -d"-" -f2-5
+  275  cat test.txt |cut -d'/' -f6-7| sed 's/\//_/g' |cut -d"_" -f1|cut -d"-" -f3-5
+  276  cat test.txt |cut -d'/' -f6-7| sed 's/\//_/g' |cut -d"_" -f1|cut -d"-" -f3-5 >yyyy-mm.txt
+  277  cat test.txt |cut -d'/' -f6-7| sed 's/\//_/g' |cut -d"_" -f1|cut -d"-" -f3-5 |sed 's/^/ -O /g;s/$/\.warc.paths ' >yyyy-mm.txt
+  278  cat test.txt |cut -d'/' -f6-7| sed 's/\//_/g' |cut -d"_" -f1|cut -d"-" -f3-5 |sed 's/^/ -O /g;s/$/\.warc.paths /g' >yyyy-mm.txt
+  279  cat yyyy-mm.txt 
+  280  vi  yyyy-mm.txt 
+  281  paste warclist.txt yyyy-mm.txt 
+  282  ls *.txt
+  283  paste test_url.txt yyyy-mm.txt 
+  284  paste test_url.txt yyyy-mm.txt |sed 's/^/wget /g' >wgetall.sh
+  285  cat wgetall.sh 
+  286  history|tail -n 30
+  287  history|tail -n 60
+  288  vi gen_batch_from_warclist.sh
+  289  chmod +x gen_batch_from_warclist.sh 
+  290  ls
+  291  ./gen_batch_from_warclist.sh 
+  292  ls -lt
+  293  cat wgetall.sh 
+  294  cat go.sh
+  295  rm go.sh
+  296  ls
+  297  ls *.txt
+  298  ls *.txt -lt
+  299  rm test_date_fn.txt 
+  300  ls
+  301  ls -lt
+  302  cat test.txt
+  303  mv test.txt copy-paste-from-view-source-of-commoncrawl.txt
+  304  ls -lt ~/bin/ -lt|head -n 30
+  305  cp ~/bin/commoncrawl_all_downscript_from_warc_paths.sh .
+  306  ls
+  307  vi commoncrawl_all_downscript_from_warc_paths.sh 
+  308  cat test_url.txt 
+  309  cat go.sh
+  310  cat commoncrawl_all_downscript_from_warc_paths.sh 
+  311  ls
+  312  cat 2014-10.warc.paths |less
+  313  cat 2014-10.warc.paths |grep aws
+  314  ls
+  315  cat yyyy-mm.txt |head
+  316  cat yyyy-mm.txt | sed 's|^/ \-O |wget https://aws-publicdatasets.s3.amazonaws.com/common-crawl/crawl-data/CC-MAIN-|g;s|\.warc\.paths|/warc.paths.gz
+|g'
+  317  cat yyyy-mm.txt | sed 's|^/ \-O |wget https://aws-publicdatasets.s3.amazonaws.com/common-crawl/crawl-data/CC-MAIN-|g;s|\.warc\.paths|/warc.paths.gz |g' >test01.txt
+  318  cat yyyy-mm.txt | sed 's|warc.paths.gz|.gz |g' >test02.txt
+  319  paste test01.txt test02.txt >wgetallgz.sh
+  320  cat wgetallgz.sh
+  321  cat yyyy-mm.txt | sed 's|^ \-O |wget https://aws-publicdatasets.s3.amazonaws.com/common-crawl/crawl-data/CC-MAIN-|g;s|\.warc\.paths|/warc.paths.gz |g' >test01.txt
+  322  paste test01.txt test02.txt >wgetallgz.sh
+  323  cat wgetallgz.sh
+  324  history|tail -n 30
+  325  ls
+  326  vi downgz.sh
+  327  chmod +x *.sh
+  328  ./downgz.sh 
+  329  ls
+  330  vi downgz.sh 
+  331  vi wgetallgz.sh 
+  332  cat 2013-20.warc.paths |less
+  333  strings  2013-20.warc.paths |less
+  334  vi wgetallgz.sh 
+  335  ls 2013*
+  336  ls 2013* -l
+  337  ls *warc.paths*
+  338  ls *warc.paths* -lt
+  339  cat downgz.sh 
+  340  cat yyyy-mm.txt |head
+  341  vi downgz.sh 
+  342  ./downgz.sh 
+  343  vi downgz.sh 
+  344  ./downgz.sh 
+  345  vi downgz.sh 
+  346  ./downgz.sh 
+  347  vi downgz.sh 
+  348  ./downgz.sh 
+  349  ls
+  350  cat gen_batch_from_warclist.sh 
+  351  cat warclist.txt 
+  352  mkdir test
+  353  mv * test
+  354  ls
+  355  mkdir ok
+  356  cp test/copy-paste-from-view-source-of-commoncrawl.txt ok
+  357  cp test/gen_batch_from_warclist.sh ok
+  358  cp test/downgz.sh ok
+  359  cd ok
+  360  ls
+  361  vi gen_batch_from_warclist.sh 
+  362  cat copy-paste-from-view-source-of-commoncrawl.txt 
+  363  vi gen_batch_from_warclist.sh 
+  364  ls
+  365  mv downgz.sh downgz_from_yyyy-mm.txt.sh 
+  366  ls
+  367  mv downgz_from_yyyy-mm.txt.sh downgz_from__yyyy-mm.txt.sh 
+  368  ls
+  369  cat *.sh|grep yyy
+  370  vi gen_batch_from_warclist.sh 
+  371  ls ../test/test.txt
+  372  ls ../test/yyyy-mm.txt
+  373  cat  ../test/yyyy-mm.txt
+  374  ls ..
+  375  ls ../test
+  376  cp ../test/yyyy-mm.txt .
+  377  ls
+  378  vi gen_batch_from_warclist.sh 
+  379  rm gen_batch_from_warclist.sh 
+  380  ls
+  381  cat downgz_from__yyyy-mm.txt.sh 
+  382  ls
+  383  cat copy-paste-from-view-source-of-commoncrawl.txt 
+  384  history|grep yyyy
+  385  ls
+  386  vi downgz_from__yyyy-mm.txt.sh 
+  387  ls
+  388  ./downgz_from__yyyy-mm.txt.sh 
+  389  ls -lt
+  390  vi wgetallgz.sh 
+  391  pwd
+  392  ls
+  393  cd ..
+  394  ls
+  395  cd gen_sh_ok/
+  396  ls
+  397  mkdir txt
+  398  mv *.txt txt
+  399  ls
+  400  pwd
+  401  sudo ln -s /sdn/last20_warc_cclist/gen_sh_ok /sdn/sh
+  402  sudo chown vhuang  /sdn/last20_warc_cclist/gen_sh_ok /sdn/sh
+  403  ls
+  404  cd /
+  405  ls
+  406  cd /sdn
+  407  ls
+  408  ls -lt
+  409  cd new_ccrawl_nov2015/
+  410  ls -lt|less
+  411  ls
+  412  ls -lt|less
+  413  vi defect_list.txt
+  414  ls ~/bin/* -lt|head
+  415  /home/vhuang/bin/ccrawl_only_defect_list.sh defect_list.txt 
+  416  cd ..
+  417  mv new_ccrawl_nov2015/ new_ccrawl_nov2015_done
+  418  sudo mv new_ccrawl_nov2015/ new_ccrawl_nov2015_done
+  419  ls
+  420  cd down_ccrawl_nov2015/
+  421  ls
+  422  cd downok/
+  423  ls
+  424  ls *.txt
+  425  ls -lt >defect_list.txt
+  426  vi defect_list.txt 
+  427  /home/vhuang/bin/ccrawl_only_defect_list.sh defect_list.txt 
+  428  ls
+  429  ls /sdn/sh/201*
+  430  cp  /sdn/sh/2015-40.warc.txt.sh all.sh
+  431  /home/vhuang/bin/ccrawl_only_defect_list.sh defect_list.txt 
+  432  ./redown.sh 
+  433  cat redown.sh 
+  434  cp  /sdn/sh/2015-48.warc.txt.sh all.sh
+  435  /home/vhuang/bin/ccrawl_only_defect_list.sh defect_list.txt 
+  436  ls
+  437  ls *.sh
+  438  cd ..
+  439  ls
+  440  cd ..
+  441  ls
+  442  mv down_ccrawl_nov2015/ down_ccrawl_nov2015_done
+  443  sud omv down_ccrawl_nov2015/ down_ccrawl_nov2015_done
+  444  sudo  mv down_ccrawl_nov2015/ down_ccrawl_nov2015_done
+  445  ls
+  446  cd /sdo
+  447  ls
+  448  cd /sdp
+  449  cd /sdq
+  450  cd /sdm
+  451  ls
+  452  cd 02_new_craw_nov201502__from_1448398446286.32__warc__CC-MAIN-20151124205406-00280-ip-10-71-132-137.ec2/
+  453  ls
+  454  ls -lt|less
+  455  cd ..
+  456  sudo mv 02_new_craw_nov201502__from_1448398446286.32__warc__CC-MAIN-20151124205406-00280-ip-10-71-132-137.ec2/ done02_new_craw_nov201502__from_1448398446286.32__warc__CC-MAIN-20151124205406-00280-ip-10-71-132-137.ec2
+  457  ls
+  458  cd down20160426-/
+  459  ls -lt|head
+  460  ls -lt|less
+  461  vi defect_list.txt
+  462  history|grep defect
+  463  /home/vhuang/bin/ccrawl_only_defect_list.sh defect_list.txt 
+  464  ls
+  465  echo "">defect_list.txt
+  466  ls -lt >test.txt
+  467  vi test.txt
+  468  cp test.txt defect_list.txt 
+  469  /home/vhuang/bin/ccrawl_only_defect_list.sh defect_list.txt 
+  470  vi redown.sh 
+  471  ls -ltast *.txt
+  472  ls -ltast *.sh
+  473  vi rescript.sh 
+  474  ./rescript.sh 
+  475  vi redown.sh 
+  476  vi rescript.sh 
+  477  ./rescript.sh 
+  478  ls -lt|head
+  479  cat redown.sh |less
+  480  cat  defect_list.txt 
+  481  echo "">redown.sh
+  482  ./rescript.sh 
+  483  vi  redown.sh 
+  484  ./redown.sh 
+  485  vi /home/vhuang/bin/ccrawl_only_defect_list.sh 
+  486  cd ..
+  487  mv down20160426-/ down_down20160426-
+  488  sud omv down20160426-/ down_down20160426-
+  489  sudo mv down20160426-/ down_down20160426-
+  490  ls
+  491  mv down_down20160426-/ done_down20160426-
+  492  sudo mv down_down20160426-/ done_down20160426-
+  493  ls
+  494  cd new_craw_nov2015/
+  495  ls
+  496  cat defect-list.txt |head
+  497  history|grep cp
+  498  cp  /sdn/sh/2015-40.warc.txt.sh all.sh
+  499  /home/vhuang/bin/ccrawl_only_defect_list.sh defect-list.txt 
+  500  df . -h
+  501  hiscap

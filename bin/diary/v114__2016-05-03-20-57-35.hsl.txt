@@ -1,0 +1,182 @@
+    1  cd bin
+    2  ls
+    3  vi bashrc
+    4  ls -l
+    5  cd ..
+    6  sudo visudo
+    7  pwd
+    8  ls
+    9  sudo chown vhuang ~ -R
+   10  cd bin
+   11  vi bashrc
+   12  vi cleanupall.sh
+   13  cat cleanupall.sh 
+   14  ls /var/lib/mlocate/
+   15  ls /var/lib/mlocate/ -l
+   16  ls /var/lib/mlocate/ -lh
+   17  vi ./cleanupall.sh 
+   18  ./install-all.sh
+   19  cp bashrc ~/.bashrc
+   20  source ~/.bashrc
+   21  pwd
+   22  aptseek.sh google-pinyin
+   23  aptseek.sh pinyin|grep google
+   24  aptseek.sh fcitx
+   25  aptseek.sh fcitx |grep pinyin
+   26  vi fcitxsetup.sh
+   27  chmod +x fcitxsetup.sh 
+   28  im-config
+   29  ./fcitxsetup.sh 
+   30  vi ./fcitxsetup.sh 
+   31  im-config
+   32  hiscap
+   33  exit
+   34  ls bin*
+   35  ./bintar.sh
+   36  cp dot_emacs ~/.emacs
+   37  diff bashrc ~/.bashrc
+   38  ./bintar.sh
+   39  aptseek.sh gimp
+   40  aptseek.sh gimp|grep gimp
+   41  aptseek.sh xournal
+   42  gedit bintar.sh &
+   43  aptseek.sh mirage
+   44  aptseek.sh sogou
+   45  sudo cp resolv.conf /etc
+   46  vi resolv.conf
+   47  sudo cp resolv.conf /etc
+   48  ./bintar.sh 
+   49  cd ~
+   50  ls -lt
+   51  cat *.sh|grep fcitx
+   52  cat ~/bin/*.sh|grep fcitx
+   53  cd bin
+   54  fcitxsetup.sh 
+   55  vi fcitxsetup.sh 
+   56  aptseek.sh "im-switch"
+   57  vi fcitxsetup.sh 
+   58  echo $USER
+   59  bintar.sh
+   60  ls -lt
+   61  ls -lt|head
+   62  ./fcitxsetup.sh 
+   63  ls -lt *sogou*
+   64  chmod +x sogou-matlab-setup.sh 
+   65  gdit  sogou-matlab-setup.sh &
+   66  ./sogou-matlab-setup.sh &
+   67  fg
+   68  bintar.sh
+   69  cd ~
+   70  ls
+   71  ls -lth
+   72  lsb_release -a
+   73  cd bin
+   74  ./generate_manual_UUID_mount_all_script.sh 
+   75  sudo gparted
+   76  aptseek.sh sogou
+   77  vi ~/bin/install-all.sh 
+   78  sodo ~/bin/install-all.sh 
+   79  sudo ~/bin/install-all.sh 
+   80  vi ~/bin/install-all.sh 
+   81  cd bin
+   82  ls
+   83  cat gbgo.sh 
+   84  sudo cp zh /var/lib/locale/supported.d/zh
+   85  sudo locale-gen
+   86  sudo apt-get install catdoc -y --force-yes 
+   87  ls zh
+   88  vi gbgo.sh 
+   89  ./gbgo.sh 
+   90  ls *docker*
+   91  cat install.docker.sh
+   92  cat install.docker.sh|less
+   93  vi install.docker.sh
+   94  ./install.docker.sh
+   95  ls
+   96  history
+   97  hiscap
+   98  ls
+   99  cd ..
+  100  ls
+  101  ls -lt
+  102  cd bin
+  103  vi bintar.sh
+  104  chmod +x *.sh
+  105  history
+  106  aptseek.sh switch|grep im
+  107  aptseek.sh switch|grep -e \bim\b
+  108  cat ~/.vimsrc
+  109  cat ~/.vimrc
+  110  ls *dev*
+  111  cat centos_dev_init.sh 
+  112  grep essential *.sh
+  113  sudo sudo apt-get install -y git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev ia32-libs x11proto-core-dev libx11-dev  lib32z-dev
+  114  sudo sudo apt-get install -y git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev  x11proto-core-dev libx11-dev  lib32z-dev
+  115  grep essential *.sh | grep ia32
+  116  sudo apt-get install -y git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev ia32-libs x11proto-core-dev libx11-dev  lib32z-dev
+  117  cat *.sh|grep oldstr
+  118  cat *.sh|grep old
+  119  grep oldstr *.sh
+  120  grep -rl ia32-libs . | xargs sed -i 's/ ia32-libs /  lib32ncurses5 lib32z1 /g'
+  121  grep -rl ia32-libs *
+  122  grep -r *
+  123  grep  ia32-libs *
+  124  grep  ia32-libs * -R
+  125  grep  ia32\-libs * -R
+  126  grep -e  ia32\-libs * -R
+  127  grep -e ess * -r
+  128  grep -rl ia32\-libs . | xargs sed -i 's/ ia32\-libs /  lib32ncurses5 lib32z1 /g'
+  129  find|xargs grep ia32
+  130  grep essent *
+  131  find|xargs grep essential
+  132  aptseek.sh openjdk
+  133  grep -rl sun\-java5\-jdk . | xargs sed -i 's/ sun\-java5\-jdk /  default-jdk /g'
+  134  find|xargs grep sun\-java5
+  135  find|xargs grep essential
+  136  sudo apt-get install -y --force-yes git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev  lib32ncurses5 lib32z1 x11proto-core-dev libx11-dev  lib32z-dev
+  137  sudo apt-get install -y --force-yes git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev  lib32ncurses5 lib32z1 x11proto-core-dev libx11-dev  lib32z-dev  build-essential git fakeroot realpath automake libglib2.0-dev g++-multilib zlib1g-dev libglib2.0-dev git
+  138  vi install-all.sh
+  139  ./install-all.sh
+  140  vi ./install-all.sh
+  141  cat *.sh|grep anykey
+  142  vi ./install-all.sh
+  143  sudo ./install-all.sh
+  144  ls *yum*
+  145  cp install-all.sh yum-install-all.sh
+  146  v install-all.sh
+  147  vi install-all.sh
+  148  ./install-all.sh
+  149  cd bin
+  150  vi /etc/default/grub
+  151  vi /etc/fstab
+  152  cat /etc/fstab|grep swap
+  153  blkid|grep swap
+  154  blkid|grep sda
+  155  vi /etc/fstab
+  156  ./refresh_initramfs.sh 
+  157  sudo apt-get update -y;sudo apt-get upgrade -y
+  158  sudo apt-get install -y
+  159  sudo apt-get install -f 
+  160  dpkg --help
+  161  dpkg --configure
+  162  dpkg -configure
+  163  dpkg configure
+  164  dpkg |grep auto
+  165  dpkg --help |grep auto
+  166  dpkg --help |grep fix
+  167  dpkg --help |grep conf
+  168  reboot
+  169  df -h
+  170  sudo -s
+  171  df -h
+  172  sudo reboot
+  173  ls ~/bin/*defect*
+  174  cat /home/vhuang/bin/rescript_commoncrawler_defectfiles.sh
+  175  ls ~/bin/*moveover*
+  176  df -h|grep 7.3
+  177  cd /sdp
+  178  ls
+  179  df -h|grep 7.3
+  180  cd /sdn/new_ccrawl_nov2015/
+  181  ./all.sh 
+  182  hiscap

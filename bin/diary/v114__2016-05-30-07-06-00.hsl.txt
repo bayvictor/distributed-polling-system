@@ -1,0 +1,500 @@
+    3  ls -lt|less
+    4  vi defect_list.txt
+    5  ls ~/bin/* -lt|head
+    6  /home/vhuang/bin/ccrawl_only_defect_list.sh defect_list.txt 
+    7  cd ..
+    8  mv new_ccrawl_nov2015/ new_ccrawl_nov2015_done
+    9  sudo mv new_ccrawl_nov2015/ new_ccrawl_nov2015_done
+   10  ls
+   11  cd down_ccrawl_nov2015/
+   12  ls
+   13  cd downok/
+   14  ls
+   15  ls *.txt
+   16  ls -lt >defect_list.txt
+   17  vi defect_list.txt 
+   18  /home/vhuang/bin/ccrawl_only_defect_list.sh defect_list.txt 
+   19  ls
+   20  ls /sdn/sh/201*
+   21  cp  /sdn/sh/2015-40.warc.txt.sh all.sh
+   22  /home/vhuang/bin/ccrawl_only_defect_list.sh defect_list.txt 
+   23  ./redown.sh 
+   24  cat redown.sh 
+   25  cp  /sdn/sh/2015-48.warc.txt.sh all.sh
+   26  /home/vhuang/bin/ccrawl_only_defect_list.sh defect_list.txt 
+   27  ls
+   28  ls *.sh
+   29  cd ..
+   30  ls
+   31  cd ..
+   32  ls
+   33  mv down_ccrawl_nov2015/ down_ccrawl_nov2015_done
+   34  sud omv down_ccrawl_nov2015/ down_ccrawl_nov2015_done
+   35  sudo  mv down_ccrawl_nov2015/ down_ccrawl_nov2015_done
+   36  ls
+   37  cd /sdo
+   38  ls
+   39  cd /sdp
+   40  cd /sdq
+   41  cd /sdm
+   42  ls
+   43  cd 02_new_craw_nov201502__from_1448398446286.32__warc__CC-MAIN-20151124205406-00280-ip-10-71-132-137.ec2/
+   44  ls
+   45  ls -lt|less
+   46  cd ..
+   47  sudo mv 02_new_craw_nov201502__from_1448398446286.32__warc__CC-MAIN-20151124205406-00280-ip-10-71-132-137.ec2/ done02_new_craw_nov201502__from_1448398446286.32__warc__CC-MAIN-20151124205406-00280-ip-10-71-132-137.ec2
+   48  ls
+   49  cd down20160426-/
+   50  ls -lt|head
+   51  ls -lt|less
+   52  vi defect_list.txt
+   53  history|grep defect
+   54  /home/vhuang/bin/ccrawl_only_defect_list.sh defect_list.txt 
+   55  ls
+   56  echo "">defect_list.txt
+   57  ls -lt >test.txt
+   58  vi test.txt
+   59  cp test.txt defect_list.txt 
+   60  /home/vhuang/bin/ccrawl_only_defect_list.sh defect_list.txt 
+   61  vi redown.sh 
+   62  ls -ltast *.txt
+   63  ls -ltast *.sh
+   64  vi rescript.sh 
+   65  ./rescript.sh 
+   66  vi redown.sh 
+   67  vi rescript.sh 
+   68  ./rescript.sh 
+   69  ls -lt|head
+   70  cat redown.sh |less
+   71  cat  defect_list.txt 
+   72  echo "">redown.sh
+   73  ./rescript.sh 
+   74  vi  redown.sh 
+   75  ./redown.sh 
+   76  vi /home/vhuang/bin/ccrawl_only_defect_list.sh 
+   77  cd ..
+   78  mv down20160426-/ down_down20160426-
+   79  sud omv down20160426-/ down_down20160426-
+   80  sudo mv down20160426-/ down_down20160426-
+   81  ls
+   82  mv down_down20160426-/ done_down20160426-
+   83  sudo mv down_down20160426-/ done_down20160426-
+   84  ls
+   85  cd new_craw_nov2015/
+   86  ls
+   87  cat defect-list.txt |head
+   88  history|grep cp
+   89  cp  /sdn/sh/2015-40.warc.txt.sh all.sh
+   90  /home/vhuang/bin/ccrawl_only_defect_list.sh defect-list.txt 
+   91  df . -h
+   92  hiscap
+   93  exit
+   94  df . -h
+   95  cd ~/bin
+   96  ls *ssh*
+   97  ./setup_ssh-server_ubuntu.sh 
+   98  ls
+   99  ls *ssh*
+  100  ssh localhost
+  101  pwd
+  102  cat *.sh|grep vsftp
+  103  grep vsftp *.sh
+  104  sudo apt-get install -y vsftpd -y
+  105  locate src/social_game
+  106  locate social_game|grep src
+  107  hiscap
+  108  exit
+  109  cat redown.sh |wc -l
+  110  ls 1448398447906.82__warc__CC-MAIN-20151124205407-00121-ip-10-71-132-137.ec2.internal.warc.gz
+  111  ls 1448398447906.82__warc__CC-MAIN-20151124205407-00121-ip-10-71-132-137.ec2.internal.warc.gz -lt
+  112  ls *.sh -lt
+  113  vi redown.sh 
+  114  cat all.sh|wc -l
+  115  df . -h
+  116  ls *.txt
+  117  cat defect_list.txt |wc -l
+  118  hiscap
+  119  exit
+  120  cat defect_list.txt |wc -l
+  121  hiscap
+  122  exit
+  123  ls ~/bin -lt|head
+  124  vi ~/bin/ccrawl_only_defect_list.sh 
+  125  hiscap
+  126  exit
+  127  cd ~/Documents/
+  128  ls
+  129  cd ..
+  130  ls Pictures/
+  131  locate resolv.conf
+  132  cat /etc/resolv.conf |grep option
+  133  cat ~/bin/resolv.conf |grep option
+  134  sudo cp ~/bin/resolv.conf /etc
+  135  ls bin.tgz
+  136  ls bin.tgz -l
+  137  cd bin
+  138  ls -lt reso*
+  139  cp resolv.conf resolv.conf.backup
+  140  bintar.sh 
+  141  cat bintar.sh 
+  142  cat ~/.bash_profile
+  143  ./bintar.sh 
+  144  ifconfig
+  145  touch NEWVICTOR_MARK
+  146  ./bintar.sh 
+  147  cat /etc/resolv.conf 
+  148  cat /etc/resolv.conf |grep option
+  149  ls
+  150  ps -ef|grep firefox
+  151  ps -ef|grep firefox >test.txt
+  152  cat test.txt|sed 's/\s\s*/ /g'
+  153  cat test.txt|sed 's/\s\s*/ /g'|cut -d" " -f2|sed 's/^/kill -9 /g'
+  154  cat test.txt|sed 's/\s\s*/ /g'|cut -d" " -f2|sed 's/^/kill -9 /g' >killall.sh
+  155  chmod +x *.sh
+  156  ./killall.sh 
+  157  ps -ef|grep firefox
+  158  cd /sdo
+  159  ls
+  160  cd new_ccawl_nov2015/
+  161  ls -lt|less
+  162  ls -lt|head
+  163  ps -ef|grep wget
+  164  kill -9 4367
+  165  ps -ef|grep wget
+  166  ls -lt|head
+  167  sudo reboot
+  168  ls -l
+  169  ls -lt|less
+  170  df -h
+  171  cd ~
+  172  ls
+  173  mv diary/ diary0
+  174  tar -zcf bin.tgz bin
+  175  cd bin
+  176  bintar.sh 
+  177  mv diary0 diary
+  178  cd ..
+  179  mv diary0 diary
+  180  cd bin
+  181  bintar.sh 
+  182  ls -lSh|less
+  183  cat generate_manual_UUID_mount_all_script.sh 
+  184  pwd
+  185  ls
+  186  pwd
+  187  ls
+  188  pwd
+  189  ls
+  190  pwd
+  191  ls
+  192  cd /sda1
+  193  ls
+  194  ./ln_vhuang_home_dirs_to_here.sh 
+  195  cd ~
+  196  ls
+  197  pwd
+  198  ls
+  199  cd /sda1
+  200  df . -h
+  201  ls
+  202  cd ~/src/social_game/
+  203  cd saved_Alexis_w_Taylor/
+  204  ls
+  205  ./run.txt.sh
+  206  df -h
+  207  df -h|grep sdn
+  208  df . -h
+  209  cd /sdo
+  210  ls
+  211  cd new_ccawl_nov2015/
+  212  ls
+  213  ls *.sh
+  214  ls -lt >defect_list.txt
+  215  ls ~/bin/*defect*
+  216  /home/vhuang/bin/ccrawl_only_defect_list.sh defect_list.txt 
+  217  ls -lt *.sh
+  218  vi redown.sh 
+  219  ./redown.sh 
+  220  pwd
+  221  cd ~/bin
+  222  ls
+  223  sudo 
+  224  sudo -s
+  225  vi /etc/default/grub 
+  226  grub-install /dev/sdf
+  227  grub-install /dev/sdc
+  228  update-grub
+  229  grub-install /dev/sdc
+  230  grub-install /dev/sdc11
+  231  reboot
+  232  df -h
+  233  lsb_release -a
+  234  df -h
+  235  cd bin
+  236  sudo -s
+  237  ./refresh_initramfs.sh 
+  238  df -h
+  239  cd bin
+  240  ./generate_manual_UUID_mount_all_script.sh 
+  241  dos2unix *.sh
+  242  sudo dos2unix *.sh
+  243  sudo chown vhuang ~/bin -R
+  244  ls -lt|less
+  245  ./generate_manual_UUID_mount_all_script.sh 
+  246  cd /sdo
+  247  ls
+  248  df . -h
+  249  cd /sdp
+  250  ls
+  251  cd new_ccawl_nov2015/
+  252  ./redown.sh 
+  253  ohup
+  254  nohup ./redown.sh 
+  255  cd /sdp/new_ccawl_nov2015/
+  256  ls -lt|head
+  257  cd ~/src/translator/
+  258  ls
+  259  cd command+line+translate/
+  260  cd ~/src/ok/translate
+  261  ls
+  262  cd data2
+  263  ls
+  264  cd ok
+  265  ls
+  266  ls -lt|head
+  267  cat 10.sh.en2zh.out |tail -n 30
+  268  cat 10.sh.en2zh.out |tail -n 50|less
+  269  cat 10.sh.en2zh.out |tail -n 150|less
+  270  cp 10.sh 11.sh
+  271  vi 11.sh
+  272  cat 10.sh.en2zh.out |tail -n 250|less
+  273  cat 10.sh.en2zh.out |tail -n 550|less
+  274  vi 11.sh
+  275  cat 10.sh.en2zh.out |grep "translation " |tail -n 150|less
+  276  vi 11.sh
+  277  ls -lt|head
+  278  cat 10.sh.en2zh.out |grep "translation " |tail -n 50|less
+  279  vi 11.sh 
+  280  vi 10.sh.en2zh.out 
+  281  vi 11.sh 
+  282  exit
+  283  locate PIctures|grep -i chinna
+  284  locate PIctures|grep -i 2011
+  285  locate PIctures >list_of_Pictures.txt
+  286  vi list_of_Pictures.txt 
+  287  df -h
+  288  cd /sdp
+  289  ls
+  290  df -h .
+  291  cd new_ccawl_nov2015/
+  292  ls -lth|headd
+  293  ls -lth|head
+  294  df -h|grep -v "7.3"
+  295  cd /sda1/home/vhuang
+  296  ls
+  297  cd /sda1
+  298  ls
+  299  cd Pictures/
+  300  ls
+  301  df -h|grep -v "7.3"
+  302  cd /sdb9
+  303  ls
+  304  cd home/vhuang
+  305  ls
+  306  cd Pictures
+  307  ls
+  308  df -h|grep -v "7.3"|grep T
+  309  cd /sdc1
+  310  s
+  311  cd home/vhuang
+  312  cd home/
+  313  ls
+  314  cd Pictures/
+  315  ls
+  316  find
+  317  cd ..
+  318  ls
+  319  cd Documents/
+  320  ls
+  321  dir
+  322  df -h|grep -v "7.3"|grep T
+  323  cd /sdd1
+  324  ls
+  325  cd /sdg1
+  326  ls
+  327  ls /sdan1
+  328  ls
+  329  df -h|grep -v "7.3"|grep -v T
+  330  cd /sdc7
+  331  ls
+  332  cd home/vhuang/
+  333  ls
+  334  cd Pictures/
+  335  ls
+  336  df -h|grep -v "7.3"|grep -v T
+  337  df -h|grep -v "7.3"|grep -v T|grep sdb
+  338  cd /sda3
+  339  ls
+  340  ls home/vhuang/Pictures
+  341  ls /sdb1/home/vhuang/Pictures
+  342  ls /sdb2/home/vhuang/Pictures
+  343  ls /sdb3/home/vhuang/Pictures
+  344  ls /sdb4/home/vhuang/Pictures
+  345  ls /sdb5/home/vhuang/Pictures
+  346  ls /sdb3
+  347  ls /sdb4
+  348  ls /sdb9
+  349  ls /sdb9/home/vhuang/Pictures
+  350  htop
+  351  sudo apt install -y htop
+  352  htop
+  353  cd /sdp
+  354  ls
+  355  df . -h
+  356  cd new_ccawl_nov2015/
+  357  ls -lt >~/sdplist.txt
+  358  vi ~/sdplist.txt
+  359  mv ~/sdplist.txt ~/removedlist.txt
+  360  cat ~/removedlist.txt |cut -d":" -f2|cut -d" " -f2
+  361  cat ~/removedlist.txt |cut -d":" -f2|cut -d" " -f2|rm -fr >~/rmall.sh
+  362  chmod +x ~/rmall.sh
+  363  ls
+  364  df -h .
+  365  ~/rmall.sh 
+  366  ls -lt >~/sdplist.txt
+  367  vi ~/sdplist.txt
+  368  ps -ef|grep all.sh
+  369  kill -9 2807
+  370  ls -lt >~/sdplist.txt
+  371  vi ~/sdplist.txt
+  372  cat ~/removedlist.txt |cut -d":" -f2|cut -d" " -f2|rm -fr >~/rmall.sh ~/sdplist.txt
+  373  vi ~/sdplist.txt
+  374  ls -lt >~/sdplist.txt
+  375  cp ~/sdplist.txt ~/removedlist.txt 
+  376  vi ~/removedlist.txt 
+  377  history|grep remove
+  378  cat ~/removedlist.txt |cut -d":" -f2|cut -d" " -f2|rm -fr >~/rmall.sh
+  379  cat ~/rmall.sh |wc -l
+  380  cat ~/removedlist.txt |cut -d":" -f2|cut -d" " -f2|sed 's/^/rm -fr /g' >~/rmall.sh
+  381  cat ~/rmall.sh |wc -l
+  382  cat ~/removedlist.txt |wc -l
+  383  vi ~/removedlist.txt 
+  384  vi ~/rmall.sh 
+  385  ls -lt|less
+  386  cat  nohup.out |tail
+  387  ls -lt >~/defect_list.txt
+  388  vi ~/defect_list.txt
+  389  df .
+  390  df -h |grep 7.3
+  391  sudo mkdir /sds/new_ccawl_nov2015
+  392  sudo chown vhuang /sds/new_ccawl_nov2015
+  393  ls ~/bin/ -lt|grep defect
+  394  ls ~/bin/*move*
+  395  vi ~/bin/ccrawl_only_defect_list.sh 
+  396  ls ~ls ~/bin/*over*
+  397  cat ~/defect_list.txt |sed 's/^/mv /g;s|$| /sds/new_ccawl_nov2015 |g' >~/mvall.sh
+  398  vi ~/mvall.sh 
+  399  cat ~/defect_list.txt|cut -d":" -f2|cut -d" " -f2 |sed 's/^/mv /g;s|$| /sds/new_ccawl_nov2015 |g' >~/mvall.sh
+  400  vi ~/mvall.sh 
+  401  vi ~/bin/mv_all_defect_list_tarball_to_new_drive.sh
+  402  chmod +x ~/bin -R
+  403  vi ~/bin/mv_all_defect_list_tarball_to_new_drive.sh
+  404  sudo kill -9 31845 
+  405  sudo kill -9 19910
+  406  sudo kill -9 16607
+  407  fdisk
+  408  fdisk -l
+  409  sudo fdisk -l
+  410  cd /sdf1
+  411  ls
+  412  df . -h
+  413  df -h
+  414  sudo vi /etc/fstab
+  415  cd ~/bin
+  416  cat *.sh|grep bz=10M
+  417  cat *.sh|grep bz=
+  418  cat *.sh|grep "dd if"
+  419  cat *|grep "dd if"
+  420  grep -e "dd "
+  421  grep -e "dd " *
+  422  grep -e "dd " * -R
+  423  ls *clone*
+  424  vi clone_disk_with_dd_bs=1M.sh
+  425  chmod +x *.sh
+  426  ./clone_disk_with_dd_bs\=1M.sh 
+  427  vi clone_disk_with_dd_bs=1M.sh
+  428  mv clone_disk_with_dd_bs\=1M.sh clone_disk_with_dd_bs\=10M.sh 
+  429  vi clone_disk_with_dd_bs=1M.sh
+  430  vi clone_disk_with_dd_bs=10M.sh
+  431  ./clone_disk_with_dd_bs=10M.sh
+  432  vi ./clone_disk_with_dd_bs=10M.sh
+  433  ps -ef|grep dd
+  434  ps -ef|grep "dd "
+  435  vi ./clone_disk_with_dd_bs=10M.sh
+  436  sudo umount /dev/sdap
+  437  cd /sdp
+  438  ls
+  439  ls -l
+  440  cd new_ccawl_nov2015/
+  441  ls -lth|head
+  442  df . -h
+  443  ls -lth|head
+  444  locate Pictures | grep -i jingxi
+  445  ls -lt|wc -l
+  446  df -h
+  447  df -h .
+  448  sudo reboot
+  449  pwd
+  450  ls
+  451  cd /sdp
+  452  ls
+  453  ls -lt
+  454  cd new_ccawl_nov2015/
+  455  ls -lth|less
+  456  df -h
+  457  sudo gparted &
+  458  q
+  459  ps -ef|grep dd
+  460  cat ~/bin/clone_disk_with_dd_bs\=10M.sh 
+  461  kill -USR1 20298
+  462  sudo kill -USR1 20298
+  463  echo "sudo kill -USR1 20298" >dd_clone_disk_progress.sh
+  464  echo "sudo kill -USR1 20298" >~/bin/dd_clone_disk_progress.sh
+  465  vi ~/bin/clone_disk_with_dd_bs\=10M.sh 
+  466  sudo kill -USR1 20298
+  467  vi ~/bin/clone_disk_with_dd_bs\=10M.sh 
+  468  sudo kill -USR1 20298;timstamp
+  469  sudo kill -USR1 20298;~/bin/timstamp
+  470  sudo kill -USR1 20298;~/bin/timstamp.sh
+  471  sudo kill -USR1 20298;/home/vhuang/bin/timstamp.sh
+  472  sudo kill -USR1 20298;/home/vhuang/bin/timstamp
+  473  ls ~/bin/timetamp*
+  474  ls ~/bin/
+  475  ls ~/bin/time*
+  476  ls ~/bin/timestamp
+  477  sudo kill -USR1 20298;/home/vhuang/bin/timestamp
+  478  vi dd_clone_disk_progress.sh 
+  479  ls -lt|head
+  480  df -h
+  481  ls ~/Downloads
+  482  mkdir /Download_fast
+  483  sudo mkdir /Download_fast
+  484  sudo chown vhuang /Download_fast
+  485  cd /sds
+  486  ls
+  487  df . -h
+  488  cd new_ccawl_nov2015/
+  489  cat redown.sh |wc -l
+  490  ls -lt|wc -l
+  491  ls -lth|head
+  492  /dev/sdam       7.3T   51M  6.9T   1% /sdam
+  493  ls -lth|head
+  494  ls -lth|less
+  495  cat all.sh -n|grep 1448398456289.53__warc__CC-MAIN-20151124205416-00075-ip-10-71-132-137.ec2.internal.warc.gz
+  496  cat redown.sh -n|grep 1448398456289.53__warc__CC-MAIN-20151124205416-00075-ip-10-71-132-137.ec2.internal.warc.gz
+  497  cat all0.sh -n|grep 1448398456289.53__warc__CC-MAIN-20151124205416-00075-ip-10-71-132-137.ec2.internal.warc.gz
+  498  cat all0.sh|wc -l
+  499  cat all.sh|wc -l
+  500  htop
+  501  df . -h
+  502  hiscap

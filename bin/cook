@@ -1,0 +1,10 @@
+
+cd /opt/media
+tar -zcvf local-lib.tgz local/lib
+tar -zcf local-bin.tgz local/bin
+tar -zcf local-plugins.tgz local/plugins
+
+
+tar -zcf local-chrome_75218+75364.tgz local/chrome_75218 local/chrome_75364
+mv local*.tgz /scratchbox/tmp
+

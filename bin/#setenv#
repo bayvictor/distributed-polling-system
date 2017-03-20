@@ -1,0 +1,24 @@
+:yes#!/bin/sh
+
+export KUNPENG_SDK_ROOT=`pwd`
+export CROSS_COMPILE=arm-cisco-linux-gnueabi-
+
+export PATH=$KUNPENG_SDK_ROOT/armv5te-cisco-glibc-gnueabi/bin:$PATH
+
+export AR=${CROSS_COMPILE}ar
+export AS=${CROSS_COMPILE}as
+export LD=${CROSS_COMPILE}ld
+export NM=${CROSS_COMPILE}nm
+export CC=${CROSS_COMPILE}gcc
+export GCC=${CROSS_COMPILE}gcc
+export CPP=${CROSS_COMPILE}cpp
+export CXX=${CROSS_COMPILE}g++
+export READELF=${CROSS_COMPILE}readelf
+export RANLIB=${CROSS_COMPILE}ranlib
+export STRIP=${CROSS_COMPILE}strip
+export OBJCOPY=${CROSS_COMPILE}objcopy
+export OBJDUMP=${CROSS_COMPILE}objdump
+export DEFAULT_ASSEMBLER=${CROSS_COMPILE}ar
+export DEFAULT_LINKER=${CROSS_COMPILE}ld
+export CFLAGS="-pipe -O2 -g -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64"
+export CXXFLAGS="${CFLAGS}"

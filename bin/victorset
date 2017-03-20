@@ -1,0 +1,92 @@
+#!/bin/sh
+
+#cat setenv | cut -d"=" -f1 | sed 's/export /unset /g'
+unset KUNPENG_SDK_ROOT
+unset CROSS_COMPILE
+unset AR
+unset AS
+unset LD
+unset NM
+unset CC
+unset GCC
+unset CPP
+unset CXX
+unset READELF
+unset RANLIB
+unset STRIP
+unset OBJCOPY
+unset OBJDUMP
+unset DEFAULT_ASSEMBLER
+unset DEFAULT_LINKER
+unset CFLAGS
+unset CXXFLAGS
+unset ARMROOT
+unset LDFLAGS
+unset GCC_DIR
+
+curdir=$PWD
+
+export  ARMROOT=${HOME}/armroot
+
+export GCC_DIR=/opt 
+
+#export GCC_DIR=${HOME}/arm-linux-gnueabi-gcc-4.8.1
+cd  $HOME/cisco-kunpeng-sdk-20130208
+
+export KUNPENG_SDK_ROOT=`pwd`
+export KUN=$KUNPENG_SDK_ROOT
+
+
+export EABI481_COMPILE=arm-eabi-                       #EABI gcc compiler 4.8.1
+export CROSS_COMPILE=arm-eabi-
+
+
+export GCC=${EABI481_COMPILE}gcc
+export AR=${GCC}-ar
+export AS=${CROSS_COMPILE}as
+export LD=${CROSS_COMPILE}ld
+export NM=${GCC}-nm
+export CC=${EABI481_COMPILE}gcc
+export CPP=${EABI481_COMPILE}cpp
+export CXX=${EABI481_COMPILE}g++
+export READELF=${CROSS_COMPILE}readelf
+export RANLIB=${GCC}-ranlib
+export STRIP=${CROSS_COMPILE}strip
+export OBJCOPY=${CROSS_COMPILE}objcopy
+export OBJDUMP=${CROSS_COMPILE}objdump
+export DEFAULT_ASSEMBLER=${EABI481_COMPILE}ar
+export DEFAULT_LINKER=${CROSS_COMPILE}ld
+
+
+export  PKG_CONFIG_PATH=${ARMROOT}/lib/pkgconfig
+
+export LL=$ARMROOT/lib/libffi-3.0.12
+export LIBFFI_CFLAGS=-I$ARMROOT/lib/libffi-3.0.12/include 
+export LIBFFI_LIBS="-L$ARMROOT/lib -lffi" 
+export cross_compiling=yes  #inserted by victor
+
+
+
+export CFLAGS="-pipe -O2 -g -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE  -I$ARMROOT/../glib-2.36.4 -I${GCC_DIR}/include -I$ARMROOT/include   -I$KUNPENG_SDK_ROOT/include  $LIBFFI_CFLAGS " 
+
+export PKG_CONFIG_PATH=$ARMROOT/lib/pkgconfig    
+export LDFLAGS=`xml2-config --libs ` 
+export LDFLAGS="-L${GCC_DIR}/lib $LDFLAGS    -L$ARMROOT/lib -L$KUNPENG_SDK_ROOT/lib  $LIBFFI_LIBS"  
+
+export CXXFLAGS="${CFLAGS}"
+
+export PATH=$GCC_DIR/bin:${ARMROOT}/bin:${KUNPENG_SDK_ROOT}/bin:$KUNPENG_SDK_ROOT/armv5te-cisco-glibc-gnueabi/bin:$PATH
+export LD_LIBRARY_PATH=$GCC_DIR/lib:${ARMROOT}/lib:${KUNPENG_SDK_ROOT}/lib:$KUNPENG_SDK_ROOT/armv5te-cisco-glibc-gnueabi/lib:$LD_LIBRARY_PATH:$ARMROOT/lib 
+
+
+
+
+
+cd $curdir
+
+
+
+
+
+
+

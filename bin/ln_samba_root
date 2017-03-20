@@ -1,0 +1,13 @@
+mkdir ~/__samba_root
+mkdir ~/diary
+cd ~/__samba_root/
+df -h|cut -d'%' -f2 | sed 's/^/ln -s /g' >test2.txt
+df -h|cut -d'%' -f2 | sed 's/\///g' >test1.txt
+
+echo "cd ~/__samba_root/" > ln_all.sh
+echo "mkdir ~/__samba_root" >> ln_all.sh
+paste test2.txt test1.txt >> ln_all.sh
+chmod +x *.sh
+cp ln_all.sh ~/diary/ln_all-`timestamp`.sh
+./ln_all.sh
+

@@ -1,0 +1,500 @@
+   25  exit
+   26  ls bin/bintar*
+   27  pwd
+   28  cd bin
+   29  ./bintar.sh 
+   30  vi bintar.sh
+   31  ./bintar.sh 
+   32  cd ..
+   33  ls
+   34  ls bin*
+   35  ls bin*.tg
+   36  ls bin*.tgz
+   37  ls bin*.tgz -l
+   38  exixt
+   39  exit
+   40  cd ~
+   41  sudo chown vhuang bin -R
+   42  cd bin
+   43  ./bintar.sh 
+   44  cd ..
+   45  exit
+   46  cd /
+   47  umount /dev/sdap1
+   48  cd /sdas1
+   49  ls
+   50  exit
+   51  cd /sdk
+   52  ls
+   53  cd bigdata_qiyeminglu/
+   54  ftp localhost
+   55  exit
+   56  cd /sdj
+   57  ls
+   58  cd /sdi
+   59  ls
+   60  cd /sdh
+   61  ls
+   62  cd /sdk
+   63  ls
+   64  cd bigdata_qiyeminglu/
+   65  ls
+   66  cd qyml_2nd_downed/
+   67  ls
+   68  cd qyml/
+   69  ls
+   70  cd converted_xls/
+   71  ls
+   72  cd 5133xls/
+   73  ls
+   74  umount /dev/sda1
+   75  umount /dev/sdas1
+   76  umount /dev/sdas
+   77  exit
+   78  pwd
+   79  ls
+   80  ls -lt|less
+   81  cd /sdk
+   82  ls
+   83  cd down20160412-/
+   84  ls
+   85  ls -lt|less
+   86  echo "">test.txt
+   87  vi test.txt
+   88  vi ~/bin/mv_ls_lt_filelist_to_newdrive.sh
+   89  chmod +x ~/bin/ -R
+   90  ~/bin/mv_ls_lt_filelist_to_newdrive.sh test.txt  /sdn/new_sdk_defect/ 
+   91  vi ~/bin/mv_ls_lt_filelist_to_newdrive.sh 
+   92  ~/bin/mv_ls_lt_filelist_to_newdrive.sh test.txt  /sdn/new_sdk_defect/ 
+   93  vi ~/bin/mv_ls_lt_filelist_to_newdrive.sh 
+   94  ~/bin/mv_ls_lt_filelist_to_newdrive.sh test.txt  /sdn/new_sdk_defect/ 
+   95  vi ~/bin/mv_ls_lt_filelist_to_newdrive.sh 
+   96  cat test.txt
+   97   ~/bin/mv_ls_lt_filelist_to_newdrive.sh 
+   98  ~/bin/mv_ls_lt_filelist_to_newdrive.sh test.txt  /sdn/new_sdk_defect/ 
+   99  ！vi
+  100  history|grep vi
+  101  vi ~/bin/mv_ls_lt_filelist_to_newdrive.sh
+  102  ~/bin/mv_ls_lt_filelist_to_newdrive.sh test.txt  /sdn/new_sdk_defect/ 
+  103  vi ~/bin/mv_ls_lt_filelist_to_newdrive.sh
+  104  ~/bin/mv_ls_lt_filelist_to_newdrive.sh test.txt  /sdn/new_sdk_defect/ 
+  105  ls
+  106  cat mvall.sh 
+  107  ls
+  108  vi ~/bin/mv_ls_lt_filelist_to_newdrive.sh
+  109  vi test.txt
+  110  ls 1454701161942.67__warc__CC-MAIN-20160205193921-00
+  111  120-ip-10-236-182-209.ec2.internal.warc.gz
+  112  ls 1454701161942.67__warc__CC-MAIN-20160205193921-00
+  113  120-ip-10-236-182-209.ec2.internal.warc.gz
+  114  vi test.txt
+  115  ls -lt|less
+  116  echo "">test.txt
+  117  vi test.txt
+  118  history|grep newsdn
+  119  history|grep new
+  120  ~/bin/mv_ls_lt_filelist_to_newdrive.sh test.txt  /sdn/new_sdk_defect/ 
+  121  ls -lt|less
+  122  cd downok/
+  123  ls -lt|less
+  124  ls -lt > test.txt
+  125  vi test.txt
+  126  mv test.txt defectlist.txt
+  127  ls
+  128  ls ~/bin/ -lt|head
+  129  ~/bin/mv_ls_lt_filelist_to_newdrive.sh 
+  130  /home/vhuang/bin/mv_ls_lt_filelist_to_newdrive.sh defect_list.txt /sdn/new_sdk_defect/
+  131  /home/vhuang/bin/mv_ls_lt_filelist_to_newdrive.sh defectlist.txt /sdn/new_sdk_defect/
+  132  ls -lt|less
+  133  cd ..
+  134  ls -lt|less
+  135  ls
+  136  ls -lt|less
+  137  cd downok/
+  138  ls -lt|less
+  139  cd ..
+  140  cd /sdj
+  141  ls
+  142  cd down20160403-/
+  143  ls
+  144  cd down_ok/
+  145  ls
+  146  ls -lt|head
+  147  ls -lt|less
+  148  ls -lt >test.txt
+  149  vi test.txt
+  150  cat test.txt |sed 's/^/rm -fr /g' >rmzerofiles.sh
+  151  chmod +x *.sh
+  152  vi ./rmzerofiles.sh 
+  153  cat test.txt |cut -d":" -f2|cut -d" " -f2 |sed 's/^/rm -fr /g' >rmzerofiles.sh
+  154  vi ./rmzerofiles.sh 
+  155  rm rmzerofiles.sh 
+  156  ls
+  157  ls -lt >test.txt
+  158  vi test.txt
+  159  mv test.txt defect_list.txt
+  160  ls ~/bin/mv*
+  161  ls -lt|less
+  162  ls
+  163  cd ..
+  164  ls
+  165  cd /sdi
+  166  ls
+  167  cd down20160308-/
+  168  ls -lt|less
+  169  cd down_ok/
+  170  ls
+  171  ls -lt|less
+  172  ls -lt > test.txt
+  173  vi test.txt
+  174  cp test.txt defect_list.txt
+  175  /home/vhuang/bin/mv_ls_lt_filelist_to_newdrive.sh defect_list.txt /sdn/new_sdk_defect/ 
+  176  hiscap\
+  177  hiscap
+  178  exit
+  179  ls -lt > test.txt
+  180  cat test.txt|wc -l
+  181  ls -lt > test.txt
+  182  lines_later_than_all_sh=`cat test.txt -n | grep all.sh|head -n 1|cut -d"-" -f1|sed 's/ //g;s/\s//g'`
+  183  echo $lines_later_than_all_sh
+  184  cat test.txt -n | grep all.sh|head -n 1
+  185  cat test.txt -n | grep all.sh|head -n 1|cut -d"-" -f1
+  186  vi rescript_commoncrawler_defectfiles.sh 
+  187  ./go.sh 
+  188  vi rescript_commoncrawler_defectfiles.sh 
+  189  ./go.sh 
+  190  vi rescript_commoncrawler_defectfiles.sh 
+  191  ./go.sh 
+  192  vi rescript_commoncrawler_defectfiles.sh 
+  193  ./go.sh 
+  194  vi rescript_commoncrawler_defectfiles.sh 
+  195  cat barelist.txt 
+  196  vi rescript_commoncrawler_defectfiles.sh 
+  197  lines_later_than_all_sh=`cat barelist.txt -n | grep -e "^all\.sh$" |head -n 1|cut -d"-" -f1|sed 's/ //g;s/\s//g'`
+  198  echo $lines_later_than_all_sh
+  199  lines_later_than_all_sh=`cat barelist.txt -n | grep -e "^all\.sh$" |head -n 1|sed 's/ //g;s/\s//g'`
+  200  echo $lines_later_than_all_sh
+  201  lines_later_than_all_sh=`cat barelist.txt -n | grep -e "^all\.sh$" |head -n 1
+  202  echo $lines_later_than_all_sh
+  203  lines_later_than_all_sh=`cat barelist.txt -n | grep -e "^all\.sh$" 
+  204  cat barelist.txt 
+  205  vi rescript_commoncrawler_defectfiles.sh 
+  206  ./go.sh 
+  207  export lines_later_than_all_sh=`cat barelist.txt -n | grep -e "^all\.sh$" |head -n 1
+  208  echo $lines_later_than_all_sh
+  209  lines_later_than_all_sh=`cat barelist.txt -n | grep -e "^all\.sh$" 
+  210  export lines_later_than_all_sh=`cat barelist.txt -n | grep -e "^all\.sh$" |head -n 1
+  211  `
+  212  export lines_later_than_all_sh=`cat barelist.txt -n | grep -e "^all\.sh$" |head -n 1`
+  213  history|grep echo
+  214  echo $lines_later_than_all_sh
+  215  mkdir backup02
+  216  mv backup02/ backup_sh2 
+  217  ls
+  218  cp /sdn/down20160426-/*.sh .
+  219  cat ./go.sh 
+  220  ls
+  221  cp backup_sh2/go.sh .
+  222  ls
+  223  cat go.sh
+  224  ls  backup_sh2/
+  225  find   backup_sh2/
+  226  ls
+  227  cd backup_sh
+  228  tree -d 
+  229  history|grep touch
+  230  vi go.sh
+  231  ./go.sh 
+  232  ls -lt
+  233  ls all.sh
+  234  ls -lt|head
+  235  vi ./go.sh 
+  236  ./go.sh 
+  237  ls -lt
+  238  ls -lt|head
+  239  ls ~/bin -lt
+  240  ls ~/bin -lt|head -n 40
+  241  vi rescript_commoncrawler_defectfiles.sh 
+  242  tree -d 
+  243  find backup_sh2/
+  244  cd ..
+  245  ls
+  246  cd downok/
+  247  cp *.sh backup_sh2/
+  248  cd ..
+  249  cat go.sh
+  250  cp all*.sh downok
+  251  cd downok/
+  252  ls
+  253  ./rescript_commoncrawler_defectfiles.sh 
+  254  ls
+  255  ls -lt all*.sh
+  256  vi rescript_commoncrawler_defectfiles.sh 
+  257  cat go.sh
+  258  vi rescript_commoncrawler_defectfiles.sh 
+  259  ./rescript_commoncrawler_defectfiles.sh 
+  260  cat test.txt
+  261  vi ./rescript_commoncrawler_defectfiles.sh 
+  262  ls *all.sh*
+  263  cat test.txt [A
+  264  vi ./rescript_commoncrawler_defectfiles.sh 
+  265  cat barelist.txt |grep "all.sh"
+  266  cat barelist.txt |grep -e "^all.sh$"
+  267  vi ./rescript_commoncrawler_defectfiles.sh 
+  268  cat ./rescript_commoncrawler_defectfiles.sh |grep all.sh
+  269  vi ./rescript_commoncrawler_defectfiles.sh 
+  270  cat ./rescript_commoncrawler_defectfiles.sh |grep nn
+  271  nn=`cat barelist.txt -n | grep -e "^all\.sh$" |head -n 1|sed 's/ //g;s/\s//g'`
+  272  echo $nn
+  273  nn=`cat barelist.txt -n | grep -e "^all\.sh$" `
+  274  echo $nn
+  275  nn=`cat barelist.txt  | grep -e "^all\.sh$" `
+  276  nn=`cat barelist.txt  | tail `
+  277  echo $nn
+  278  nn=`cat barelist.txt  | tail -n 1 `
+  279  echo $nn
+  280  nn=`cat barelist.txt -n | tail -n 1 `
+  281  echo $nn
+  282  vi rescript_commoncrawler_defectfiles.sh 
+  283  ./rescript_commoncrawler_defectfiles.sh 
+  284  nn=`cat barelist.txt -n | tail -n 1 `
+  285  nn=`cat barelist.txt -n`
+  286  echo $nn
+  287  nn=`cat barelist.txt -n | tail -n 1 `
+  288  echo $nn
+  289  vi rescript_commoncrawler_defectfiles.sh 
+  290  ./rescript_commoncrawler_defectfiles.sh 
+  291  cat barelist.txt -n | grep -e "^[0-9]* all\.sh$"
+  292  cat barelist.txt -n | grep -e "all\.sh$"
+  293  cat barelist.txt -n | grep -e "^[0-9]*\s*all\.sh$"
+  294  cat barelist.txt -n | grep -e "^\s*[0-9]*\s*all\.sh$"
+  295  vi ./rescript_commoncrawler_defectfiles.sh 
+  296  cp rescript_commoncrawler_defectfiles.sh ~
+  297  cd /sdl
+  298  ls
+  299  cd /sdk
+  300  ls
+  301  cd down20160412-/
+  302  ls
+  303  ls -lt |wc -l
+  304  ls -lt -n|grep all.sh
+  305  ls -lt >test.txt
+  306  cat test.txt -n | grep all.sh
+  307  ~/rescript_commoncrawler_defectfiles.sh 
+  308  ls
+  309  df . -h
+  310  cat defect_list.txt |less
+  311  cat defect_list.txt 
+  312  cat defect_list.txt |cut -d":" -f2|cut -d" " -f2 |sed 's/^/mv /g;s/$/ \/sdn\/new_sdk_defect/ /g' > test.txt
+  313  cat defect_list.txt |cut -d":" -f2|cut -d" " -f2 |sed 's/^/mv /g;s/$/ \/sdn\/new_sdk_defect\/ /g' > test.txt
+  314  cat test.txt|head
+  315  mv test.txt mv_defects_to_sdn_drive.sh
+  316  chmod +x *.sh
+  317  ./mv_defects_to_sdn_drive.sh
+  318  cp all.sh /sdn/new_sdk_defect/
+  319  ls
+  320  df -h|grep 7.3
+  321  df -h|grep 7.3|grep -v 51M
+  322  cd /sdq
+  323  ls
+  324  cd /sdaa
+  325  ls
+  326  cd /sdr
+  327  ls -lt
+  328  cd /sdi
+  329  ls
+  330  cd down20160308-/
+  331  ls -lt|less
+  332  cd down_ok/
+  333  ls -lt|less
+  334  ls -lt > test.txt
+  335  vi test.txt
+  336  cat defect_list.txt |less
+  337  ls *.sh -lt
+  338  cat rmall.sh |less
+  339  vi renameall.sh 
+  340  diff test.txt defect_list.txt 
+  341  cat test.txt|wc -l
+  342  cat defect_list.txt |wc -l
+  343  ~/bin/mv_ls_lt_filelist_to_newdrive.sh 
+  344  /home/vhuang/bin/mv_ls_lt_filelist_to_newdrive.sh defect_list.txt /sdn/new_sdk_defect/ 
+  345  /home/vhuang/bin/mv_ls_lt_filelist_to_newdrive.sh test.txt /sdn/new_sdk_defect/ 
+  346  ~~:x
+  347  /home/vhuang/bin/mv_ls_lt_filelist_to_newdrive.sh test.txt /sdn/new_sdk_defect/ 
+  348  ls -lt|less
+  349  cd ..
+  350  ls
+  351  cd /sdj
+  352  ls
+  353  cd down20160403-/
+  354  ls -lt|less
+  355  cd down_ok/
+  356  ls -lt|less
+  357  df -h|grep -v 51M|grep 7.3
+  358  cd /sdl
+  359  ls
+  360  ls /sdm
+  361  cd /sdm
+  362  ls
+  363  cd down20160419-/
+  364  ls
+  365  cd downok/
+  366  ls -lt|less
+  367  vi defect_list.txt 
+  368  history|grep mv
+  369  /home/vhuang/bin/mv_ls_lt_filelist_to_newdrive.sh test.txt /sdn/new_sdk_defect/ 
+  370  vi defect_list.txt 
+  371  /home/vhuang/bin/mv_ls_lt_filelist_to_newdrive.sh defect_list.txt   /sdn/new_sdk_defect/ 
+  372  df -h|grep -v 51M|grep 7.3
+  373  cd /sdj
+  374  ls
+  375  cd down20160403-/
+  376  ls
+  377  cd down_ok/
+  378  ls -lt|less
+  379  df -h|grep -v "7.3"
+  380  cd /sda1
+  381  ls
+  382  ls -l|grep down
+  383  df -h|grep -v "7.3"
+  384  cd /sdc1
+  385  ls
+  386  ls -l|grep down
+  387  cd /sde6
+  388  ls -l|grep down
+  389  ls -l /sdd1|grep down
+  390  ls -l /sdb16|grep down
+  391  ls -l /sdg1|grep down
+  392  sudo mkdir /sdn/new_craw_nov2015
+  393  sudo chown vhuang /sdn/new_craw_nov2015 -R
+  394  cd down_craw_nov2015
+  395  ls
+  396  cd /sdg1
+  397  cd down_craw_nov2015
+  398  ls
+  399  ls -lt|head
+  400  ls -lt|less
+  401  ls -lt >test.txt
+  402  ls *.sh
+  403  cat go.sh
+  404  ls -lt *.sh
+  405  ls -lt|tail
+  406  vi test.txt
+  407  cp test.txt defect_list.txt
+  408  cp  ~/bin/mv_ls_lt_filelist_to_newdrive.sh .
+  409  vi mv_ls_lt_filelist_to_newdrive.sh 
+  410  ls /sdn
+  411  vi mv_ls_lt_filelist_to_newdrive.sh 
+  412  chmod +x *.sh
+  413  ./mv_ls_lt_filelist_to_newdrive.sh 
+  414  ./mv_ls_lt_filelist_to_newdrive.sh defect_list.txt /sdn/new_craw_nov2015/
+  415  hiscap
+  416  exit
+  417  cat mv_defects_to_sdn_drive.sh |wc -l
+  418  ls -lt
+  419  ls -lt|less
+  420  cd downok/
+  421  ls -lt|less
+  422  ls all.sh
+  423  cd /sdn
+  424  ls
+  425  mkdir nov2015_craw
+  426  sudo mkdir nov2015_craw
+  427  sudo chown vhuang nov2015_craw
+  428  cd nov2015_craw/
+  429  ls
+  430  ln -s /sdg1/craw-sept2015/ craw-sept2015
+  431  ln -s /sdg1/down_craw_nov2015/ craw-nov2015
+  432  ls
+  433  ls -lt
+  434  ls /sdg1/bare0/
+  435  ls
+  436  ls /sdan1
+  437  ln -s /sdan1/commoncrawl_data commoncrawl_data
+  438  ls -lt
+  439  ln -s /sdan1/commoncrawl_data02/ commoncrawl_data02
+  440  ln -s /sdan1/data/ 
+  441  ls /sdan1/data/ 
+  442  ln -s /sdan1/data/ data
+  443  ls
+  444  ln -s /sdan1/
+  445  ln  /sdan1/
+  446  ln  /sdan1
+  447  ls  /sdan1
+  448  ls  /sdan2
+  449  df -h   /sdan2
+  450  df -h   /sdan1
+  451  ls -lt
+  452  df -h
+  453  df -h|grep -v "7.3"
+  454  ls /sdar4
+  455  ls /sdar4/diskbackup_megadata
+  456  ls /sdar4/diskbackup_megadata -lt|less
+  457  ls /sdar4/diskbackup_megadata/ -lt|less
+  458  cd /sdn
+  459  ln -s /sdar4/diskbackup_megadata diskbackup_megadata_CA
+  460  sudo ln -s /sdar4/diskbackup_megadata diskbackup_megadata_CA
+  461  ls /sdar4
+  462  ls /sdar4/home/vhuang/
+  463  ls /sdar4/home/vhuang/doc
+  464  ls /sdar4/home/vhuang/bin
+  465  du -h /sdar4/home/vhuang/doc
+  466  du -h /sdar4/home/vhuang/doc|grep G
+  467  ln -s /sdar4/home/vhuang/doc/disk_m4700_win7__backup diskbackup__sdar4_home_vhuang_doc_disk_m4700_win7__backup
+  468  sudo ln -s /sdar4/home/vhuang/doc/disk_m4700_win7__backup diskbackup__sdar4_home_vhuang_doc_disk_m4700_win7__backup
+  469  cd /sdar4/home/vhuang/doc
+  470  ls
+  471  sudo ln -s  /sdar4/home/vhuang/doc doc
+  472  df -h|grep -v "7.3"
+  473  ls /sdr5
+  474  ls /sdar5
+  475  ls /sdar5/down12302013-/
+  476  du -h  /sdar5/down12302013-/ | grep [0-9]G
+  477  du -h  /sdar5/ | grep [0-9]G
+  478  wget --help
+  479  wget --help|grep timeout
+  480  df -h
+  481  cd /sdk
+  482  ls
+  483  cd /sdg
+  484  ls
+  485  cd /sdg1
+  486  ls
+  487  cd craw-sept2015/
+  488  ls -lt
+  489  history|less
+  490  hiscap
+  491  ls rmall*
+  492  cd downok_0-2926/
+  493  ls rmall*
+  494  cat rmall.sh |wc -l
+  495  cd ..
+  496  ls
+  497  cd ..
+  498  ls
+  499  cd down_craw_nov2015/
+  500  ls *.gz|wc -l
+  501  ls -lt|less
+  502  cd /sdg1
+  503  ls
+  504  cd down_craw_nov2015/
+  505  ls
+  506  ls -lt >../downed_nov2015.txt
+  507  cd ..
+  508  vi downed_nov2015.txt 
+  509  cp downed_nov2015.txt /sdn/new_craw_nov2015/
+  510  cd down_craw_nov2015/
+  511  cd downok/
+  512  ls -lt >../downed_nov2015.txt
+  513  cd ..
+  514  cp downed_nov2015.txt /sdn/new_craw_nov2015/
+  515  df -h|grep sdo
+  516  cd /sdo
+  517  ls
+  518  cd down_ccrawl_nov2015/
+  519  df -h .
+  520  du -h|less
+  521  cd downok/
+  522  du -h|less
+  523  ls -lh|less
+  524  hiscap

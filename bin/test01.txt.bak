@@ -1,0 +1,12 @@
+sshfs -o idmap=user vhuang@v102:/sudo chown vhuang /mnt/sdb3 /mnt/v102/
+sshfs -o idmap=user vhuang@v102:/sudo chown vhuang /mnt/sdc1 /mnt/v102/
+sshfs -o idmap=user vhuang@v102:/sudo chown vhuang /mnt/sdd1 /mnt/v102/
+sshfs -o idmap=user vhuang@v102:/sudo chown vhuang /mnt/sde1 /mnt/v102/
+sshfs -o idmap=user vhuang@v102:/sudo chown vhuang /mnt/sdf2 /mnt/v102/
+sshfs -o idmap=user vhuang@v102:/sudo chown vhuang /mnt/sdg1 /mnt/v102/
+sshfs -o idmap=user vhuang@v102:/sudo chown vhuang /mnt/sdh1 /mnt/v102/
+sshfs -o idmap=user vhuang@v102:/sudo chown vhuang /mnt/sdi1 /mnt/v102/
+sshfs -o idmap=user vhuang@v102:/sudo chown vhuang /mnt/sdj1 /mnt/v102/
+sshfs -o idmap=user vhuang@v102:/sudo chown vhuang /mnt/sdk1 /mnt/v102/
+sshfs -o idmap=user vhuang@v102:/sudo chown vhuang /mnt/ /mnt/v102/
+sshfs -o idmap=user vhuang@v102:/sudo chown vhuang /mnt/ /mnt/v102/

@@ -1,0 +1,1 @@
+find -L|grep -e "\.$1$"|xargs etags -a
