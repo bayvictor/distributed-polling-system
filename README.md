@@ -188,3 +188,8 @@ For this modeling task, rather than using the raw latitude and longitude values 
 March 14, 2017 <br>
 Search in google for the reference code in opensource:<br>
 time series matplotlib "__main__" predict filetype:py <br>
+----------------
+<br><br> March 22, 2017 <br>
+<br> Reading notes: time serial + hierarchical + container + index topics: <br>
+https://arxiv.org/pdf/1311.6785.pdf: partition into five communities is detected at Markov time t = 97.712 corresponding to the five roles in the Twitter network. B: The in- and out-degrees of the five clusters found reflect their characterisations as: references, engaged leaders, mediators, diversified listeners, and listeners. <br>
+
