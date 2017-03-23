@@ -193,3 +193,19 @@ time series matplotlib "__main__" predict filetype:py <br>
 <br> Reading notes: time serial + hierarchical + container + index topics: <br>
 https://arxiv.org/pdf/1311.6785.pdf: partition into five communities is detected at Markov time t = 97.712 corresponding to the five roles in the Twitter network. B: The in- and out-degrees of the five clusters found reflect their characterisations as: references, engaged leaders, mediators, diversified listeners, and listeners. <br>
 
+<br><br>March 23, 2017:<br>
+source:http://stackoverflow.com/questions/30969435/where-is-the-docker-daemon-log<br>
+DOcker log directories, It depends on your OS. Here are the few locations, with commands for few Operating Systems:
+<br><br>
+Ubuntu (old using upstart ) - /var/log/upstart/docker.log <br>
+Ubuntu (new using systemd ) - journalctl -u docker.service <br>
+Boot2Docker - /var/log/docker.log <br>
+Debian GNU/Linux - /var/log/daemon.log <br>
+CentOS - /var/log/daemon.log | grep docker <br>
+CoreOS - journalctl -u docker.service <br>
+Fedora - journalctl -u docker.service <br>
+Red Hat Enterprise Linux Server - /var/log/messages | grep docker <br>
+OpenSuSE - journalctl -u docker.service <br>
+OSX - ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/log/d‌​ocker.log <br>
+<br>
+
