@@ -208,14 +208,11 @@ Red Hat Enterprise Linux Server - /var/log/messages | grep docker <br>
 OpenSuSE - journalctl -u docker.service <br>
 OSX - ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/log/d‌​ocker.log <br>
 <br>
-2. source:
+2. source:https://docs.openstack.org/juno/config-reference/content/section_nova-logs.html <br>
 
-uno -  Juno -  Juno -  Juno -  Juno -  Juno -  Juno -  Juno - 
- Compute log files
+The corresponding log file of each Compute service is stored in the <b> /var/log/nova/ </b> directory of the host on which each service runs. <br>
 
-The corresponding log file of each Compute service is stored in the /var/log/nova/ directory of the host on which each service runs.
-
-Table 2.11. Log files used by Compute services
+Table 2.11. Log files used by Compute services layout break, so better refer to original url for right one). <br>
 Log file	Service name (CentOS/Fedora/openSUSE/Red Hat Enterprise Linux/SUSE Linux Enterprise)	Service name (Ubuntu/Debian)
 api.log	openstack-nova-api	nova-api
 cert.log [a]	openstack-nova-cert	nova-cert
