@@ -211,16 +211,17 @@ OSX - ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/
 2. source:https://docs.openstack.org/juno/config-reference/content/section_nova-logs.html <br>
 
 The corresponding log file of each Compute service is stored in the <b> /var/log/nova/ </b> directory of the host on which each service runs. <br>
-
+<br><br>
 Table 2.11. Log files used by Compute services layout break, so better refer to original url for right one). <br>
-Log file	Service name (CentOS/Fedora/openSUSE/Red Hat Enterprise Linux/SUSE Linux Enterprise)	Service name (Ubuntu/Debian)
-api.log	openstack-nova-api	nova-api
-cert.log [a]	openstack-nova-cert	nova-cert
-compute.log	openstack-nova-compute	nova-compute
-conductor.log	openstack-nova-conductor	nova-conductor
-consoleauth.log	openstack-nova-consoleauth	nova-consoleauth
-network.log[b]	openstack-nova-network	nova-network
-nova-manage.log	nova-manage	nova-manage
-scheduler.log	openstack-nova-scheduler	nova-scheduler
+Log file	Service name (CentOS/Fedora/openSUSE/Red Hat Enterprise Linux/SUSE Linux Enterprise)	Service name (Ubuntu/Debian) <br>
+api.log	openstack-nova-api	nova-api <br>
+cert.log [a]	openstack-nova-cert	nova-cert <br>
+compute.log	openstack-nova-compute	nova-compute <br>
+conductor.log	openstack-nova-conductor	nova-conductor <br>
+consoleauth.log	openstack-nova-consoleauth	nova-consoleauth <br>
+network.log[b]	openstack-nova-network	nova-network <br>
+nova-manage.log	nova-manage	nova-manage <br>
+scheduler.log	openstack-nova-scheduler	nova-scheduler <br>
+<br><br>
 
 
