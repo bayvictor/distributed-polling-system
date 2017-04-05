@@ -227,5 +227,33 @@ scheduler.log||openstack-nova-scheduler||nova-scheduler <br>
 
 <br>
 <br><br>
+============================================  <br>
+Reading for answer:
+source:http://www.jianshu.com/p/3f4b89aaf057, 简书：
+Q. Why matplotlib with plot() is not visible?  <br>
+Answer:
+1. 安装Tkinter 和 matplotlib
 
+我的问题在于我原来的python居然没有Tkinter！！
+  sudo apt-get install tk-dev
+  pip uninstall -y matplotlib
+  pip --no-cache-dir install -U matplotlib #这是最关键的
+
+2. 设置agg
+
+其实经过上面的步骤，已经可以画图了
+补充2种设置agg方法
+
+临时的
+import matplotlib
+matplotlib.use('TkAgg')
+这个命令必须在第一次使用%pylab 或者import matplotlib.pyplot as plt之前使用
+常见的agg有：Qt4Agg Qt5Agg TkAgg WX WXAgg Agg Cairo GDK PS PDF SVG
+
+永久的
+修改matplotlibrc文件
+matplotlibrc文件的位置在：
+[~/.virtualenvs/myenv]/lib/python2.7/site-packages/matplotlib/mpl-data/
+修改位置：backend      : youragg
+<br><br><p>
 
