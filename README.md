@@ -260,3 +260,6 @@ matplotlibrc文件的位置在：
 ML reading notes: <br>
 04/14/2017<br>
 https://www.slideshare.net/pfi/3d-volumetric-data-generation-with-generative-adversarial-networks
+AutoCad default format: dwg <br>
+Posibility of GAN applying to MAP recognition and extraction.  <br>
+Urban Vertical Farming: Generative System for a Vegetable Growing Infrastructure - eVolo. source: https://www.pinterest.com/pin/144396731773989357/
