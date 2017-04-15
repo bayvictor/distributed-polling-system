@@ -257,3 +257,6 @@ matplotlibrc文件的位置在：
 修改位置：backend      : youragg
 <br><br><p>
 
+ML reading notes: <br>
+04/14/2017<br>
+https://www.slideshare.net/pfi/3d-volumetric-data-generation-with-generative-adversarial-networks
