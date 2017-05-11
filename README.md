@@ -263,3 +263,8 @@ https://www.slideshare.net/pfi/3d-volumetric-data-generation-with-generative-adv
 AutoCad default format: dwg <br>
 Posibility of GAN applying to MAP recognition and extraction.  <br>
 Urban Vertical Farming: Generative System for a Vegetable Growing Infrastructure - eVolo. source: https://www.pinterest.com/pin/144396731773989357/
+
+
+05/11/2017:
+The flexibility of "domain or the fly, id otf", will be vip for implementation. 
+Borrowing the idea from adversarial network, we can form a new world from bionicle simulation of the evolution tree.
