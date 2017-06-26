@@ -269,7 +269,13 @@ Urban Vertical Farming: Generative System for a Vegetable Growing Infrastructure
 The flexibility of "domain or the fly, id otf", will be vip for implementation. 
 Borrowing the idea from adversarial network, we can form a new world from bionicle simulation of the evolution tree.
 
-06/26/2017: Notes:
-https://hackaday.io/project/12715-tritium-nuclear-battery-betaphotovoltaic, Interesting making of nuclei battery with age 20 years of cost of $40.
+06/26/2017: Interesting Notes:
+https://hackaday.io/project/12715-tritium-nuclear-battery-betaphotovoltaic, Interesting making of nuclei battery lasting 20 years at cost of $40, produce 1.6V at ~50 nanoamps. The author writes:
+"This is a simple DIY nuclear battery. It uses a small, prepurchased Tritium tube that glows for 20+ years pressed against a tiny calculator solar panel and reflector to produce 1.6V at ~50 nanoamps for around $40. It will produce relatively constant current for years, decreasing with the 12-year halflife of Tritium. It can be used to charge capacitors which can then flash an LED briefly with a voltage boosting circuit. 
+
+Tritium is an isotope of Hydrogen containing 2 neutrons. It is unstable and decays with a halflife of 12 years, emitting a 5.7 (average) keV electron (beta particle) and a ~10 keV neutrino. The neutrino is essentially lost energy as it cannot be harvested with this device. The beta particle collides with the phosphor coating on the tube walls to produce green photons which are produced for as long as the Tritium sample is decaying. 
+
+Looking for feedback to improve design or to build new types of nuclear battery."
+
 
 
