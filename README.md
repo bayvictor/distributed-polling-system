@@ -268,3 +268,8 @@ Urban Vertical Farming: Generative System for a Vegetable Growing Infrastructure
 05/11/2017:
 The flexibility of "domain or the fly, id otf", will be vip for implementation. 
 Borrowing the idea from adversarial network, we can form a new world from bionicle simulation of the evolution tree.
+
+06/26/2017: Notes:
+https://hackaday.io/project/12715-tritium-nuclear-battery-betaphotovoltaic, Interesting making of nuclei battery with age 20 years of cost of $40.
+
+
