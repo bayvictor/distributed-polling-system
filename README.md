@@ -278,4 +278,6 @@ Tritium is an isotope of Hydrogen containing 2 neutrons. It is unstable and deca
 Looking for feedback to improve design or to build new types of nuclear battery."
 
 
+07/07/2017.
+Very interesting search "iot+aws", "secure+udp" on google, images.google.com, github.com search by "like" ranking.
 
