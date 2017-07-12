@@ -281,3 +281,23 @@ Looking for feedback to improve design or to build new types of nuclear battery.
 07/07/2017.
 Very interesting search "iot+aws", "secure+udp" on google, images.google.com, github.com search by "like" ranking.
 
+07/12/2017. reading notes on googled "machine+learning+laser+manufacturing":
+(1) http://www.laserfocusworld.com/articles/print/volume-53/issue-01/features/industrial-laser-systems-for-industry-4-0-visualization-and-machine-learning-can-be-combined-to-enhance-laser-processing.html: published on 01/24/2017.
+(A) The Industry 4.0 (or Industrie 4.0) trend enables a vision for the factory of the future based on automation and data exchange that will change the way laser processes are optimized.
+(B) "combines interactive visualization with machine learning techniques called the Intelligent Viewer (iV) Model for analyzing laser process parameters applied for welding, joining, cutting, bonding, cladding, coating, and printing". 
+(C) Process data include information about the temperature, environment, and power, logging up to several million thermal camera images, as well as image analysis results with more than 100,000 rows and more than 20 columns.
+(D)  To our knowledge, this is the first demonstration of an interactive visualization combined with machine learning to be described for laser application in Industry 4.0 processes.
+
+(2) http://www.laserfocusworld.cn/DeIAP.asp?id=3369
+与波长为 10.6 微米的二氧化碳激光器相比，波长约为 1 微米的光纤激光器可以提供更高的加工效率。
+
+尤其是，光纤激光器能极好地满足深熔焊接的要求。它们提供的输出功率一般在 500 瓦到 10 千瓦之间，而且可以轻易地将焊点直径聚焦在 40 微米到 800 微米之间的必要范围内，即使在相对较大的作业距离上也能实现。
+Coherent | Rofin 光纤激光器专为统和提供性能、可靠性、轻松集成和成本特性而设计，是焊接和其他材料加工应用的最佳选择。
+
+(3) http://www.laserfocusworld.com/articles/print/volume-53/issue-04/columns/market-insights/digital-photonics-should-be-called-disruptive-photonics.html
+
+One example is connected light, which will enable many new applications. Street lights will be equipped with sensors and cameras, and will be connected. They will be able to monitor air quality and enable location services, and traffic control apps will derive from this feature.
+
+
+
+
