@@ -298,6 +298,9 @@ Coherent | Rofin 光纤激光器专为统和提供性能、可靠性、轻松集
 
 One example is connected light, which will enable many new applications. Street lights will be equipped with sensors and cameras, and will be connected. They will be able to monitor air quality and enable location services, and traffic control apps will derive from this feature.
 
-
+07/13/2017:
+来源：https://book.douban.com/review/8476997/
+<升维思考，降维攻击>:
+传统企业将产品作为核心，而互联网企业则将产品视为入口，将人流作为根本。如果不理解这个本质，就理解不了更高的商业维度，也不清楚如何从高维度降到低维，用降维的方式打败对手。
 
 
