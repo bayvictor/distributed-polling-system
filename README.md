@@ -305,4 +305,7 @@ One example is connected light, which will enable many new applications. Street 
 （2）人脑的"先升维、后降维"的分类算法。
 如何区分同是黄色的哈密瓜和黄香蕉？哈密瓜是圓形的，那麼我們就可以用形狀來把香蕉和哈密瓜劃分開了，即引入一個新維度：形狀，來區分。
 原文網址：https://read01.com/5MNMM2.html
+（3）机器学习简史：
+https://community.emc.com/thread/205192?start=0&tstart=0
+
 
