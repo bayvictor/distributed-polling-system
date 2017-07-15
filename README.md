@@ -309,3 +309,13 @@ One example is connected light, which will enable many new applications. Street 
 https://community.emc.com/thread/205192?start=0&tstart=0
 
 
+07/14/2017:
+http://www.chinaaet.com/article/3000019638
+(1) IoT Sensors: 随着物联网技术的发展，对传统传感技术又提出了新的要求，产品正逐渐向MEMS技术、无线数据传输技术、红外技术、新材料技术、纳米技术、陶瓷技术、薄膜技术、光纤技术、激光技术、复合传感器技术、多学科交叉融合的方向发展。
+
+https://www.quora.com/Can-a-laser-beam-be-bent-or-focused-with-magnetic-fields
+(2) Laser bending: However a beam *can* be deflected or focused by a magnetic field if it is propagating through something called a "magneto-optic" material. In fact, in the field of optics, we often *do* use magneto-optic materials, as well as electro-optic, acousto-optic, etc
+
+
+
+
