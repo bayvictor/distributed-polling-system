@@ -15,5 +15,6 @@ https://thefinanser.com/2016/08/nine-standout-start-ups-focused-upon-blockchain-
 
 Keyword:how about blockchain+addressbook?
 
-
+3) https://www.theregister.co.uk/2017/03/10/deepmind_system_to_protect_medical_data/
+Google-stablemate DeepMind is creating a blockchain-like system to show how sensitive medical data passing through its processors will be used, allowing healthcare professionals to check if data has been tampered with.
 
