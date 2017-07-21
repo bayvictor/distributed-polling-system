@@ -18,3 +18,18 @@ Keyword:how about blockchain+addressbook?
 3) https://www.theregister.co.uk/2017/03/10/deepmind_system_to_protect_medical_data/
 Google-stablemate DeepMind is creating a blockchain-like system to show how sensitive medical data passing through its processors will be used, allowing healthcare professionals to check if data has been tampered with.
 
+4) https://www.geekwire.com/2017/lendingrobot-launches-hedge-fund-uses-blockchain-machine-learning-no-human-intervention/
+LendingRobot, without human intervention, making use of Amazon Web Services’ machine learning, compute servers and blockchain technology.
+
+The investment is attractive, as it can yield 8-10 percent interest paid monthly. But managing the choice of those multiple loans, and investing, re-investing and collecting interest, can get complex and boring, which is why LendingRobot has automated those tasks, taking a fee for its services.
+LendingRobot says it serves 6,500 clients with more than $120 million in assets. The company was founded in 2012 by founding CEO Gilad Golan and Marot, who first met at Microsoft and shared an interest in making personal Lending Club investments.
+
+5)http://www.kdnuggets.com/2017/05/challenges-machine-learning-trust.html
+ automated trust computations:
+
+Finance companies calculate credit scores for loan/credit card decisions.
+Peer to Peer companies make decisions on whom to onboard to their platform.
+Tech companies detect whether content on their site is fake.
+Law enforcement agencies use models to identify potential criminal activity.
+Yet as trust is becoming increasingly crucial, it is becoming harder to build systems for automated trust decisions.
+
