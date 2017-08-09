@@ -33,3 +33,12 @@ Tech companies detect whether content on their site is fake.
 Law enforcement agencies use models to identify potential criminal activity.
 Yet as trust is becoming increasingly crucial, it is becoming harder to build systems for automated trust decisions.
 
+08/08/2017.
+Advisory Points of Improvements, in a 'tight' enterprise environment:
+
+1. Communication: poise, tempo and control, always ask "am I on the same page with you? "
+2. Active Report, interactions with multi-tier, multi-source managers.
+3. R&D, Always deliver with visible, phony results at daily, weekly period; have something special for team-player to consume.
+4. Don't just be a mentor/consultant, be a stake-holder, and a agressive contributor.
+
+
