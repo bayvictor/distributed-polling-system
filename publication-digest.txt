@@ -42,3 +42,13 @@ Advisory Points of Improvements, in a 'tight' enterprise environment:
 4. Don't just be a mentor/consultant, be a stake-holder, and a agressive contributor.
 
 
+08/29/2017:
+reading notes:
+(1) AI工程#1:技术涉及到大量数据，一旦选定云平台，基本上就被锁死了。Google就是利用TF来作为客户上云的抓手。它在TF平台开发的投入上超过200人，确保对AI平台的垄断。
+(2)AI学术#1:MS的目标是在所有云上的SaaS服务都引入AI，让用户有更好的体验。
+(3) 差异性可以是
+数据，基于数据的模型和调优
+计算速度，数据吞吐量，网络时延
+专业领域产品，服务，或解决方案
+软件或硬件
+
