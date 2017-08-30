@@ -40,7 +40,10 @@ def parse_link(keyword,link,per4s="1",per1s="1", random_s="5", tarball_num="1000
     fout=open( fn_out, "w")
 #  for kk in range(0, len(lines) ):
   for kk in range(0, int(max_pages) ):
-    fn_kk = "norm.sh "+ lines[kk]
+    filename_line = lines[kk]
+    new_filename_line = ''.join( ch if ch.isalnum() else '_' for ch in filename_line )
+    fn_kk = "~/bin/norm.sh "+ lines[kk]
+    #fn_kk = new_filename_line 
     print "fn_kk["+str(kk)+"]=("+fn_kk+")"
     data = os.popen( fn_kk ).readlines()
     print "read data=("
