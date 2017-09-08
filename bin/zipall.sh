@@ -1,0 +1,33 @@
+echo "tar -zcf ./ML.tgz 	 ./ML";	tar -zcf ./ML.tgz 	 ./ML
+echo "tar -zcf ./ML2.tgz 	 ./ML2";	tar -zcf ./ML2.tgz 	 ./ML2
+echo "tar -zcf ./ML3.tgz 	 ./ML3";	tar -zcf ./ML3.tgz 	 ./ML3
+echo "";	
+echo "";	
+echo "tar -zcf ./android.tgz 	 ./android";	tar -zcf ./android.tgz 	 ./android
+echo "tar -zcf ./backup.tgz 	 ./backup";	tar -zcf ./backup.tgz 	 ./backup
+echo "tar -zcf ./backup02.tgz 	 ./backup02";	tar -zcf ./backup02.tgz 	 ./backup02
+echo "tar -zcf ./bigzip.tgz 	 ./bigzip";	tar -zcf ./bigzip.tgz 	 ./bigzip
+echo "tar -zcf ./bzip2-1.0.5.tgz 	 ./bzip2-1.0.5";	tar -zcf ./bzip2-1.0.5.tgz 	 ./bzip2-1.0.5
+echo "tar -zcf ./db-4.8.30.tgz 	 ./db-4.8.30";	tar -zcf ./db-4.8.30.tgz 	 ./db-4.8.30
+echo "tar -zcf ./Downloads_mac.tgz 	 ./Downloads_mac";	tar -zcf ./Downloads_mac.tgz 	 ./Downloads_mac
+echo "tar -zcf ./elk.tgz 	 ./elk";	tar -zcf ./elk.tgz 	 ./elk
+echo "tar -zcf ./labs.tgz 	 ./labs";	tar -zcf ./labs.tgz 	 ./labs
+echo "tar -zcf ./macbook.tgz 	 ./macbook";	tar -zcf ./macbook.tgz 	 ./macbook
+echo "tar -zcf ./matplot.tgz 	 ./matplot";	tar -zcf ./matplot.tgz 	 ./matplot
+echo "tar -zcf ./mattest.tgz 	 ./mattest";	tar -zcf ./mattest.tgz 	 ./mattest
+echo "tar -zcf ./mp3.tgz 	 ./mp3";	tar -zcf ./mp3.tgz 	 ./mp3
+echo "tar -zcf ./ng-materials.tgz 	 ./ng-materials";	tar -zcf ./ng-materials.tgz 	 ./ng-materials
+echo "tar -zcf ./nvidia.tgz 	 ./nvidia";	tar -zcf ./nvidia.tgz 	 ./nvidia
+echo "tar -zcf ./nvidia+driver.tgz 	 ./nvidia+driver";	tar -zcf ./nvidia+driver.tgz 	 ./nvidia+driver
+echo "tar -zcf ./nvidia-graphics-drivers-367-367.57.tgz 	 ./nvidia-graphics-drivers-367-367.57";	tar -zcf ./nvidia-graphics-drivers-367-367.57.tgz 	 ./nvidia-graphics-drivers-367-367.57
+echo "tar -zcf ./rbac.tgz 	 ./rbac";	tar -zcf ./rbac.tgz 	 ./rbac
+echo "tar -zcf ./ref.tgz 	 ./ref";	tar -zcf ./ref.tgz 	 ./ref
+echo "tar -zcf ./rolegui.tgz 	 ./rolegui";	tar -zcf ./rolegui.tgz 	 ./rolegui
+echo "tar -zcf ./sonar.tgz 	 ./sonar";	tar -zcf ./sonar.tgz 	 ./sonar
+echo "tar -zcf ./src.tgz 	 ./src";	tar -zcf ./src.tgz 	 ./src
+echo "tar -zcf ./src_macbook.tgz 	 ./src_macbook";	tar -zcf ./src_macbook.tgz 	 ./src_macbook
+echo "tar -zcf ./tcl8.5.8.tgz 	 ./tcl8.5.8";	tar -zcf ./tcl8.5.8.tgz 	 ./tcl8.5.8
+echo "tar -zcf ./tensorflow.tgz 	 ./tensorflow";	tar -zcf ./tensorflow.tgz 	 ./tensorflow
+echo "tar -zcf ./test.tgz 	 ./test";	tar -zcf ./test.tgz 	 ./test
+echo "tar -zcf ./tgz.tgz 	 ./tgz";	tar -zcf ./tgz.tgz 	 ./tgz
+echo "tar -zcf ./tk8.5.8.tgz 	 ./tk8.5.8";	tar -zcf ./tk8.5.8.tgz 	 ./tk8.5.8
