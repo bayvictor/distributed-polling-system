@@ -52,3 +52,32 @@ reading notes:
 专业领域产品，服务，或解决方案
 软件或硬件
 
+09/11/2017: Interesting notes of cool, trendy laptop notes:
+
+http://forum.notebookreview.com/threads/good-notebook-for-15mm-hdd-st5000lm000-and-64gb-ram.802324/
+Topic 1: 15mm z-height, thick 5GB hdd, fitting into laptops.
+Some laptops like Sager p650 can stack two hard drives and can stack two hard drives on top of each other. That could allow 15mm drive to fit, but it would have no room for the other 1TB drive. It has 2x m.2 lots though.
+old alienware m18x could stack three hard drives on top of each other, but i'm not aware of any other new laptops that supports 15mm drive.
+Topic 2: selecting nvme x4 m2 sdd:
+I remember that GT70 that I used to have, had a lot of drive space, but it is outdated as well. It could fit 15mm drive and fit another 9mm drive on the second HDD bay.
+ichangedmyname, Mar 10, 2017
+M.2 SSD
+----------------------------------------------------------------------------------------------------------------------------------
+2 M2 512GB
+Roundup
+2017 Guide: The Best PCI Express NVMe Solid State Drives
+1) SSDs that adhere to the NVMe protocol are the fastest storage drives you can buy today. Here's how to shop for one with confidence.
+2) These slots are known as M.2 slots, and they accept M.2 SSDs that look like sticks of silicon chewing gum.
+3) In practice, all of the upgrader- or PC-builder-minded M.2 SSDs and slots we have seen to date have been 22mm wide, so you can expect this number to start with "22." The most common lengths are 80mm (“M.2 Type-2280”) and 60mm (“M.2 Type-2260”). Drives as short as 42mm ("M.2 Type-2242") or as long as 110mm ("M.2 Type-22110") do exist, though. Why the differences in length? The longer the drive's PCB, the more surface area it will have onto which chips can fit.
+
+ Today’s new high-end M.2 drives support PCI Express x4 (four lanes of bandwidth), working alongside a technology called Non-Volatile Memory Express (NVMe). The idea behind NVMe is to accelerate performance further, especially with hardy workloads.
+4) NVMe, (Intel's "Kaby Lake" 7th Generation chips, based on chipsets like the Z270) support PCI Express x4 NVMe M.2 drives.
+Many recent M.2-equipped mobos support both bus types of M.2 SSD (M.2 SATA and M.2 PCI Express/NVMe).
+5) NVMe in Other Shapes: PCI Cards and U.2;  
+6) Desktop: And, in the case of PCI Express M.2, an older motherboard may not support PCI Express x4, only x2!)
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+2 models mentioned were:
+MSI GT73VR TITAN-017 --- 2 NVMe, 1 M.2 non-NVMe, 1 2.5
+SAGER NP9873 (CLEVO P870DM3-G) --- 2 NVM3, 2 2.5
