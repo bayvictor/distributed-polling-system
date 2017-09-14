@@ -1,4 +1,0 @@
-echo "echo password | gpg --batch -q -o /tmp/file.tgz --passphrase-fd 0 --decrypt $1.tgz.gpg">gpg_unzip_with_password_for.$1.sh
-tar -zcvf $1.tgz $1  gpg_unzip_with_password_for.$1.sh
-echo password | gpg --batch -q --passphrase-fd 0 --cipher-algo AES256 -c $1.tgz # $1.tgz=>$1.tgz.gpg
-

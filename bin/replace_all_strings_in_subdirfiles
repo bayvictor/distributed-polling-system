@@ -1,5 +1,0 @@
-#grep -rl oldstr path | xargs sed -i 's/oldstr/newstr/g' /dev/null
-echo "usage: $1 oldstr newstr"
-read readline
-grep -rl $1 path | xargs sed -i -e 's/$1/$2/g' /dev/null
-

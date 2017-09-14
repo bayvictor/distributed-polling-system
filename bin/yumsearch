@@ -1,1 +1,0 @@
-yum search gd|sed 's/^/sudo yum install -y /g;s/ : /;#  : /g' 

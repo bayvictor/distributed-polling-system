@@ -1,0 +1,3 @@
+
+sudo mount -t vboxsf -o uid=$UID,gid=$(id -g) D_DRIVE /d
+sudo mount -t vboxsf -o uid=$UID,gid=$(id -g) C_DRIVE /c  

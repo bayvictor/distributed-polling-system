@@ -1,8 +1,0 @@
-mkdir /sdb2/disks_backup_from_dell7710_midway
-cd /sdb2/disks_backup_from_dell7710_midway
-cp /sda1 . -fr
-cp /sda2 . -fr 
-cp /sda8 . -fr
-cp /sda13 . -fr 
-cp /sda17 . -fr
-# /media/vhuang/3T01

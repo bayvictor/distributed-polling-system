@@ -1,3 +1,0 @@
-cd /home/vhuang/src/mdf2csv/mdfreader/mdfconverter
-python mdfconverter.py
-

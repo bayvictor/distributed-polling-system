@@ -1,3 +1,0 @@
- vv=`echo $1 | sed -e 's|\/|_|g' -e 's/ /_/g' -e 's/\./_/g' -e 's/\.\/\.//g'`; echo $vv | cleanwf > ~/wf/${vv}.wf.txt; strings "$1" |cleanwf >>~/wf/${vv}.wf.txt;echo "wf $1 to ~/wf/'$vv'"
- 
- 

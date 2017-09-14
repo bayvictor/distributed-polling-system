@@ -1,1 +1,0 @@
-/home/vhuang/bin/curdir_cp_downthemall_filename_to_newdir_with_shorten_name.py 

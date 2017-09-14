@@ -1,3 +1,0 @@
-/home/fogdev/cisco-kunpeng-sdk-20130208/armv5te-cisco-glibc-gnueabi/bin/arm-cisco-linux-gnueabi-ldd:if [ -z "${sysroot}" ]; then
-/home/fogdev/cisco-kunpeng-sdk-20130208/armv5te-cisco-glibc-gnueabi/bin/arm-cisco-linux-gnueabi-ldd:if [ -z "${sysroot}" ]; then
-/home/fogdev/cisco-kunpeng-sdk-20130208/armv5te-cisco-glibc-gnueabi/bin/arm-cisco-linux-gnueabi-ldd:        "sysroot:${sysroot}"    \

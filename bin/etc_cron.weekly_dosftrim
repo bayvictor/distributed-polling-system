@@ -1,5 +1,0 @@
-#! /bin/sh
-for mount in / /boot /home; do
-	fstrim $mount
-done
-
