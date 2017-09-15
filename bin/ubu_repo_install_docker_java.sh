@@ -1,0 +1,309 @@
+echo "Administrative Stuff (Skip freely)
+
+On any new box I need vim, curl and git to deploy my .dotfiles otherwise I can’t function properly:
+"
+	
+sudo apt-get install vim curl git
+
+curl -Lks http://j.mp/durdn-cfg | bash
+
+echo "
+Install Docker
+
+Installing Docker is easy. First we install some kernel extensions needed for it to run:
+
+
+1"
+	
+sudo apt-get install linux-image-extra-$(uname -r)
+
+
+echo "Then we install software-properties-common which provides us with add-apt-repository:
+
+
+1"
+	
+ sudo apt-get install -y --force-yes docker #- System tray for KDE3/GNOME2 docklet applications
+ sudo apt-get install -y --force-yes docker.io #- Linux container runtime
+
+sudo apt-get install software-properties-common
+
+
+echo "Add the dotcloud ppa:
+
+
+1
+2"
+	
+sudo add-apt-repository ppa:dotcloud/lxc-docker
+sudo apt-get update
+
+echo "
+And finally install Docker with:
+
+
+1"
+	
+sudo apt-get install lxc-docker
+
+echo "
+Now we are ready to pull a base image which will be the base of all our work:
+
+
+1
+"
+	
+docker pull base
+
+echo "
+This will output:
+
+Pulling repository base from https://index.docker.io/v1
+Pulling image 27cf784147099545 () from base
+Pulling 27cf784147099545 metadata
+Pulling 27cf784147099545 fs layer
+Downloading 94863360/? (n/a)
+Pulling image b750fe7[...]2b4accb2c21d589ff2f5f2dc (ubuntu-quantl) from base
+Pulling b750fe79269d2[...]f05b433b1d1a02a62b4accb2c21d589ff2f5f2dc metadata
+Pulling b750fe79269d2[...]3ef05b4332b1d1a02a62b4accb2c289ff2f5f2dc fs layer
+Downloading 10240/? (n/a)
+
+
+(Note that any docker command requires that your machine is running the docker daemon. To run the docker daemon in the background in case it’s not already, simply type: sudo docker -d &).
+
+You can pull any public image published on the Index Docker or publish your own.
+
+You can inspect all the images that docker has at its disposal with:
+
+
+1"
+
+	
+docker images
+
+
+echo "This will list:
+
+REPOSITORY          TAG                 ID                  CREATED
+base                ubuntu-quantl       b750fe79269d        10 weeks ago
+base                latest              b750fe79269d        10 weeks ago
+base                ubuntu-quantal      b750fe79269d        10 weeks ago
+base                ubuntu-12.10        b750fe79269d        10 weeks ago
+
+
+Which means we have a base image based on Ubuntu 12.10 ready for our perusal.
+Installing Java
+
+Now we’re ready to create an image and customise it to our needs. The first requirement is to install Java.
+
+Let’s spin up a shell in the base container:
+
+
+1
+"
+	
+docker run -i -t base /bin/bash
+
+echo "
+This starts a new container, gives it a unique id, assigns it an IP address and setups networking to it.
+
+We’re greeted with a root shell:
+
+	
+root@298af82e71ef:/#
+
+
+Now in this container – which is a lightweight and sealed vm-like thing separate from all the rest – we can install our dependencies:
+
+"
+ apt-get install software-properties-common
+
+echo "
+Add the ppa that will allow us to install Java:
+
+
+1
+2"
+	
+add-apt-repository ppa:webupd8team/java
+apt-get update
+
+echo "
+Install Java:
+
+
+1"
+	
+apt-get install git curl oracle-java7-installer
+
+echo "
+(Accept manually the license, we’ll be able to automate this in the next installments)
+
+We’re good. Now we can create a commit to save the state of this container in an image.
+
+Exit the container (with exit or CTRL-d) and list the containers – dead or alive with docker ps -a, which outputs:
+"
+docker ps -a
+echo "
+ID                  IMAGE                COMMAND             CREATED             STATUS              PORTS
+8e07a84ea97a        base:latest          /bin/bash           12 minutes ago      Exit 0              
+fecada4ce303        base:latest          /bin/bash           17 minutes ago      Exit 0              
+9cb541022c5b        base:latest          /bin/bash           25 minutes ago      Exit 127            
+a2914a38394d        durdn/base:latest    /bin/bash           26 minutes ago      Exit 0              
+6fa304872025        durdn/base:latest    /bin/bash           30 minutes ago      Exit 0              
+3e0241227129        durdn/base:latest    /bin/bash           30 minutes ago      Exit 0              
+98b400fcb5dc        durdn/base:latest    /bin/bash           31 minutes ago      Exit 0              
+88a113234c47        base:latest          /bin/bash           36 minutes ago      Exit 0
+
+From the list of recent containers we take the most recent, where we installed all the dependencies. Now we can commit a new snapshot/image with docker commit:
+
+
+1"
+	
+docker commit 8e07a84ea97a durdn/java7
+
+echo "
+And as you can see it is now listed if I type docker images:
+
+	
+docker images
+
+REPOSITORY          TAG                 ID                  CREATED
+durdn/java7         latest              ab6396541f9a        2 hours ago
+base                ubuntu-quantal      b750fe79269d        10 weeks ago
+base                ubuntu-quantl       b750fe79269d        10 weeks ago
+base                latest              b750fe79269d        10 weeks ago
+base                ubuntu-12.10        b750fe79269d        10 weeks ago
+"
+docker images
+
+
+echo "Installing Stash
+
+Now we can install our Java application – in this case Stash – in our newly created durdn/java7 image.
+
+We can add content to an image in several ways, the docker insert command is one,but we can also use curl, wget, etc.):
+
+Spin up a shell in the newly created durdn/java7 image opening a mirror port 7990 from the container to the host and with a persistent home where the data will be stored:
+
+
+1
+2
+3"
+	
+docker run -i -t -p :7990 -v /opt/stash-home durdn/java7 /bin/bash
+
+echo "
+root@afbf1fd4f78d:/#
+
+
+Download Stash:
+
+
+1
+	
+root@afbf1fd4f78d:/# curl -Lks http://www.atlassian.com/software/stash/downloads/binary/atlassian-stash-2.4.2.tar.gz -o /root/stash.tar.gz
+
+
+Unpack stash, create and export STASH_HOME folder:
+
+
+root@202bf30a3b19:/# mkdir /opt/stash
+root@202bf30a3b19:/# tar zxf /root/stash.tar.gz --strip=1 -C /opt/stash
+root@202bf30a3b19:/# mkdir /opt/stash-home
+root@202bf30a3b19:/# export STASH_HOME=/opt/stash-home
+
+
+To avoid startup errors we must add the unique id of this host 202bf30a3b19 to the /etc/hosts.
+
+Now we can start Stash:
+
+
+1"
+docker images
+
+echo "	
+root@202bf30a3b19:/# 
+"
+
+
+/opt/stash/bin/start-stash.sh -fg
+
+
+echo "
+Check that Stash is running in the container by accessing http://localhost:7991/stash (we picked 7991 as the port that Vagrant forwards to our host OSX). It works:
+"
+stash-login
+
+echo "
+We can now exit this container and commit it so that we can reuse the work we did:
+
+
+1
+2
+	
+vagrant@vagrant-ubuntu-raring-64:~] $ 
+"
+docker commit aec2feb8cdea durdn/stash
+
+echo "
+effd5d47b34f
+
+
+Where aec2feb8cdea was the ID of the last modified container in docker ps -a.
+The result is that we have a new image called durdn/stash with Stash installed:
+
+
+	
+[vagrant@vagrant-ubuntu-raring-64:~] $ docker images
+
+REPOSITORY          TAG                 ID                  CREATED
+durdn/java7         latest              ab6396541f9a        2 hours ago
+durdn/stash         latest              effd5d47b34f        3 seconds ago
+base                ubuntu-quantal      b750fe79269d        10 weeks ago
+base                ubuntu-quantl       b750fe79269d        10 weeks ago
+base                latest              b750fe79269d        10 weeks ago
+base                ubuntu-12.10        b750fe79269d        10 weeks ago
+
+
+Ephemeral containers and persistent storage
+
+Containers are ephemeral once down they will be reset entirely to their snapshot state!
+"
+
+echo "
+This means your Stash installation will be reset every time you stop the container. To make sure data is preserved between runs we can use volumes which will be shared and persisted between containers. We do this simply by reusing the volumes from older containers using the option -volumes-from.
+
+Let’s start Stash in the container interactively (-i runs the command interactively and -t attaches a tty to it):
+
+
+1"
+	
+docker run -i -t -p :7990 -volumes-from aec2feb8cdea durdn/stash /bin/bash -c 'STASH_HOME=/opt/stash-home /opt/stash/bin/start-stash.sh -fg'
+
+echo "
+The above will start the Stash application in foreground, if you want the container to run in the background you can just use the -d flag:
+
+
+1"
+	
+docker run -d -p :7990 -volumes-from aec2feb8cdea durdn/stash /bin/bash -c 'STASH_HOME=/opt/stash-home /opt/stash/bin/start-stash.sh -fg'
+
+echo "
+Voilá! Your Stash instance – with data persisted – is now running in the background as you can see by running docker ps.
+Next Steps
+
+There is a lot more to explore. If there is interest in future installments I will build on this example to cover more interesting areas:
+– Streamline the process and make it repeatable using a Dockerfile (similar in concept to a Vagrantfile or a puppet recipe).
+– Configure a stand-alone container with PostgreSQL.
+– Link other Atlassian products.
+– Export and import images.
+Conclusions
+
+What I liked about Docker is how responsive and quick it is and the insta-repeatability that it delivers. Spawning up a new container takes literally the same time it takes to run the command on bare metal. It’s a joy to behold!
+Tags: aufs, containers, docker, java, lxc
+"
+
+
+docker ps 
+

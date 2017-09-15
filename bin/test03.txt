@@ -1,0 +1,8 @@
+echo "mkdir /sdb2/disks_backup_from_dell7710_midway";	mkdir /sdb2/disks_backup_from_dell7710_midway
+echo "cd /sdb2/disks_backup_from_dell7710_midway";	cd /sdb2/disks_backup_from_dell7710_midway
+#echo "cp /sda1 . -fr";	cp /sda1 . -fr
+#echo "cp /sda2 . -fr ";	cp /sda2 . -fr 
+echo "cp /sda8 . -fr";	cp /sda8 . -fr
+echo "cp /sda13 . -fr ";	cp /sda13 . -fr 
+echo "cp /sda17 . -fr";	cp /sda17 . -fr
+echo "# /media/vhuang/3T01";	# /media/vhuang/3T01

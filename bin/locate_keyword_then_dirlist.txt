@@ -1,0 +1,2 @@
+
+locate $1 | tr '\/' '\n'|sed 's/^$/@/g'|grep -v "\."|tr '\n' '\/'|tr '@' '\n'

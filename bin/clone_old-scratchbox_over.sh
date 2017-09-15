@@ -1,0 +1,16 @@
+#sudo cp -fr ~/scratchbox/devkits//home/vhuang/scratchbox/devkits/ . 
+sudo cp -fr ~/scratchbox/devkits/apt-https . 
+sudo cp -fr ~/scratchbox/devkits/autotools-legacy . 
+sudo cp -fr ~/scratchbox/devkits/cputransp . 
+#sudo cp -fr ~/scratchbox/devkits/debian-etch . 
+#sudo cp -fr ~/scratchbox/devkits/debian-lenny . 
+#sudo cp -fr ~/scratchbox/devkits/debian-sarge . 
+sudo cp -fr ~/scratchbox/devkits/debian-squeeze . 
+sudo cp -fr ~/scratchbox/devkits/doctools . 
+sudo cp -fr ~/scratchbox/devkits/git . 
+sudo cp -fr ~/scratchbox/devkits/mtd . 
+sudo cp -fr ~/scratchbox/devkits/perl . 
+#sudo cp -fr ~/scratchbox/devkits/qemu . 
+#sudo cp -fr ~/scratchbox/devkits/slp-tools . 
+sudo cp -fr ~/scratchbox/devkits/ . 
+#sudo cp -fr ~/scratchbox/devkits/directories . 

@@ -1,0 +1,12 @@
+sudo apt-get install -y -y cairomm-1.0
+sudo apt-get install -y -y dbus-glib-1
+sudo apt-get install -y -y glibmm-2.4
+sudo apt-get install -y -y gnome-vfs-2.0
+sudo apt-get install -y -y gtkglext-1.0
+sudo apt-get install -y -y gtkmm-2.4
+sudo apt-get install -y -y gtksourceview-2.0
+sudo apt-get install -y -y gts
+sudo apt-get install -y -y ImageMagick++
+sudo apt-get install -y -y OpenEXR
+sudo apt-get install -y -y osmesa
+sudo apt-get install -y -y sigc++-2.0

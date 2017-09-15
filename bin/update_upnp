@@ -1,0 +1,20 @@
+cd ~/src/cling/UpnpBrowser-101103
+mvn install
+cp target/upnp-browser-1.0-alpha6.apk /home/vhuang/src/android-sdk-linux_x86/tools/
+cd $AROOT/tools
+
+export ustr=`adb shell ls data/app | grep -e "org\.teleal\.cling\.android"`
+
+echo "ustr=(${ustr})"
+
+adb shell rm data/app/org.teleal.cling.android.browser.apk
+
+
+adb install upnp-browser-1.0-alpha6.apk
+
+cd ~/src/cling/UpnpBrowser-101103
+
+# To be done to hide GUI for workbench: 
+# 1) use skills like Datagrid setHi SetWid all to 0 
+# 2) writing received strings to a xml file!
+

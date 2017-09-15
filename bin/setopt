@@ -1,0 +1,35 @@
+#!/bin/bash
+
+
+
+
+curdir=$PWD
+
+export  OPT=/opt 
+
+
+export LDFLAGS=" -L/opt/lib $LDFLAGS -L/lib -L/usr/lib -L/usr/local/lib -lpmalloc -lrt " 
+
+
+#export SRP_CFLAGS=""
+export CFLAGS="-pipe -O2 -g -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE   -I$OPT/include  $SRP_CFLAGS -I${HOME}/glib-2.36.4  -I$KUNPENG_SDK_ROOT/include $LIBFFI_CFLAGS -I$INC1 -I$INC2 -I$INC3 -I$INC4 " 
+export CXXFLAGS="${CFLAGS}"
+
+export CTRIPLE=" --build=x86_64-build_unknown-linux-gnu --host=x86_64-build_unknown-linux-gnu --target=arm-cisco-linux-gnueabi "
+export C3=$CTRIPLE
+
+
+
+export  PKG_CONFIG_PATH=/opt/lib/pkgconfig
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/opt/lib:/usr/lib:/usr/local/lib:/lib
+export PATH=/opt/bin:~/victor:~/bin:$PATH
+
+
+
+
+cd $curdir
+
+
+export HISTTIMEFORMAT="%F %T "
+
+

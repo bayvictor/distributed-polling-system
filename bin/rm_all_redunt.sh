@@ -1,0 +1,9 @@
+rm -fr ./bugzilla-4.4
+rm -fr ./glib-2.16.6
+rm -fr ./old_victor
+rm -fr ./srp-1.3-0
+rm -fr ./srp-1.3_00
+rm -fr ./srp-1.3-02
+rm -fr ./srp-1.3_orig
+rm -fr ./srp-1.4.1
+rm -fr ./srp_debug
