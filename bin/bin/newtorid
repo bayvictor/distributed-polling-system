@@ -1,0 +1,5 @@
+echo -e 'AUTHENTICATE ""\r\nsignal NEWNYM\r\nQUIT' | nc 127.0.0.1 9051
+sleep $[ ( $RANDOM % 30 )  + 1 ]s;
+
+torify curl ifconfig.me 2 > /dev/null
+

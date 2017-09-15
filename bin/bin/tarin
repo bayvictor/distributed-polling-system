@@ -1,0 +1,337 @@
+#!/usr/bin/env python
+import os,sys,getopt,urllib,string,mimetools
+
+usage_text = """
+  tarin-0.0.4 
+  tarin installs tarballs, RPMs, and other packaged files
+  tarin can extract, configure, make, and su -c "make install"
+  tarin currently accepts the following formats: 
+    .tar.gz .tgz .zip .rpm .src.rpm  
+
+  Usage: 
+	# install a local file in ~/local/src/
+	tarin localfile.tar.gz
+
+	# install a remote file in ~/local/src/
+	tarin http://ftp.gnome.org/gnumeric/gnumeric-latest.tar.gz
+
+	# see this page
+	tarin --help
+	
+  Extracted tar.gz files will be confined to a single directory under ~/local/src/
+  Output is logged to ~/.tarin-log
+
+  Last changed on 2000-09-21
+  License: GNU GPL, for details see http://www.gnu.org 
+  Author: Pehr Anderson <pehr@pehr.net>
+  URL: http://morseall.org
+"""
+
+todo_text = """
+tarin todo
+#1. Replace the hardcoded directories with a preferences file
+#2. Add the following options:
+     -d <archive name>   Delete sources after installation (overwrites existing sources)
+     -D <archive name>   Delete leftover sources without compiling or installing
+"""
+
+changelog = """
+tarin changelog
+   1999-11-07 Bug found: tarin doesn't create a subdirectory for Zip files that don't
+"""
+
+
+
+#-----------------------------------
+# File and directory subroutines
+
+def prefs2dict(str, dict={}, ass='='):
+	for line in string.split(str,"\n"):
+		try:
+			x,y =  string.split(line, ass) 
+			dict[string.strip(x)]=string.strip(y)
+		except ValueError:
+			pass
+	return dict
+		
+prefs = prefs2dict("""
+	gzdir=~/gz
+	srcdir=~/local/src
+	logfile=~/.tarin-log
+	""") 
+
+def file_is_readable(filename):
+    """ returns 1 if file exists, is readable, and contains data.
+    otherwise returns 0.
+    """
+    try:
+    	open(filename,"r").read(1)
+    	return 1
+    except IOError: pass
+    return 0
+
+def file_is_executable(filename):
+    """ returns 1 if file exists and is executable, 
+    otherwise returns 0.
+    """
+    try:
+    	# TODO: fix this to actually test for executability
+    	open(filename,"r").read(1) 
+    	return 1
+    except IOError: pass
+    return 0
+
+def try_system(cmd, error="", success="", abort=0):
+    printlog("trying: " + cmd)
+    retval = os.system(cmd)
+    if retval:
+        printlog("failure: " + error)
+    	if abort:
+	    raise IOError
+    else: 
+        printlog("success: " + success)
+    return retval
+
+def md(dirname):
+    """Make a directory. Expand ~ if necessary"""
+    os.system("install -d " + os.path.expanduser(dirname))
+
+def printlog(str):
+    """ print a string to the screen, and to the log file"""
+    logfile = os.path.expanduser(prefs["logfile"])
+    date = string.strip(os.popen("date").read())
+    open(logfile,"a").write(date + " " + str + "\n");
+    print str
+
+def makelocal(filename):
+    """If necessary, Download the given URL as a   
+    file in the "gzdir" location as specified in prefs.
+    Returns the full path+filename of the local file.
+    """
+    fn = os.path.expanduser(filename) 
+    # Test if the file can be opened and read
+    try:
+        f = open(fn).read(1)
+    except OSError: 
+        # download the 
+        dest = os.path.expanduser(prefs["gzdir"]) + "/" + os.path.basename(filename)
+        if len(dest) < 1:
+	    printlog("bad filename \"%s\"" % (filename))
+	    sys.exit()    
+        printlog("Downloading url \"%s\"" % (filename)) 
+        u = urllib.urlopen(filename)
+        open(dest,"w").write(u.read())
+        return dest
+    # The file can be opened, all is well
+    return fn 
+
+
+def in_same_dir(filelist):
+    """Returns a directory name if all the files occur 
+    in the same subdirectory as is the case for most tar files. 
+    Otherwise returns None, indicating that
+    no directory meets this criterion.
+    This is used to test for multiple base files & directories 
+    so we don't extract in-place and spatter files all over the place.
+    """
+    lines = string.split(filelist, '\n')
+    x = string.find(lines[0], '/')
+    directory_name = lines[0][:x]
+    print "directory_name", directory_name
+    all_same_dir_flag = 1
+    for line in lines:
+	if line == '': continue
+	x = string.find(line, '/')
+	str = line[:x]
+	#print str
+	if directory_name != str:
+	   return ""
+    return directory_name
+
+def get_extensions(filename):
+    """find the filename extensions "tar", "gz", "rpm", etc."""
+    extparts = string.split(os.path.basename(filename),".")
+    # ext is last extention 
+    ext = extparts[-1]
+    # ext2 is second-to-the-last extention, if it exists
+    ext2 = "" 
+    if len(extparts) > 2:
+        ext2 = extparts[-2]
+    return ext,ext2    
+
+def get_filelist(filename):
+    """Returns the list of files in an archive"""
+    # find command to list files in the archive
+    cmd = "" 
+    ext, ext2 = get_extensions(filename)
+    if ext == 'bz2':
+        cmd = "tar tjf %s" % (filename)
+        #cmd = "bzip2 -dc %s | tar tvjf -" % (filename)
+    elif ext == "tgz":
+        cmd = "tar tzf %s" % (filename)
+    elif ext == "gz" and ext2 == "tar":
+        cmd = "tar tzf %s" % (filename)
+    elif ext == "tar":
+        cmd = "tar tf %s" % (filename)
+    elif ext == "rpm" or ext == "deb":
+	pass
+    elif ext == "EXE":
+    	pass
+    elif ext == "zip":
+    	pass
+    elif ext == "EXE":
+    	pass
+    elif ext == "exe":
+    	pass
+    if cmd:  
+        return os.popen(cmd).read()
+    return ""   
+
+def get_extdir_instdir(filename):
+    """ extdir is the directory in which to extract our files
+        instdir is the directory from which to do the installation
+    """
+    extdir = instder = ""
+    filelist = get_filelist(filename)
+    if filelist:
+    	dirname = in_same_dir(filelist)
+    	if dirname:
+    	    # all the files will be in the install directory
+    	    extdir = os.path.expanduser(prefs["srcdir"])
+    	    instdir = extdir + "/" + dirname
+            return extdir,instdir
+    # we must make our own install directory
+    print "Need New Subdirectory"
+    extparts = string.split(os.path.basename(filename),".")
+    if len(extparts) <= 2: dirname = extparts[0]
+    else:  dirname = string.join(extparts[0:-2],".")
+    print "dirname: " + `dirname` 
+    print " extparts: " + `extparts`
+    if dirname == "": dirname = extparts[0]
+    extdir = os.path.expanduser(prefs["srcdir"]) + "/" + dirname
+    instdir = extdir
+    return extdir,instdir
+
+def extract(filename, extdir):
+    """ Extract an archive file in the specified place """
+    # find command to extract the files
+    cmd = ""
+    ext, ext2 = get_extensions(filename)
+    if ext == 'bz2':
+        cmd = "bzip2 -dc %s | tar xvf - --directory %s" % (filename, extdir)
+    elif ext == "tgz":
+        cmd = "tar xzvf %s --directory %s" % (filename, extdir)
+    elif ext == "gz":
+	if ext2 == "tar":
+            cmd = "tar xzvf %s --directory %s" % (filename, extdir)
+    elif ext == "tar":
+        cmd = "tar xvf %s --directory %s" % (filename, extdir)
+    elif ext == "zip" or ext == "ZIP":
+        cmd = "unzip -o %s -d %s" % (filename, extdir)
+    elif ext == "exe" or ext == "EXE":
+	# exe is often a self-extracting archive. Let's treat it like a zip
+        cmd = "unzip -o %s -d %s" % (filename, extdir)
+    elif ext == "rpm":
+	return filename
+    elif ext == "deb":
+	pass
+    # if we don't know how to extract, give up
+    if cmd == "":
+	printlog("I don't know how to extract \"%s\"" % (filename))
+	sys.exit()
+    # extract the files
+    md(extdir)
+    printlog(cmd)
+    xcmd = os.popen(cmd)
+    out = xcmd.read()
+    print out
+    t = xcmd.close()
+    if t != 0 and t != None:
+	printlog("extraction failed")
+	sys.exit()
+
+
+def su_system(cmd, dir="./"):
+	""" run as superuser, prompt user if necessary """
+    	# use "sudo" if the /etc/sudoers file exists
+    	sucmd = "su -c \"%s\"" % cmd
+    	if os.listdir("/etc/").count("sudoers"):
+	    if os.listdir("/sbin/").count("sudo"):
+    		sucmd = "sudo %s" % cmd
+	try_system("cd %s; %s" % (dir, sucmd), abort=1)
+
+
+def install(filename,instdir=""):
+    """install an extracted archive or RPM file onto the system""" 
+
+    ext,ext2 = get_extensions(filename)
+    if ext == "rpm":
+    	cmd = "%s rpm -Uvh %s %s" % (sucmd % filename)
+    	try_system(cmd, "RPM install", abort=1)
+	# nothing more to do for an RPM
+	return 1
+    
+    if (file_is_executable(instdir + "/configure")):
+        cmd = "cd %s; %s/configure" % (instdir,instdir)
+        try_system(cmd, "./configure", abort=1)
+    
+    if file_is_executable(instdir + "/install"):
+        cmd = "cd %s; %s/install" % (instdir,instdir)
+    	try_system(cmd, "./install", abort=1)
+	
+    if (file_is_readable(instdir + "/Makefile")):
+        cmd = "cd %s; make" % (instdir)
+        try_system(cmd, "make", abort=1)
+        su_system("make install", dir=instdir)
+	try_system(cmd, "make install", abort=1)
+
+    # Custom Package Behaviors!
+    print os.path.basename(filename)
+    if os.path.basename(filename) == "flash_linux.tar.gz":
+        printlog("Installing Flash Player")
+    	file = instdir + "libflashplayer.so"
+    	if (file_is_readable(file)):
+		su_system("install %s /usr/lib/netscape/plugins" % file)
+    	file = instdir + "ShockwaveFlash.class"
+    	if (file_is_readable(file)):
+		su_system("install %s /usr/lib/netscape/plugins" % file)
+
+
+#-------------------
+# Tarin Main routines
+
+def init_tarin():
+    """ Do the necessary actions to initialize tarin.
+    This code must be safe to run on *every* call to tarin
+    """
+    md(prefs["gzdir"])
+    md(prefs["srcdir"])
+
+def exit_with_usage():
+    """ This prints usage, it is a subroutine to make the default behavior easy to change """
+    global usage_text
+    print usage_text
+    sys.exit()
+
+    
+if __name__ == '__main__':
+    """run tarin, Do everything """
+    init_tarin()
+    if len(sys.argv) < 2:
+	exit_with_usage()
+    for arg in sys.argv[1:]:
+	if arg == "--help" or arg == "-h":
+	    exit_with_usage()
+
+	# parse the darn argument already
+	try:
+    		print "tarin %s" % arg
+        	filename = makelocal(arg)
+        	extdir,instdir = get_extdir_instdir(filename)
+        	extract(filename,extdir)
+        	result = install(filename,instdir)
+	except IOError:
+	 	print "failed on '%s', to see usage, run:  tarin --help" % str(arg)
+    	print "done tarin"
+
+

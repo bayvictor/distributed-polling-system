@@ -1,0 +1,24 @@
+vhuang@v114:~/bin$ df -h|grep T|grep -v 7.3T
+/dev/sdat1      4.6T  3.4T  944G  79% /sdat1
+/dev/sda1       3.5T  3.1T  199G  95% /sda1
+/dev/sdb1       2.9T  2.8T   81M 100% /sdb1
+/dev/sdaj2      1.7T  1.6T     0 100% /sdaj2
+/dev/sdak1      1.8T  587G  1.2T  34% /sdak1
+/dev/sdar1      1.5T  1.5T     0 100% /sdal1
+/dev/sdam1      1.7T  1.6T     0 100% /sdam1
+/dev/sdan2      1.8T  876G  844G  51% /sdan2
+/dev/sdao1      1.8T  1.7T  2.7G 100% /sdao1
+/dev/sdap1      1.8T  1.7T   19G  99% /sdap1
+/dev/sdas1      1.7T  1.6T     0 100% /sdas1
+vhuang@v114:~/bin$ df -h|tail
+/dev/sdaq10      25G   11G   13G  46% /sdaq10
+/dev/sdaq11     293G  269G  9.7G  97% /sdaq11
+/dev/sdaq13      27G  8.7G   17G  35% /sdaq13
+/dev/sdaq14      73G  6.6G   63G  10% /sdaq14
+/dev/sdar2       79G   70G  5.3G  93% /sdar2
+/dev/sdar3       72G   67G  5.1G  93% /sdar3
+/dev/sdar4      193G  151G   33G  83% /sdar4
+/dev/sdas1      1.7T  1.6T     0 100% /sdas1
+/dev/sdas2       94M  1.0K   94M   1% /sdas2
+/dev/sdas3       93G  2.9G   86G   4% /sdas3
+

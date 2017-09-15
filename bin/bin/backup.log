@@ -1,0 +1,26 @@
+#1328291326 Disk /dev/sda - 1500 GB / 1397 GiB - CHS 182401 255 63
+ 1 : start=1342597095, size=1587691035, Id=0F, E
+ 5 : start=1342597120, size=198594520, Id=AF, L
+ 6 : start=1541193728, size=1031401600, Id=83, L
+ 7 : start=2676885504, size= 16240640, Id=83, L
+ 8 : start=2805669888, size=124604416, Id=83, L
+#1353235082 Disk /dev/sdb - 250 GB / 232 GiB - CHS 30401 255 63
+ 1 : start=     2048, size= 41871360, Id=0B, P
+ 3 : start= 41873408, size=322469888, Id=05, E
+ 6 : start= 41875456, size=186847232, Id=07, L
+ 5 : start=228724736, size=135618560, Id=83, L
+ 2 : start=364343296, size=124053504, Id=83, P
+#1461565875 Disk /dev/sdb - 2000 GB / 1863 GiB - CHS 243201 255 63
+ 2 : start=  1026048, size=   204800, Id=00, P
+ 3 : start=  1492992, size= 24604672, Id=00, P
+ 4 : start= 26097664, size=916957177, Id=00, P
+ 5 : start=943054848, size= 51011584, Id=00, P
+ 6 : start=994066432, size=109395968, Id=00, P
+ 7 : start=1103462400, size=125990912, Id=00, P
+19 : start=1229453312, size= 97654784, Id=00, P
+ 8 : start=1327108096, size=442707968, Id=00, P
+ 9 : start=1769816064, size=    12288, Id=00, P
+17 : start=1769828352, size=104857600, Id=00, P
+18 : start=1874685952, size= 61528064, Id=00, P
+14 : start=1936214016, size= 64194560, Id=00, P
+10 : start=2000408576, size= 30007296, Id=00, P

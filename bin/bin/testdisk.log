@@ -1,0 +1,198 @@
+
+
+Sat Nov 17 08:40:28 2012
+Command line: TestDisk
+
+TestDisk 6.13, Data Recovery Utility, November 2011
+Christophe GRENIER <grenier@cgsecurity.org>
+http://www.cgsecurity.org
+OS: Linux, kernel 3.5.0-18-generic (#29-Ubuntu SMP Fri Oct 19 10:26:51 UTC 2012) x86_64
+Compiler: GCC 4.7
+Compilation date: 2012-10-01T13:00:04
+ext2fs lib: 1.42.5, ntfs lib: libntfs-3g, reiserfs lib: none, ewf lib: none
+/dev/sda: LBA, HPA, LBA48, DCO support
+/dev/sda: size       2930277168 sectors
+/dev/sda: user_max   2930277168 sectors
+/dev/sda: native_max 2930277168 sectors
+/dev/sda: dco        2930277168 sectors
+Warning: can't get size for Disk /dev/mapper/control - 0 B - CHS 1 1 1, sector size=512
+Hard disk list
+Disk /dev/sda - 1500 GB / 1397 GiB - CHS 182401 255 63, sector size=512 - ST1500LM003-9YH148, S/N:Z110P3NG, FW:CC9F
+Disk /dev/sdb - 250 GB / 232 GiB - CHS 30401 255 63, sector size=512 - ST925031 5AS
+
+Partition table type (auto): Intel
+Disk /dev/sdb - 250 GB / 232 GiB - ST925031 5AS
+Partition table type: Intel
+
+Analyse Disk /dev/sdb - 250 GB / 232 GiB - CHS 30401 255 63
+Geometry from i386 MBR: head=255 sector=63
+FAT32 at 0/32/33
+Info: size boot_sector 41871360, partition 41871360
+FAT1 : 72-10291
+FAT2 : 10292-20511
+start_rootdir : 20512 root cluster : 2
+Data : 20512-41871359
+sectors : 41871360
+cluster_size : 32
+no_of_cluster : 1307839 (2 - 1307840)
+fat_length 10220 calculated 10218
+file_pread(5,16,buffer,41875458(2606/159/52)) read err: Input/output error
+file_pread(5,1,buffer,41875458(2606/159/52)) read err: Input/output error
+file_pread(5,1,buffer,41875457(2606/159/51)) read err: Input/output error
+file_pread(5,1,buffer,41875456(2606/159/50)) read err: Input/output error
+check_part_i386 failed for partition type 83
+Current partition structure:
+ 1 P FAT32                    0  32 33  2606 127 17   41871360 [pod_2B]
+ 2 P Linux                22679  81 59 30401  75 10  124053504 [linux-mp3]
+ 3 E extended              2606 127 18 22679  81 58  322469888
+No partition is bootable
+No ext2, JFS, Reiser, cramfs or XFS marker
+ 5 L Linux                 2606 159 50 14237  83 54  186847232
+ 5 L Linux                 2606 159 50 14237  83 54  186847232
+   X extended             14237  83 55 22679  81 58  135620608
+ 6 L Linux                14237 116 24 22679  81 58  135618560 [/scratchbox64]
+Computes LBA from CHS for Disk /dev/sdb - 250 GB / 232 GiB - CHS 30402 255 63
+Allow partial last cylinder : Yes
+search_vista_part: 1
+
+search_part()
+Disk /dev/sdb - 250 GB / 232 GiB - CHS 30402 255 63
+FAT32 at 0/1/1
+FAT1 : 42-15161
+FAT2 : 15162-30281
+start_rootdir : 30282 root cluster : 2
+Data : 30282-123877257
+sectors : 123877313
+cluster_size : 64
+no_of_cluster : 1935109 (2 - 1935110)
+fat_length 15120 calculated 15119
+FAT differs, FAT sectors=0-16/15120
+sect/track 32 (FAT) != 63 (HD)
+set_FAT_info: name from BS used
+
+FAT32 at 0/1/1
+     FAT32 LBA                0   1  1  7711   2 35  123877313 [NO NAME]
+     FAT32, 63 GB / 59 GiB
+
+recover_EXT2: s_block_group_nr=0/517, s_mnt_count=0/22, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 16952320
+recover_EXT2: part_size 135618560
+     Linux                14237 116 24 22679  81 58  135618560 [/scratchbox64]
+     EXT4 Large file Sparse superblock, 69 GB / 64 GiB
+
+recover_EXT2: s_block_group_nr=0/473, s_mnt_count=0/29, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 15506688
+recover_EXT2: part_size 124053504
+     Linux                22679  81 59 30401  75 10  124053504 [linux-mp3]
+     EXT4 Large file Sparse superblock, 63 GB / 59 GiB
+get_geometry_from_list_part_aux head=255 nbr=1
+get_geometry_from_list_part_aux head=8 nbr=1
+get_geometry_from_list_part_aux head=16 nbr=1
+get_geometry_from_list_part_aux head=32 nbr=1
+get_geometry_from_list_part_aux head=64 nbr=1
+get_geometry_from_list_part_aux head=128 nbr=1
+get_geometry_from_list_part_aux head=240 nbr=1
+get_geometry_from_list_part_aux head=255 nbr=1
+
+Results
+   * FAT32 LBA                0   1  1  7711   2 35  123877313 [NO NAME]
+     FAT32, 63 GB / 59 GiB
+   P Linux                14237 116 24 22679  81 58  135618560 [/scratchbox64]
+     EXT4 Large file Sparse superblock, 69 GB / 64 GiB
+   P Linux                22679  81 59 30401  75 10  124053504 [linux-mp3]
+     EXT4 Large file Sparse superblock, 63 GB / 59 GiB
+
+interface_write()
+ 1 * FAT32 LBA                0   1  1  7711   2 35  123877313 [NO NAME]
+ 2 P Linux                14237 116 24 22679  81 58  135618560 [/scratchbox64]
+ 3 P Linux                22679  81 59 30401  75 10  124053504 [linux-mp3]
+
+search_part()
+Disk /dev/sdb - 250 GB / 232 GiB - CHS 30402 255 63
+FAT32 at 0/1/1
+FAT1 : 42-15161
+FAT2 : 15162-30281
+start_rootdir : 30282 root cluster : 2
+Data : 30282-123877257
+sectors : 123877313
+cluster_size : 64
+no_of_cluster : 1935109 (2 - 1935110)
+fat_length 15120 calculated 15119
+FAT differs, FAT sectors=0-16/15120
+sect/track 32 (FAT) != 63 (HD)
+set_FAT_info: name from BS used
+
+FAT32 at 0/1/1
+     FAT32 LBA                0   1  1  7711   2 35  123877313 [NO NAME]
+     FAT32, 63 GB / 59 GiB
+FAT32 at 0/1/7
+FAT1 : 42-15161
+FAT2 : 15162-30281
+start_rootdir : 30282 root cluster : 2
+Data : 30282-123877257
+sectors : 123877313
+cluster_size : 64
+no_of_cluster : 1935109 (2 - 1935110)
+fat_length 15120 calculated 15119
+FAT differs, FAT sectors=0-16/15120
+sect/track 32 (FAT) != 63 (HD)
+set_FAT_info: name from BS used
+
+FAT32 at 0/1/7
+     FAT32 LBA                0   1  1  7711   2 35  123877313 [NO NAME]
+     FAT found using backup sector!, 63 GB / 59 GiB
+FAT32 at 0/32/33
+FAT1 : 72-10291
+FAT2 : 10292-20511
+start_rootdir : 20512 root cluster : 2
+Data : 20512-41871359
+sectors : 41871360
+cluster_size : 32
+no_of_cluster : 1307839 (2 - 1307840)
+fat_length 10220 calculated 10218
+
+FAT32 at 0/32/33
+     FAT32 LBA                0  32 33  2606 127 17   41871360 [pod_2B]
+     FAT32, 21 GB / 19 GiB
+FAT32 at 0/32/39
+FAT1 : 72-10291
+FAT2 : 10292-20511
+start_rootdir : 20512 root cluster : 2
+Data : 20512-41871359
+sectors : 41871360
+cluster_size : 32
+no_of_cluster : 1307839 (2 - 1307840)
+fat_length 10220 calculated 10218
+set_FAT_info: name from BS used
+
+FAT32 at 0/32/39
+     FAT32 LBA                0  32 33  2606 127 17   41871360 [NO NAME]
+     FAT found using backup sector!, 21 GB / 19 GiB
+Search for partition aborted
+get_geometry_from_list_part_aux head=255 nbr=1
+get_geometry_from_list_part_aux head=8 nbr=1
+get_geometry_from_list_part_aux head=16 nbr=1
+get_geometry_from_list_part_aux head=32 nbr=1
+get_geometry_from_list_part_aux head=64 nbr=1
+get_geometry_from_list_part_aux head=128 nbr=1
+get_geometry_from_list_part_aux head=240 nbr=1
+get_geometry_from_list_part_aux head=255 nbr=1
+
+Results
+     FAT32 LBA                0   1  1  7711   2 35  123877313 [NO NAME]
+     FAT32, 63 GB / 59 GiB
+     FAT32 LBA                0  32 33  2606 127 17   41871360 [pod_2B]
+     FAT32, 21 GB / 19 GiB
+
+interface_write()
+ 
+No partition found or selected for recovery
+simulate write!
+
+write_mbr_i386: starting...
+write_all_log_i386: starting...
+No extended partition
+
+TestDisk exited normally.

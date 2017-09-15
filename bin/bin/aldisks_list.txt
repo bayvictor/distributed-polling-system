@@ -1,0 +1,10 @@
+ /run/user/1000
+ /mnt/dell7710/sda6
+ /mnt/dell7710/sda1
+ /mnt/dell7710/sda3
+ /mnt/dell7710/sdb1
+ /mnt/dell7710/sdb2
+ /mnt/dell7710/sdb7
+ /mnt/dell7710/sdb8
+ /mnt/dell7710/sdb13
+ /mnt/dell7710/sdb17

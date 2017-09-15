@@ -1,0 +1,974 @@
+./bgp/cli/Makefile-LDFLAGS = -lxml2 -lz -lpthread -lm  -L/home/fogdev/cisco-kunpeng-sdk-20130208/lib   -L/home/fogdev/armroot/lib  -L/home/fogdev/armroot/lib -lffi
+./bgp/cli/Makefile-LIBOBJS =  ${LIBOBJDIR}lstat$U.o ${LIBOBJDIR}malloc$U.o ${LIBOBJDIR}memcmp$U.o ${LIBOBJDIR}mktime$U.o ${LIBOBJDIR}realloc$U.o ${LIBOBJDIR}stat$U.o ${LIBOBJDIR}strnlen$U.o
+./bgp/cli/Makefile-LIBS = \
+./bgp/cli/Makefile-	   $(linuxutil_LIBS) \
+./bgp/cli/Makefile:	   $(top_builddir)/ippc/src/libippc.la
+./bgp/cli/Makefile-
+./bgp/cli/Makefile-LIBTOOL = $(SHELL) $(top_builddir)/libtool
+./bgp/cli/Makefile-LIPO = 
+./bgp/cli/Makefile-LN_S = ln -s
+--
+./bgp/cli/Makefile.in-LDFLAGS = @LDFLAGS@
+./bgp/cli/Makefile.in-LIBOBJS = @LIBOBJS@
+./bgp/cli/Makefile.in-LIBS = \
+./bgp/cli/Makefile.in-	   $(linuxutil_LIBS) \
+./bgp/cli/Makefile.in:	   $(top_builddir)/ippc/src/libippc.la
+./bgp/cli/Makefile.in-
+./bgp/cli/Makefile.in-LIBTOOL = @LIBTOOL@
+./bgp/cli/Makefile.in-LIPO = @LIPO@
+./bgp/cli/Makefile.in-LN_S = @LN_S@
+--
+./bgp/cli/Makefile.am-AM_LDFLAGS = \
+./bgp/cli/Makefile.am-			 $(linuxutil_LDFLAGS)
+./bgp/cli/Makefile.am-LIBS = \
+./bgp/cli/Makefile.am-	   $(linuxutil_LIBS) \
+./bgp/cli/Makefile.am:	   $(top_builddir)/ippc/src/libippc.la
+./bgp/cli/Makefile.am-libbgp_cli_common_la_SOURCES = bgp_cli_common.c
+./bgp/cli/Makefile.am-cfg_bin_bgp_loc_community_LDADD = libbgp_cli_common.la
+./bgp/cli/Makefile.am-cfg_bin_bgp_loc_community_SOURCES = cfg_bin_bgp_loc_community.c
+./bgp/cli/Makefile.am-cfg_bin_bgp_misc_SOURCES = cfg_bin_bgp_misc.c
+--
+./dht/src/Makefile-am__DEPENDENCIES_1 =
+./dht/src/Makefile-libsrp_core_la_DEPENDENCIES = $(am__DEPENDENCIES_1) \
+./dht/src/Makefile-	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
+./dht/src/Makefile-	$(am__DEPENDENCIES_1) $(top_builddir)/log/src/liblog.la \
+./dht/src/Makefile:	$(top_builddir)/ippc/src/libippc.la \
+./dht/src/Makefile-	$(top_builddir)/common-libs/src/libcommonlibs.la \
+./dht/src/Makefile-	$(top_builddir)/routing-libs/src/libroutinglibs.la
+./dht/src/Makefile-am_libsrp_core_la_OBJECTS = srhp_op.lo srhp_pkt.lo srhp_replica_set.lo \
+./dht/src/Makefile-	srp_debug.lo srp_forward.lo srp_frag.lo srp_host.lo srp_key.lo \
+--
+./dht/src/Makefile-					   	$(ssl_LIBS) \
+./dht/src/Makefile-						$(addebug_LIBS) \
+./dht/src/Makefile-						$(dslib_LIBS) \
+./dht/src/Makefile-						$(top_builddir)/log/src/liblog.la \
+./dht/src/Makefile:						$(top_builddir)/ippc/src/libippc.la \
+./dht/src/Makefile-						$(top_builddir)/common-libs/src/libcommonlibs.la \
+./dht/src/Makefile-						$(top_builddir)/routing-libs/src/libroutinglibs.la
+./dht/src/Makefile-
+./dht/src/Makefile-libsrp_core_la_SOURCES = \
+--
+./dht/src/Makefile.in-am__DEPENDENCIES_1 =
+./dht/src/Makefile.in-libsrp_core_la_DEPENDENCIES = $(am__DEPENDENCIES_1) \
+./dht/src/Makefile.in-	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
+./dht/src/Makefile.in-	$(am__DEPENDENCIES_1) $(top_builddir)/log/src/liblog.la \
+./dht/src/Makefile.in:	$(top_builddir)/ippc/src/libippc.la \
+./dht/src/Makefile.in-	$(top_builddir)/common-libs/src/libcommonlibs.la \
+./dht/src/Makefile.in-	$(top_builddir)/routing-libs/src/libroutinglibs.la
+./dht/src/Makefile.in-am_libsrp_core_la_OBJECTS = srhp_op.lo srhp_pkt.lo srhp_replica_set.lo \
+./dht/src/Makefile.in-	srp_debug.lo srp_forward.lo srp_frag.lo srp_host.lo srp_key.lo \
+--
+./dht/src/Makefile.in-					   	$(ssl_LIBS) \
+./dht/src/Makefile.in-						$(addebug_LIBS) \
+./dht/src/Makefile.in-						$(dslib_LIBS) \
+./dht/src/Makefile.in-						$(top_builddir)/log/src/liblog.la \
+./dht/src/Makefile.in:						$(top_builddir)/ippc/src/libippc.la \
+./dht/src/Makefile.in-						$(top_builddir)/common-libs/src/libcommonlibs.la \
+./dht/src/Makefile.in-						$(top_builddir)/routing-libs/src/libroutinglibs.la
+./dht/src/Makefile.in-
+./dht/src/Makefile.in-libsrp_core_la_SOURCES = \
+--
+./dht/src/Makefile.am-					   	$(ssl_LIBS) \
+./dht/src/Makefile.am-						$(addebug_LIBS) \
+./dht/src/Makefile.am-						$(dslib_LIBS) \
+./dht/src/Makefile.am-						$(top_builddir)/log/src/liblog.la \
+./dht/src/Makefile.am:						$(top_builddir)/ippc/src/libippc.la \
+./dht/src/Makefile.am-						$(top_builddir)/common-libs/src/libcommonlibs.la \
+./dht/src/Makefile.am-						$(top_builddir)/routing-libs/src/libroutinglibs.la
+./dht/src/Makefile.am-libsrp_core_la_SOURCES = \
+./dht/src/Makefile.am-						 srhp_op.c \
+--
+./dht/clientlib/Makefile-am__DEPENDENCIES_1 =
+./dht/clientlib/Makefile-libsrpclient_la_DEPENDENCIES = $(am__DEPENDENCIES_1) \
+./dht/clientlib/Makefile-	$(top_builddir)/log/src/liblog.la \
+./dht/clientlib/Makefile-	$(top_builddir)/mainloop/src/libmainloop.la \
+./dht/clientlib/Makefile:	$(top_builddir)/ippc/src/libippc.la \
+./dht/clientlib/Makefile-	$(top_builddir)/common-libs/src/libcommonlibs.la \
+./dht/clientlib/Makefile-	$(top_builddir)/routing-libs/src/libroutinglibs.la
+./dht/clientlib/Makefile-am_libsrpclient_la_OBJECTS = libsrpclient_la-srp_client_api.lo
+./dht/clientlib/Makefile-libsrpclient_la_OBJECTS = $(am_libsrpclient_la_OBJECTS)
+--
+./dht/clientlib/Makefile-libsrpclient_la_LIBADD = \
+./dht/clientlib/Makefile-						 $(ssl_LIBS) \
+./dht/clientlib/Makefile-						 $(top_builddir)/log/src/liblog.la \
+./dht/clientlib/Makefile-						 $(top_builddir)/mainloop/src/libmainloop.la \
+./dht/clientlib/Makefile:						 $(top_builddir)/ippc/src/libippc.la \
+./dht/clientlib/Makefile-						 $(top_builddir)/common-libs/src/libcommonlibs.la \
+./dht/clientlib/Makefile-						 $(top_builddir)/routing-libs/src/libroutinglibs.la
+./dht/clientlib/Makefile-
+./dht/clientlib/Makefile-libsrpclient_la_SOURCES = srp_client_api.c
+--
+./dht/clientlib/Makefile.in-am__DEPENDENCIES_1 =
+./dht/clientlib/Makefile.in-libsrpclient_la_DEPENDENCIES = $(am__DEPENDENCIES_1) \
+./dht/clientlib/Makefile.in-	$(top_builddir)/log/src/liblog.la \
+./dht/clientlib/Makefile.in-	$(top_builddir)/mainloop/src/libmainloop.la \
+./dht/clientlib/Makefile.in:	$(top_builddir)/ippc/src/libippc.la \
+./dht/clientlib/Makefile.in-	$(top_builddir)/common-libs/src/libcommonlibs.la \
+./dht/clientlib/Makefile.in-	$(top_builddir)/routing-libs/src/libroutinglibs.la
+./dht/clientlib/Makefile.in-am_libsrpclient_la_OBJECTS = libsrpclient_la-srp_client_api.lo
+./dht/clientlib/Makefile.in-libsrpclient_la_OBJECTS = $(am_libsrpclient_la_OBJECTS)
+--
+./dht/clientlib/Makefile.in-libsrpclient_la_LIBADD = \
+./dht/clientlib/Makefile.in-						 $(ssl_LIBS) \
+./dht/clientlib/Makefile.in-						 $(top_builddir)/log/src/liblog.la \
+./dht/clientlib/Makefile.in-						 $(top_builddir)/mainloop/src/libmainloop.la \
+./dht/clientlib/Makefile.in:						 $(top_builddir)/ippc/src/libippc.la \
+./dht/clientlib/Makefile.in-						 $(top_builddir)/common-libs/src/libcommonlibs.la \
+./dht/clientlib/Makefile.in-						 $(top_builddir)/routing-libs/src/libroutinglibs.la
+./dht/clientlib/Makefile.in-
+./dht/clientlib/Makefile.in-libsrpclient_la_SOURCES = srp_client_api.c
+--
+./dht/clientlib/Makefile.am-libsrpclient_la_LIBADD = \
+./dht/clientlib/Makefile.am-						 $(ssl_LIBS) \
+./dht/clientlib/Makefile.am-						 $(top_builddir)/log/src/liblog.la \
+./dht/clientlib/Makefile.am-						 $(top_builddir)/mainloop/src/libmainloop.la \
+./dht/clientlib/Makefile.am:						 $(top_builddir)/ippc/src/libippc.la \
+./dht/clientlib/Makefile.am-						 $(top_builddir)/common-libs/src/libcommonlibs.la \
+./dht/clientlib/Makefile.am-						 $(top_builddir)/routing-libs/src/libroutinglibs.la
+./dht/clientlib/Makefile.am-libsrpclient_la_SOURCES = srp_client_api.c
+./dht/clientlib/Makefile.am-
+--
+./rpm/cli/Makefile-LD = arm-cisco-linux-gnueabi-ld
+./rpm/cli/Makefile-LDFLAGS = -lxml2 -lz -lpthread -lm  -L/home/fogdev/cisco-kunpeng-sdk-20130208/lib   -L/home/fogdev/armroot/lib  -L/home/fogdev/armroot/lib -lffi
+./rpm/cli/Makefile-LIBOBJS =  ${LIBOBJDIR}lstat$U.o ${LIBOBJDIR}malloc$U.o ${LIBOBJDIR}memcmp$U.o ${LIBOBJDIR}mktime$U.o ${LIBOBJDIR}realloc$U.o ${LIBOBJDIR}stat$U.o ${LIBOBJDIR}strnlen$U.o
+./rpm/cli/Makefile-LIBS = \
+./rpm/cli/Makefile:	   $(top_builddir)/ippc/src/libippc.la
+./rpm/cli/Makefile-
+./rpm/cli/Makefile-LIBTOOL = $(SHELL) $(top_builddir)/libtool
+./rpm/cli/Makefile-LIPO = 
+./rpm/cli/Makefile-LN_S = ln -s
+--
+./rpm/cli/Makefile.in-LD = @LD@
+./rpm/cli/Makefile.in-LDFLAGS = @LDFLAGS@
+./rpm/cli/Makefile.in-LIBOBJS = @LIBOBJS@
+./rpm/cli/Makefile.in-LIBS = \
+./rpm/cli/Makefile.in:	   $(top_builddir)/ippc/src/libippc.la
+./rpm/cli/Makefile.in-
+./rpm/cli/Makefile.in-LIBTOOL = @LIBTOOL@
+./rpm/cli/Makefile.in-LIPO = @LIPO@
+./rpm/cli/Makefile.in-LN_S = @LN_S@
+--
+./rpm/cli/Makefile.am-			$(C_WFLAGS) \
+./rpm/cli/Makefile.am-			-Wno-packed \
+./rpm/cli/Makefile.am-			-Wno-shadow
+./rpm/cli/Makefile.am-LIBS = \
+./rpm/cli/Makefile.am:	   $(top_builddir)/ippc/src/libippc.la
+./rpm/cli/Makefile.am-cfg_bin_rpm_SOURCES = rpm_show.c
+./rpm/cli/Makefile.am-exec_show_rpm_SOURCES = rpm_show.c
+./rpm/cli/Makefile.am-rpm_config_SOURCES = rpm_config.c
+--
+./ospf/src/ospf-lib/Makefile-libospflib_la_DEPENDENCIES = $(am__DEPENDENCIES_1) \
+./ospf/src/ospf-lib/Makefile-	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
+./ospf/src/ospf-lib/Makefile-	$(am__DEPENDENCIES_1) $(top_builddir)/box/src/libbox.la \
+./ospf/src/ospf-lib/Makefile-	$(top_builddir)/mbean/src/libmbean.la \
+./ospf/src/ospf-lib/Makefile:	$(top_builddir)/ippc/src/libippc.la \
+./ospf/src/ospf-lib/Makefile-	$(top_builddir)/mainloop/src/libmainloop.la \
+./ospf/src/ospf-lib/Makefile-	$(top_builddir)/routing-libs/src/libroutinglibs.la \
+./ospf/src/ospf-lib/Makefile-	$(top_builddir)/routing-libs/src/smm_api/libsmmapi.la \
+./ospf/src/ospf-lib/Makefile-	$(top_builddir)/rpm/src/librpm/librpmapi.la \
+--
+./ospf/src/ospf-lib/Makefile-					   $(addebug_LIBS) \
+./ospf/src/ospf-lib/Makefile-					   $(dslib_LIBS) \
+./ospf/src/ospf-lib/Makefile-					   $(top_builddir)/box/src/libbox.la \
+./ospf/src/ospf-lib/Makefile-					   $(top_builddir)/mbean/src/libmbean.la \
+./ospf/src/ospf-lib/Makefile:					   $(top_builddir)/ippc/src/libippc.la \
+./ospf/src/ospf-lib/Makefile-					   $(top_builddir)/mainloop/src/libmainloop.la \
+./ospf/src/ospf-lib/Makefile-					   $(top_builddir)/routing-libs/src/libroutinglibs.la \
+./ospf/src/ospf-lib/Makefile-					   $(top_builddir)/routing-libs/src/smm_api/libsmmapi.la \
+./ospf/src/ospf-lib/Makefile-					   $(top_builddir)/rpm/src/librpm/librpmapi.la \
+--
+./ospf/src/ospf-lib/Makefile.in-libospflib_la_DEPENDENCIES = $(am__DEPENDENCIES_1) \
+./ospf/src/ospf-lib/Makefile.in-	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
+./ospf/src/ospf-lib/Makefile.in-	$(am__DEPENDENCIES_1) $(top_builddir)/box/src/libbox.la \
+./ospf/src/ospf-lib/Makefile.in-	$(top_builddir)/mbean/src/libmbean.la \
+./ospf/src/ospf-lib/Makefile.in:	$(top_builddir)/ippc/src/libippc.la \
+./ospf/src/ospf-lib/Makefile.in-	$(top_builddir)/mainloop/src/libmainloop.la \
+./ospf/src/ospf-lib/Makefile.in-	$(top_builddir)/routing-libs/src/libroutinglibs.la \
+./ospf/src/ospf-lib/Makefile.in-	$(top_builddir)/routing-libs/src/smm_api/libsmmapi.la \
+./ospf/src/ospf-lib/Makefile.in-	$(top_builddir)/rpm/src/librpm/librpmapi.la \
+--
+./ospf/src/ospf-lib/Makefile.in-					   $(addebug_LIBS) \
+./ospf/src/ospf-lib/Makefile.in-					   $(dslib_LIBS) \
+./ospf/src/ospf-lib/Makefile.in-					   $(top_builddir)/box/src/libbox.la \
+./ospf/src/ospf-lib/Makefile.in-					   $(top_builddir)/mbean/src/libmbean.la \
+./ospf/src/ospf-lib/Makefile.in:					   $(top_builddir)/ippc/src/libippc.la \
+./ospf/src/ospf-lib/Makefile.in-					   $(top_builddir)/mainloop/src/libmainloop.la \
+./ospf/src/ospf-lib/Makefile.in-					   $(top_builddir)/routing-libs/src/libroutinglibs.la \
+./ospf/src/ospf-lib/Makefile.in-					   $(top_builddir)/routing-libs/src/smm_api/libsmmapi.la \
+./ospf/src/ospf-lib/Makefile.in-					   $(top_builddir)/rpm/src/librpm/librpmapi.la \
+--
+./ospf/src/ospf-lib/Makefile.am-					   $(addebug_LIBS) \
+./ospf/src/ospf-lib/Makefile.am-					   $(dslib_LIBS) \
+./ospf/src/ospf-lib/Makefile.am-					   $(top_builddir)/box/src/libbox.la \
+./ospf/src/ospf-lib/Makefile.am-					   $(top_builddir)/mbean/src/libmbean.la \
+./ospf/src/ospf-lib/Makefile.am:					   $(top_builddir)/ippc/src/libippc.la \
+./ospf/src/ospf-lib/Makefile.am-					   $(top_builddir)/mainloop/src/libmainloop.la \
+./ospf/src/ospf-lib/Makefile.am-					   $(top_builddir)/routing-libs/src/libroutinglibs.la \
+./ospf/src/ospf-lib/Makefile.am-					   $(top_builddir)/routing-libs/src/smm_api/libsmmapi.la \
+./ospf/src/ospf-lib/Makefile.am-					   $(top_builddir)/rpm/src/librpm/librpmapi.la \
+--
+./cli/clientlib/Makefile-	"$(DESTDIR)$(pkgincludedir)"
+./cli/clientlib/Makefile-LTLIBRARIES = $(lib_LTLIBRARIES)
+./cli/clientlib/Makefile-libcliclient_la_DEPENDENCIES = $(top_builddir)/log/src/liblog.la \
+./cli/clientlib/Makefile-	$(top_builddir)/mainloop/src/libmainloop.la \
+./cli/clientlib/Makefile:	$(top_builddir)/ippc/src/libippc.la \
+./cli/clientlib/Makefile-	$(top_builddir)/common-libs/src/libcommonlibs.la \
+./cli/clientlib/Makefile-	$(top_builddir)/routing-libs/src/libroutinglibs.la
+./cli/clientlib/Makefile-am_libcliclient_la_OBJECTS = libcliclient_la-cli_client_api.lo
+./cli/clientlib/Makefile-libcliclient_la_OBJECTS = $(am_libcliclient_la_OBJECTS)
+--
+./cli/clientlib/Makefile-
+./cli/clientlib/Makefile-libcliclient_la_LIBADD = \
+./cli/clientlib/Makefile-						 $(top_builddir)/log/src/liblog.la \
+./cli/clientlib/Makefile-						 $(top_builddir)/mainloop/src/libmainloop.la \
+./cli/clientlib/Makefile:						 $(top_builddir)/ippc/src/libippc.la \
+./cli/clientlib/Makefile-						 $(top_builddir)/common-libs/src/libcommonlibs.la \
+./cli/clientlib/Makefile-						 $(top_builddir)/routing-libs/src/libroutinglibs.la
+./cli/clientlib/Makefile-
+./cli/clientlib/Makefile-libcliclient_la_SOURCES = cli_client_api.c
+--
+./cli/clientlib/Makefile.in-	"$(DESTDIR)$(pkgincludedir)"
+./cli/clientlib/Makefile.in-LTLIBRARIES = $(lib_LTLIBRARIES)
+./cli/clientlib/Makefile.in-libcliclient_la_DEPENDENCIES = $(top_builddir)/log/src/liblog.la \
+./cli/clientlib/Makefile.in-	$(top_builddir)/mainloop/src/libmainloop.la \
+./cli/clientlib/Makefile.in:	$(top_builddir)/ippc/src/libippc.la \
+./cli/clientlib/Makefile.in-	$(top_builddir)/common-libs/src/libcommonlibs.la \
+./cli/clientlib/Makefile.in-	$(top_builddir)/routing-libs/src/libroutinglibs.la
+./cli/clientlib/Makefile.in-am_libcliclient_la_OBJECTS = libcliclient_la-cli_client_api.lo
+./cli/clientlib/Makefile.in-libcliclient_la_OBJECTS = $(am_libcliclient_la_OBJECTS)
+--
+./cli/clientlib/Makefile.in-
+./cli/clientlib/Makefile.in-libcliclient_la_LIBADD = \
+./cli/clientlib/Makefile.in-						 $(top_builddir)/log/src/liblog.la \
+./cli/clientlib/Makefile.in-						 $(top_builddir)/mainloop/src/libmainloop.la \
+./cli/clientlib/Makefile.in:						 $(top_builddir)/ippc/src/libippc.la \
+./cli/clientlib/Makefile.in-						 $(top_builddir)/common-libs/src/libcommonlibs.la \
+./cli/clientlib/Makefile.in-						 $(top_builddir)/routing-libs/src/libroutinglibs.la
+./cli/clientlib/Makefile.in-
+./cli/clientlib/Makefile.in-libcliclient_la_SOURCES = cli_client_api.c
+--
+./cli/clientlib/Makefile.am-						  -release $(VERSION)
+./cli/clientlib/Makefile.am-libcliclient_la_LIBADD = \
+./cli/clientlib/Makefile.am-						 $(top_builddir)/log/src/liblog.la \
+./cli/clientlib/Makefile.am-						 $(top_builddir)/mainloop/src/libmainloop.la \
+./cli/clientlib/Makefile.am:						 $(top_builddir)/ippc/src/libippc.la \
+./cli/clientlib/Makefile.am-						 $(top_builddir)/common-libs/src/libcommonlibs.la \
+./cli/clientlib/Makefile.am-						 $(top_builddir)/routing-libs/src/libroutinglibs.la
+./cli/clientlib/Makefile.am-libcliclient_la_SOURCES = cli_client_api.c
+./cli/clientlib/Makefile.am-
+--
+./service-registry/src/Makefile-LTLIBRARIES = $(lib_LTLIBRARIES)
+./service-registry/src/Makefile-am__DEPENDENCIES_1 =
+./service-registry/src/Makefile-libsvcregd_la_DEPENDENCIES = $(am__DEPENDENCIES_1) \
+./service-registry/src/Makefile-	$(am__DEPENDENCIES_1) $(top_builddir)/log/src/liblog.la \
+./service-registry/src/Makefile:	$(top_builddir)/ippc/src/libippc.la \
+./service-registry/src/Makefile-	$(top_builddir)/mainloop/src/libmainloop.la \
+./service-registry/src/Makefile-	$(top_builddir)/dht/src/libsrp_core.la \
+./service-registry/src/Makefile-	$(top_builddir)/dht/src/libsrp_db.la \
+./service-registry/src/Makefile-	$(top_builddir)/dht/src/libsrp_io.la \
+--
+./service-registry/src/Makefile-libsvcregd_la_LIBADD = \
+./service-registry/src/Makefile-					   $(libxml2_LIBS) \
+./service-registry/src/Makefile-					   $(dslib_LIBS) \
+./service-registry/src/Makefile-					   $(top_builddir)/log/src/liblog.la \
+./service-registry/src/Makefile:					   $(top_builddir)/ippc/src/libippc.la \
+./service-registry/src/Makefile-					   $(top_builddir)/mainloop/src/libmainloop.la \
+./service-registry/src/Makefile-					   $(top_builddir)/dht/src/libsrp_core.la \
+./service-registry/src/Makefile-					   $(top_builddir)/dht/src/libsrp_db.la \
+./service-registry/src/Makefile-					   $(top_builddir)/dht/src/libsrp_io.la \
+--
+./service-registry/src/Makefile.in-LTLIBRARIES = $(lib_LTLIBRARIES)
+./service-registry/src/Makefile.in-am__DEPENDENCIES_1 =
+./service-registry/src/Makefile.in-libsvcregd_la_DEPENDENCIES = $(am__DEPENDENCIES_1) \
+./service-registry/src/Makefile.in-	$(am__DEPENDENCIES_1) $(top_builddir)/log/src/liblog.la \
+./service-registry/src/Makefile.in:	$(top_builddir)/ippc/src/libippc.la \
+./service-registry/src/Makefile.in-	$(top_builddir)/mainloop/src/libmainloop.la \
+./service-registry/src/Makefile.in-	$(top_builddir)/dht/src/libsrp_core.la \
+./service-registry/src/Makefile.in-	$(top_builddir)/dht/src/libsrp_db.la \
+./service-registry/src/Makefile.in-	$(top_builddir)/dht/src/libsrp_io.la \
+--
+./service-registry/src/Makefile.in-libsvcregd_la_LIBADD = \
+./service-registry/src/Makefile.in-					   $(libxml2_LIBS) \
+./service-registry/src/Makefile.in-					   $(dslib_LIBS) \
+./service-registry/src/Makefile.in-					   $(top_builddir)/log/src/liblog.la \
+./service-registry/src/Makefile.in:					   $(top_builddir)/ippc/src/libippc.la \
+./service-registry/src/Makefile.in-					   $(top_builddir)/mainloop/src/libmainloop.la \
+./service-registry/src/Makefile.in-					   $(top_builddir)/dht/src/libsrp_core.la \
+./service-registry/src/Makefile.in-					   $(top_builddir)/dht/src/libsrp_db.la \
+./service-registry/src/Makefile.in-					   $(top_builddir)/dht/src/libsrp_io.la \
+--
+./service-registry/src/Makefile.am-libsvcregd_la_LIBADD = \
+./service-registry/src/Makefile.am-					   $(libxml2_LIBS) \
+./service-registry/src/Makefile.am-					   $(dslib_LIBS) \
+./service-registry/src/Makefile.am-					   $(top_builddir)/log/src/liblog.la \
+./service-registry/src/Makefile.am:					   $(top_builddir)/ippc/src/libippc.la \
+./service-registry/src/Makefile.am-					   $(top_builddir)/mainloop/src/libmainloop.la \
+./service-registry/src/Makefile.am-					   $(top_builddir)/dht/src/libsrp_core.la \
+./service-registry/src/Makefile.am-					   $(top_builddir)/dht/src/libsrp_db.la \
+./service-registry/src/Makefile.am-					   $(top_builddir)/dht/src/libsrp_io.la \
+--
+./service-registry/cli/Makefile-LDFLAGS = -lxml2 -lz -lpthread -lm  -L/home/fogdev/cisco-kunpeng-sdk-20130208/lib   -L/home/fogdev/armroot/lib  -L/home/fogdev/armroot/lib -lffi
+./service-registry/cli/Makefile-LIBOBJS =  ${LIBOBJDIR}lstat$U.o ${LIBOBJDIR}malloc$U.o ${LIBOBJDIR}memcmp$U.o ${LIBOBJDIR}mktime$U.o ${LIBOBJDIR}realloc$U.o ${LIBOBJDIR}stat$U.o ${LIBOBJDIR}strnlen$U.o
+./service-registry/cli/Makefile-LIBS = \
+./service-registry/cli/Makefile-	   $(dslib_LIBS) \
+./service-registry/cli/Makefile:	   $(top_builddir)/ippc/src/libippc.la
+./service-registry/cli/Makefile-
+./service-registry/cli/Makefile-LIBTOOL = $(SHELL) $(top_builddir)/libtool
+./service-registry/cli/Makefile-LIPO = 
+./service-registry/cli/Makefile-LN_S = ln -s
+--
+./service-registry/cli/Makefile.in-LDFLAGS = @LDFLAGS@
+./service-registry/cli/Makefile.in-LIBOBJS = @LIBOBJS@
+./service-registry/cli/Makefile.in-LIBS = \
+./service-registry/cli/Makefile.in-	   $(dslib_LIBS) \
+./service-registry/cli/Makefile.in:	   $(top_builddir)/ippc/src/libippc.la
+./service-registry/cli/Makefile.in-
+./service-registry/cli/Makefile.in-LIBTOOL = @LIBTOOL@
+./service-registry/cli/Makefile.in-LIPO = @LIPO@
+./service-registry/cli/Makefile.in-LN_S = @LN_S@
+--
+./service-registry/cli/Makefile.am-AM_LDFLAGS = \
+./service-registry/cli/Makefile.am-			 $(dslib_LDFLAGS)
+./service-registry/cli/Makefile.am-LIBS = \
+./service-registry/cli/Makefile.am-	   $(dslib_LIBS) \
+./service-registry/cli/Makefile.am:	   $(top_builddir)/ippc/src/libippc.la
+./service-registry/cli/Makefile.am-exec_clear_svcreg_SOURCES = svcreg_cli_clear.c
+./service-registry/cli/Makefile.am-exec_show_svcreg_SOURCES = svcreg_cli_show.c
+./service-registry/cli/Makefile.am-exec_debug_svcreg_SOURCES = svcreg_cli_debug.c
+./service-registry/cli/Makefile.am-exec_debug_ippc_svcreg_SOURCES = svcreg_cli_ippc_debug.c
+--
+./routing-libs/src/Makefile.in2013-08-30-13-26-40-am__DEPENDENCIES_1 =
+./routing-libs/src/Makefile.in2013-08-30-13-26-40-libroutinglibs_la_DEPENDENCIES = $(am__DEPENDENCIES_1) \
+./routing-libs/src/Makefile.in2013-08-30-13-26-40-	$(top_builddir)/log/src/liblog.la \
+./routing-libs/src/Makefile.in2013-08-30-13-26-40-	$(top_builddir)/common-libs/src/libcommonlibs.la \
+./routing-libs/src/Makefile.in2013-08-30-13-26-40:	$(top_builddir)/ippc/src/libippc.la \
+./routing-libs/src/Makefile.in2013-08-30-13-26-40-	$(top_builddir)/routing-libs/src/pmalloc/libpmalloc.la \
+./routing-libs/src/Makefile.in2013-08-30-13-26-40-	$(top_builddir)/routing-libs/src/if_agent/libifagent.la \
+./routing-libs/src/Makefile.in2013-08-30-13-26-40-	$(top_builddir)/routing-libs/src/urib_api/liburibapi.la
+./routing-libs/src/Makefile.in2013-08-30-13-26-40-am_libroutinglibs_la_OBJECTS = active_timer.lo bitlogic.lo \
+--
+./routing-libs/src/Makefile.in2013-08-30-13-26-40-libroutinglibs_la_LIBADD = \
+./routing-libs/src/Makefile.in2013-08-30-13-26-40-						   $(libevent_LIBS) \
+./routing-libs/src/Makefile.in2013-08-30-13-26-40-						   $(top_builddir)/log/src/liblog.la \
+./routing-libs/src/Makefile.in2013-08-30-13-26-40-						   $(top_builddir)/common-libs/src/libcommonlibs.la \
+./routing-libs/src/Makefile.in2013-08-30-13-26-40:						   $(top_builddir)/ippc/src/libippc.la \
+./routing-libs/src/Makefile.in2013-08-30-13-26-40-						   $(top_builddir)/routing-libs/src/pmalloc/libpmalloc.la \
+./routing-libs/src/Makefile.in2013-08-30-13-26-40-						   $(top_builddir)/routing-libs/src/if_agent/libifagent.la \
+./routing-libs/src/Makefile.in2013-08-30-13-26-40-						   $(top_builddir)/routing-libs/src/urib_api/liburibapi.la
+./routing-libs/src/Makefile.in2013-08-30-13-26-40-
+--
+./routing-libs/src/Makefile-am__DEPENDENCIES_1 =
+./routing-libs/src/Makefile-libroutinglibs_la_DEPENDENCIES = $(am__DEPENDENCIES_1) \
+./routing-libs/src/Makefile-	$(top_builddir)/log/src/liblog.la \
+./routing-libs/src/Makefile-	$(top_builddir)/common-libs/src/libcommonlibs.la \
+./routing-libs/src/Makefile:	$(top_builddir)/ippc/src/libippc.la \
+./routing-libs/src/Makefile-	$(top_builddir)/routing-libs/src/pmalloc/libpmalloc.la \
+./routing-libs/src/Makefile-	$(top_builddir)/routing-libs/src/if_agent/libifagent.la \
+./routing-libs/src/Makefile-	$(top_builddir)/routing-libs/src/urib_api/liburibapi.la
+./routing-libs/src/Makefile-am_libroutinglibs_la_OBJECTS = bitlogic.lo \
+--
+./routing-libs/src/Makefile-libroutinglibs_la_LIBADD = \
+./routing-libs/src/Makefile-						   $(libevent_LIBS) \
+./routing-libs/src/Makefile-						   $(top_builddir)/log/src/liblog.la \
+./routing-libs/src/Makefile-						   $(top_builddir)/common-libs/src/libcommonlibs.la \
+./routing-libs/src/Makefile:						   $(top_builddir)/ippc/src/libippc.la \
+./routing-libs/src/Makefile-						   $(top_builddir)/routing-libs/src/pmalloc/libpmalloc.la \
+./routing-libs/src/Makefile-						   $(top_builddir)/routing-libs/src/if_agent/libifagent.la \
+./routing-libs/src/Makefile-						   $(top_builddir)/routing-libs/src/urib_api/liburibapi.la
+./routing-libs/src/Makefile-
+--
+./routing-libs/src/Makefile.am2013-08-30-13-25-26-libroutinglibs_la_LIBADD = \
+./routing-libs/src/Makefile.am2013-08-30-13-25-26-						   $(libevent_LIBS) \
+./routing-libs/src/Makefile.am2013-08-30-13-25-26-						   $(top_builddir)/log/src/liblog.la \
+./routing-libs/src/Makefile.am2013-08-30-13-25-26-						   $(top_builddir)/common-libs/src/libcommonlibs.la \
+./routing-libs/src/Makefile.am2013-08-30-13-25-26:						   $(top_builddir)/ippc/src/libippc.la \
+./routing-libs/src/Makefile.am2013-08-30-13-25-26-						   $(top_builddir)/routing-libs/src/pmalloc/libpmalloc.la \
+./routing-libs/src/Makefile.am2013-08-30-13-25-26-						   $(top_builddir)/routing-libs/src/if_agent/libifagent.la \
+./routing-libs/src/Makefile.am2013-08-30-13-25-26-						   $(top_builddir)/routing-libs/src/urib_api/liburibapi.la
+./routing-libs/src/Makefile.am2013-08-30-13-25-26-libroutinglibs_la_SOURCES = \
+--
+./routing-libs/src/Makefile.in-am__DEPENDENCIES_1 =
+./routing-libs/src/Makefile.in-libroutinglibs_la_DEPENDENCIES = $(am__DEPENDENCIES_1) \
+./routing-libs/src/Makefile.in-	$(top_builddir)/log/src/liblog.la \
+./routing-libs/src/Makefile.in-	$(top_builddir)/common-libs/src/libcommonlibs.la \
+./routing-libs/src/Makefile.in:	$(top_builddir)/ippc/src/libippc.la \
+./routing-libs/src/Makefile.in-	$(top_builddir)/routing-libs/src/pmalloc/libpmalloc.la \
+./routing-libs/src/Makefile.in-	$(top_builddir)/routing-libs/src/if_agent/libifagent.la \
+./routing-libs/src/Makefile.in-	$(top_builddir)/routing-libs/src/urib_api/liburibapi.la
+./routing-libs/src/Makefile.in-am_libroutinglibs_la_OBJECTS = bitlogic.lo \
+--
+./routing-libs/src/Makefile.in-libroutinglibs_la_LIBADD = \
+./routing-libs/src/Makefile.in-						   $(libevent_LIBS) \
+./routing-libs/src/Makefile.in-						   $(top_builddir)/log/src/liblog.la \
+./routing-libs/src/Makefile.in-						   $(top_builddir)/common-libs/src/libcommonlibs.la \
+./routing-libs/src/Makefile.in:						   $(top_builddir)/ippc/src/libippc.la \
+./routing-libs/src/Makefile.in-						   $(top_builddir)/routing-libs/src/pmalloc/libpmalloc.la \
+./routing-libs/src/Makefile.in-						   $(top_builddir)/routing-libs/src/if_agent/libifagent.la \
+./routing-libs/src/Makefile.in-						   $(top_builddir)/routing-libs/src/urib_api/liburibapi.la
+./routing-libs/src/Makefile.in-
+--
+./routing-libs/src/Makefile.am-libroutinglibs_la_LIBADD = \
+./routing-libs/src/Makefile.am-						   $(libevent_LIBS) \
+./routing-libs/src/Makefile.am-						   $(top_builddir)/log/src/liblog.la \
+./routing-libs/src/Makefile.am-						   $(top_builddir)/common-libs/src/libcommonlibs.la \
+./routing-libs/src/Makefile.am:						   $(top_builddir)/ippc/src/libippc.la \
+./routing-libs/src/Makefile.am-						   $(top_builddir)/routing-libs/src/pmalloc/libpmalloc.la \
+./routing-libs/src/Makefile.am-						   $(top_builddir)/routing-libs/src/if_agent/libifagent.la \
+./routing-libs/src/Makefile.am-						   $(top_builddir)/routing-libs/src/urib_api/liburibapi.la
+./routing-libs/src/Makefile.am-libroutinglibs_la_SOURCES = \
+--
+./ippc/src/Makefile-  sed '$$!N;$$!N;$$!N;$$!N;s/\n/ /g'
+./ippc/src/Makefile-am__installdirs = "$(DESTDIR)$(libdir)"
+./ippc/src/Makefile-LTLIBRARIES = $(lib_LTLIBRARIES)
+./ippc/src/Makefile-am__DEPENDENCIES_1 =
+./ippc/src/Makefile:libippc_la_DEPENDENCIES = $(am__DEPENDENCIES_1) \
+./ippc/src/Makefile-	$(top_builddir)/log/src/liblog.la \
+./ippc/src/Makefile-	$(top_builddir)/box/src/libbox.la \
+./ippc/src/Makefile-	$(top_builddir)/common-libs/src/libcommonlibs.la \
+./ippc/src/Makefile-	$(top_builddir)/mbean/src/libmbean.la
+./ippc/src/Makefile:am_libippc_la_OBJECTS = client.lo core.lo error.lo internal.lo \
+./ippc/src/Makefile-	message.lo pair.lo registry.lo server.lo
+./ippc/src/Makefile:libippc_la_OBJECTS = $(am_libippc_la_OBJECTS)
+./ippc/src/Makefile-DEFAULT_INCLUDES = -I. -I$(top_builddir)/include
+./ippc/src/Makefile-depcomp = $(SHELL) $(top_srcdir)/depcomp
+./ippc/src/Makefile-am__depfiles_maybe = depfiles
+./ippc/src/Makefile-am__mv = mv -f
+--
+./ippc/src/Makefile-CCLD = $(CC)
+./ippc/src/Makefile-LINK = $(LIBTOOL) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \
+./ippc/src/Makefile-	--mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) \
+./ippc/src/Makefile-	$(LDFLAGS) -o $@
+./ippc/src/Makefile:SOURCES = $(libippc_la_SOURCES)
+./ippc/src/Makefile:DIST_SOURCES = $(libippc_la_SOURCES)
+./ippc/src/Makefile-HEADERS = $(noinst_HEADERS)
+./ippc/src/Makefile-ETAGS = etags
+./ippc/src/Makefile-CTAGS = ctags
+./ippc/src/Makefile-DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+--
+./ippc/src/Makefile-		   -I$(top_srcdir)/log/include \
+./ippc/src/Makefile-		   -I$(top_srcdir)/mbean/include \
+./ippc/src/Makefile-		   -I$(srcdir)/../include
+./ippc/src/Makefile-
+./ippc/src/Makefile:lib_LTLIBRARIES = libippc.la
+./ippc/src/Makefile-AM_CPPFLAGS = -DTOPOS_COMPONENT=\"IPPC\" -DTOPOS_TRACE_COMPONENT=IPPC
+./ippc/src/Makefile-AM_CFLAGS = \
+./ippc/src/Makefile-			$(libevent_CFLAGS) \
+./ippc/src/Makefile-			$(C_WFLAGS)
+--
+./ippc/src/Makefile-AM_LDFLAGS = \
+./ippc/src/Makefile-			 -release $(VERSION) \
+./ippc/src/Makefile-			 $(libevent_LDFLAGS)
+./ippc/src/Makefile-
+./ippc/src/Makefile:libippc_la_LIBADD = \
+./ippc/src/Makefile-					$(libevent_LIBS) \
+./ippc/src/Makefile-					$(top_builddir)/log/src/liblog.la \
+./ippc/src/Makefile-					$(top_builddir)/box/src/libbox.la \
+./ippc/src/Makefile-					$(top_builddir)/common-libs/src/libcommonlibs.la \
+./ippc/src/Makefile-					$(top_builddir)/mbean/src/libmbean.la
+./ippc/src/Makefile-
+./ippc/src/Makefile:libippc_la_SOURCES = \
+./ippc/src/Makefile-					 client.c \
+./ippc/src/Makefile-					 core.c \
+./ippc/src/Makefile-					 error.c \
+./ippc/src/Makefile-					 internal.c \
+--
+./ippc/src/Makefile-	  test "$$dir" != "$$p" || dir=.; \
+./ippc/src/Makefile-	  echo "rm -f \"$${dir}/so_locations\""; \
+./ippc/src/Makefile-	  rm -f "$${dir}/so_locations"; \
+./ippc/src/Makefile-	done
+./ippc/src/Makefile:libippc.la: $(libippc_la_OBJECTS) $(libippc_la_DEPENDENCIES) 
+./ippc/src/Makefile:	$(LINK) -rpath $(libdir) $(libippc_la_OBJECTS) $(libippc_la_LIBADD) $(LIBS)
+./ippc/src/Makefile-
+./ippc/src/Makefile-mostlyclean-compile:
+./ippc/src/Makefile-	-rm -f *.$(OBJEXT)
+./ippc/src/Makefile-
+--
+./ippc/src/Makefile.in-  sed '$$!N;$$!N;$$!N;$$!N;s/\n/ /g'
+./ippc/src/Makefile.in-am__installdirs = "$(DESTDIR)$(libdir)"
+./ippc/src/Makefile.in-LTLIBRARIES = $(lib_LTLIBRARIES)
+./ippc/src/Makefile.in-am__DEPENDENCIES_1 =
+./ippc/src/Makefile.in:libippc_la_DEPENDENCIES = $(am__DEPENDENCIES_1) \
+./ippc/src/Makefile.in-	$(top_builddir)/log/src/liblog.la \
+./ippc/src/Makefile.in-	$(top_builddir)/box/src/libbox.la \
+./ippc/src/Makefile.in-	$(top_builddir)/common-libs/src/libcommonlibs.la \
+./ippc/src/Makefile.in-	$(top_builddir)/mbean/src/libmbean.la
+./ippc/src/Makefile.in:am_libippc_la_OBJECTS = client.lo core.lo error.lo internal.lo \
+./ippc/src/Makefile.in-	message.lo pair.lo registry.lo server.lo
+./ippc/src/Makefile.in:libippc_la_OBJECTS = $(am_libippc_la_OBJECTS)
+./ippc/src/Makefile.in-DEFAULT_INCLUDES = -I.@am__isrc@ -I$(top_builddir)/include
+./ippc/src/Makefile.in-depcomp = $(SHELL) $(top_srcdir)/depcomp
+./ippc/src/Makefile.in-am__depfiles_maybe = depfiles
+./ippc/src/Makefile.in-am__mv = mv -f
+--
+./ippc/src/Makefile.in-CCLD = $(CC)
+./ippc/src/Makefile.in-LINK = $(LIBTOOL) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \
+./ippc/src/Makefile.in-	--mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) \
+./ippc/src/Makefile.in-	$(LDFLAGS) -o $@
+./ippc/src/Makefile.in:SOURCES = $(libippc_la_SOURCES)
+./ippc/src/Makefile.in:DIST_SOURCES = $(libippc_la_SOURCES)
+./ippc/src/Makefile.in-HEADERS = $(noinst_HEADERS)
+./ippc/src/Makefile.in-ETAGS = etags
+./ippc/src/Makefile.in-CTAGS = ctags
+./ippc/src/Makefile.in-DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+--
+./ippc/src/Makefile.in-		   -I$(top_srcdir)/log/include \
+./ippc/src/Makefile.in-		   -I$(top_srcdir)/mbean/include \
+./ippc/src/Makefile.in-		   -I$(srcdir)/../include
+./ippc/src/Makefile.in-
+./ippc/src/Makefile.in:lib_LTLIBRARIES = libippc.la
+./ippc/src/Makefile.in-AM_CPPFLAGS = -DTOPOS_COMPONENT=\"IPPC\" -DTOPOS_TRACE_COMPONENT=IPPC
+./ippc/src/Makefile.in-AM_CFLAGS = \
+./ippc/src/Makefile.in-			$(libevent_CFLAGS) \
+./ippc/src/Makefile.in-			$(C_WFLAGS)
+--
+./ippc/src/Makefile.in-AM_LDFLAGS = \
+./ippc/src/Makefile.in-			 -release $(VERSION) \
+./ippc/src/Makefile.in-			 $(libevent_LDFLAGS)
+./ippc/src/Makefile.in-
+./ippc/src/Makefile.in:libippc_la_LIBADD = \
+./ippc/src/Makefile.in-					$(libevent_LIBS) \
+./ippc/src/Makefile.in-					$(top_builddir)/log/src/liblog.la \
+./ippc/src/Makefile.in-					$(top_builddir)/box/src/libbox.la \
+./ippc/src/Makefile.in-					$(top_builddir)/common-libs/src/libcommonlibs.la \
+./ippc/src/Makefile.in-					$(top_builddir)/mbean/src/libmbean.la
+./ippc/src/Makefile.in-
+./ippc/src/Makefile.in:libippc_la_SOURCES = \
+./ippc/src/Makefile.in-					 client.c \
+./ippc/src/Makefile.in-					 core.c \
+./ippc/src/Makefile.in-					 error.c \
+./ippc/src/Makefile.in-					 internal.c \
+--
+./ippc/src/Makefile.in-	  test "$$dir" != "$$p" || dir=.; \
+./ippc/src/Makefile.in-	  echo "rm -f \"$${dir}/so_locations\""; \
+./ippc/src/Makefile.in-	  rm -f "$${dir}/so_locations"; \
+./ippc/src/Makefile.in-	done
+./ippc/src/Makefile.in:libippc.la: $(libippc_la_OBJECTS) $(libippc_la_DEPENDENCIES) 
+./ippc/src/Makefile.in:	$(LINK) -rpath $(libdir) $(libippc_la_OBJECTS) $(libippc_la_LIBADD) $(LIBS)
+./ippc/src/Makefile.in-
+./ippc/src/Makefile.in-mostlyclean-compile:
+./ippc/src/Makefile.in-	-rm -f *.$(OBJEXT)
+./ippc/src/Makefile.in-
+--
+./ippc/src/Makefile.am-		   -I$(top_srcdir)/common-libs/include \
+./ippc/src/Makefile.am-		   -I$(top_srcdir)/log/include \
+./ippc/src/Makefile.am-		   -I$(top_srcdir)/mbean/include \
+./ippc/src/Makefile.am-		   -I$(srcdir)/../include
+./ippc/src/Makefile.am:lib_LTLIBRARIES = libippc.la
+./ippc/src/Makefile.am-AM_CPPFLAGS = -DTOPOS_COMPONENT=\"IPPC\" -DTOPOS_TRACE_COMPONENT=IPPC
+./ippc/src/Makefile.am-AM_CFLAGS = \
+./ippc/src/Makefile.am-			$(libevent_CFLAGS) \
+./ippc/src/Makefile.am-			$(C_WFLAGS)
+./ippc/src/Makefile.am-AM_LDFLAGS = \
+./ippc/src/Makefile.am-			 -release $(VERSION) \
+./ippc/src/Makefile.am-			 $(libevent_LDFLAGS)
+./ippc/src/Makefile.am:libippc_la_LIBADD = \
+./ippc/src/Makefile.am-					$(libevent_LIBS) \
+./ippc/src/Makefile.am-					$(top_builddir)/log/src/liblog.la \
+./ippc/src/Makefile.am-					$(top_builddir)/box/src/libbox.la \
+./ippc/src/Makefile.am-					$(top_builddir)/common-libs/src/libcommonlibs.la \
+./ippc/src/Makefile.am-					$(top_builddir)/mbean/src/libmbean.la
+./ippc/src/Makefile.am:libippc_la_SOURCES = \
+./ippc/src/Makefile.am-					 client.c \
+./ippc/src/Makefile.am-					 core.c \
+./ippc/src/Makefile.am-					 error.c \
+./ippc/src/Makefile.am-					 internal.c \
+--
+./ippc/tests/Makefile-	$(am_test_ippc_unit_client_async_OBJECTS)
+./ippc/tests/Makefile-test_ippc_unit_client_async_LDADD = $(LDADD)
+./ippc/tests/Makefile-am__DEPENDENCIES_1 =
+./ippc/tests/Makefile-test_ippc_unit_client_async_DEPENDENCIES = $(am__DEPENDENCIES_1) \
+./ippc/tests/Makefile:	$(am__DEPENDENCIES_1) $(top_builddir)/ippc/src/libippc.la
+./ippc/tests/Makefile-am_test_ippc_unit_client_sync_OBJECTS = client_sync.$(OBJEXT)
+./ippc/tests/Makefile-test_ippc_unit_client_sync_OBJECTS =  \
+./ippc/tests/Makefile-	$(am_test_ippc_unit_client_sync_OBJECTS)
+./ippc/tests/Makefile-test_ippc_unit_client_sync_LDADD = $(LDADD)
+./ippc/tests/Makefile-test_ippc_unit_client_sync_DEPENDENCIES = $(am__DEPENDENCIES_1) \
+./ippc/tests/Makefile:	$(am__DEPENDENCIES_1) $(top_builddir)/ippc/src/libippc.la
+./ippc/tests/Makefile-am_test_ippc_unit_racecond_OBJECTS = race_cond.$(OBJEXT)
+./ippc/tests/Makefile-test_ippc_unit_racecond_OBJECTS =  \
+./ippc/tests/Makefile-	$(am_test_ippc_unit_racecond_OBJECTS)
+./ippc/tests/Makefile-test_ippc_unit_racecond_LDADD = $(LDADD)
+./ippc/tests/Makefile-test_ippc_unit_racecond_DEPENDENCIES = $(am__DEPENDENCIES_1) \
+./ippc/tests/Makefile:	$(am__DEPENDENCIES_1) $(top_builddir)/ippc/src/libippc.la
+./ippc/tests/Makefile-am_test_ippc_unit_timeout_async_OBJECTS =  \
+./ippc/tests/Makefile-	unit_timeout_async.$(OBJEXT)
+./ippc/tests/Makefile-test_ippc_unit_timeout_async_OBJECTS =  \
+./ippc/tests/Makefile-	$(am_test_ippc_unit_timeout_async_OBJECTS)
+./ippc/tests/Makefile-test_ippc_unit_timeout_async_LDADD = $(LDADD)
+./ippc/tests/Makefile-test_ippc_unit_timeout_async_DEPENDENCIES = $(am__DEPENDENCIES_1) \
+./ippc/tests/Makefile:	$(am__DEPENDENCIES_1) $(top_builddir)/ippc/src/libippc.la
+./ippc/tests/Makefile-am_test_ippc_unit_timeout_sync_OBJECTS = unit_timeout_sync.$(OBJEXT)
+./ippc/tests/Makefile-test_ippc_unit_timeout_sync_OBJECTS =  \
+./ippc/tests/Makefile-	$(am_test_ippc_unit_timeout_sync_OBJECTS)
+./ippc/tests/Makefile-test_ippc_unit_timeout_sync_LDADD = $(LDADD)
+./ippc/tests/Makefile-test_ippc_unit_timeout_sync_DEPENDENCIES = $(am__DEPENDENCIES_1) \
+./ippc/tests/Makefile:	$(am__DEPENDENCIES_1) $(top_builddir)/ippc/src/libippc.la
+./ippc/tests/Makefile-DEFAULT_INCLUDES = -I. -I$(top_builddir)/include
+./ippc/tests/Makefile-depcomp = $(SHELL) $(top_srcdir)/depcomp
+./ippc/tests/Makefile-am__depfiles_maybe = depfiles
+./ippc/tests/Makefile-am__mv = mv -f
+--
+./ippc/tests/Makefile-
+./ippc/tests/Makefile-LDADD = \
+./ippc/tests/Makefile-		$(check_LIBS) \
+./ippc/tests/Makefile-		$(libevent_LIBS) \
+./ippc/tests/Makefile:		$(top_builddir)/ippc/src/libippc.la
+./ippc/tests/Makefile-
+./ippc/tests/Makefile-test_ippc_unit_client_async_SOURCES = client_async.c
+./ippc/tests/Makefile-test_ippc_unit_client_sync_SOURCES = client_sync.c
+./ippc/tests/Makefile-test_ippc_unit_racecond_SOURCES = race_cond.c
+--
+./ippc/tests/Makefile.in-	$(am_test_ippc_unit_client_async_OBJECTS)
+./ippc/tests/Makefile.in-test_ippc_unit_client_async_LDADD = $(LDADD)
+./ippc/tests/Makefile.in-am__DEPENDENCIES_1 =
+./ippc/tests/Makefile.in-test_ippc_unit_client_async_DEPENDENCIES = $(am__DEPENDENCIES_1) \
+./ippc/tests/Makefile.in:	$(am__DEPENDENCIES_1) $(top_builddir)/ippc/src/libippc.la
+./ippc/tests/Makefile.in-am_test_ippc_unit_client_sync_OBJECTS = client_sync.$(OBJEXT)
+./ippc/tests/Makefile.in-test_ippc_unit_client_sync_OBJECTS =  \
+./ippc/tests/Makefile.in-	$(am_test_ippc_unit_client_sync_OBJECTS)
+./ippc/tests/Makefile.in-test_ippc_unit_client_sync_LDADD = $(LDADD)
+./ippc/tests/Makefile.in-test_ippc_unit_client_sync_DEPENDENCIES = $(am__DEPENDENCIES_1) \
+./ippc/tests/Makefile.in:	$(am__DEPENDENCIES_1) $(top_builddir)/ippc/src/libippc.la
+./ippc/tests/Makefile.in-am_test_ippc_unit_racecond_OBJECTS = race_cond.$(OBJEXT)
+./ippc/tests/Makefile.in-test_ippc_unit_racecond_OBJECTS =  \
+./ippc/tests/Makefile.in-	$(am_test_ippc_unit_racecond_OBJECTS)
+./ippc/tests/Makefile.in-test_ippc_unit_racecond_LDADD = $(LDADD)
+./ippc/tests/Makefile.in-test_ippc_unit_racecond_DEPENDENCIES = $(am__DEPENDENCIES_1) \
+./ippc/tests/Makefile.in:	$(am__DEPENDENCIES_1) $(top_builddir)/ippc/src/libippc.la
+./ippc/tests/Makefile.in-am_test_ippc_unit_timeout_async_OBJECTS =  \
+./ippc/tests/Makefile.in-	unit_timeout_async.$(OBJEXT)
+./ippc/tests/Makefile.in-test_ippc_unit_timeout_async_OBJECTS =  \
+./ippc/tests/Makefile.in-	$(am_test_ippc_unit_timeout_async_OBJECTS)
+./ippc/tests/Makefile.in-test_ippc_unit_timeout_async_LDADD = $(LDADD)
+./ippc/tests/Makefile.in-test_ippc_unit_timeout_async_DEPENDENCIES = $(am__DEPENDENCIES_1) \
+./ippc/tests/Makefile.in:	$(am__DEPENDENCIES_1) $(top_builddir)/ippc/src/libippc.la
+./ippc/tests/Makefile.in-am_test_ippc_unit_timeout_sync_OBJECTS = unit_timeout_sync.$(OBJEXT)
+./ippc/tests/Makefile.in-test_ippc_unit_timeout_sync_OBJECTS =  \
+./ippc/tests/Makefile.in-	$(am_test_ippc_unit_timeout_sync_OBJECTS)
+./ippc/tests/Makefile.in-test_ippc_unit_timeout_sync_LDADD = $(LDADD)
+./ippc/tests/Makefile.in-test_ippc_unit_timeout_sync_DEPENDENCIES = $(am__DEPENDENCIES_1) \
+./ippc/tests/Makefile.in:	$(am__DEPENDENCIES_1) $(top_builddir)/ippc/src/libippc.la
+./ippc/tests/Makefile.in-DEFAULT_INCLUDES = -I.@am__isrc@ -I$(top_builddir)/include
+./ippc/tests/Makefile.in-depcomp = $(SHELL) $(top_srcdir)/depcomp
+./ippc/tests/Makefile.in-am__depfiles_maybe = depfiles
+./ippc/tests/Makefile.in-am__mv = mv -f
+--
+./ippc/tests/Makefile.in-
+./ippc/tests/Makefile.in-LDADD = \
+./ippc/tests/Makefile.in-		$(check_LIBS) \
+./ippc/tests/Makefile.in-		$(libevent_LIBS) \
+./ippc/tests/Makefile.in:		$(top_builddir)/ippc/src/libippc.la
+./ippc/tests/Makefile.in-
+./ippc/tests/Makefile.in-test_ippc_unit_client_async_SOURCES = client_async.c
+./ippc/tests/Makefile.in-test_ippc_unit_client_sync_SOURCES = client_sync.c
+./ippc/tests/Makefile.in-test_ippc_unit_racecond_SOURCES = race_cond.c
+--
+./ippc/tests/Makefile.am-			 $(libevent_LDFLAGS)
+./ippc/tests/Makefile.am-LDADD = \
+./ippc/tests/Makefile.am-		$(check_LIBS) \
+./ippc/tests/Makefile.am-		$(libevent_LIBS) \
+./ippc/tests/Makefile.am:		$(top_builddir)/ippc/src/libippc.la
+./ippc/tests/Makefile.am-
+./ippc/tests/Makefile.am-test_ippc_unit_client_async_SOURCES = client_async.c
+./ippc/tests/Makefile.am-test_ippc_unit_client_sync_SOURCES = client_sync.c
+./ippc/tests/Makefile.am-test_ippc_unit_racecond_SOURCES = race_cond.c
+--
+./smm/src/Makefile-LTLIBRARIES = $(lib_LTLIBRARIES)
+./smm/src/Makefile-am__DEPENDENCIES_1 =
+./smm/src/Makefile-libsmmd_la_DEPENDENCIES = $(am__DEPENDENCIES_1) \
+./smm/src/Makefile-	$(top_builddir)/log/src/liblog.la \
+./smm/src/Makefile:	$(top_builddir)/ippc/src/libippc.la \
+./smm/src/Makefile-	$(top_builddir)/mainloop/src/libmainloop.la \
+./smm/src/Makefile-	$(top_builddir)/routing-libs/src/libroutinglibs.la \
+./smm/src/Makefile-	$(top_builddir)/routing-libs/src/smm_api/libsmmapi.la
+./smm/src/Makefile-am_libsmmd_la_OBJECTS = smm_enumtab.lo smm_ippc.lo smm_main.lo \
+--
+./smm/src/Makefile-
+./smm/src/Makefile-libsmmd_la_LIBADD = \
+./smm/src/Makefile-					$(addebug_LIBS) \
+./smm/src/Makefile-					$(top_builddir)/log/src/liblog.la \
+./smm/src/Makefile:					$(top_builddir)/ippc/src/libippc.la \
+./smm/src/Makefile-					$(top_builddir)/mainloop/src/libmainloop.la \
+./smm/src/Makefile-					$(top_builddir)/routing-libs/src/libroutinglibs.la \
+./smm/src/Makefile-					$(top_builddir)/routing-libs/src/smm_api/libsmmapi.la
+./smm/src/Makefile-
+--
+./smm/src/Makefile.in-LTLIBRARIES = $(lib_LTLIBRARIES)
+./smm/src/Makefile.in-am__DEPENDENCIES_1 =
+./smm/src/Makefile.in-libsmmd_la_DEPENDENCIES = $(am__DEPENDENCIES_1) \
+./smm/src/Makefile.in-	$(top_builddir)/log/src/liblog.la \
+./smm/src/Makefile.in:	$(top_builddir)/ippc/src/libippc.la \
+./smm/src/Makefile.in-	$(top_builddir)/mainloop/src/libmainloop.la \
+./smm/src/Makefile.in-	$(top_builddir)/routing-libs/src/libroutinglibs.la \
+./smm/src/Makefile.in-	$(top_builddir)/routing-libs/src/smm_api/libsmmapi.la
+./smm/src/Makefile.in-am_libsmmd_la_OBJECTS = smm_enumtab.lo smm_ippc.lo smm_main.lo \
+--
+./smm/src/Makefile.in-
+./smm/src/Makefile.in-libsmmd_la_LIBADD = \
+./smm/src/Makefile.in-					$(addebug_LIBS) \
+./smm/src/Makefile.in-					$(top_builddir)/log/src/liblog.la \
+./smm/src/Makefile.in:					$(top_builddir)/ippc/src/libippc.la \
+./smm/src/Makefile.in-					$(top_builddir)/mainloop/src/libmainloop.la \
+./smm/src/Makefile.in-					$(top_builddir)/routing-libs/src/libroutinglibs.la \
+./smm/src/Makefile.in-					$(top_builddir)/routing-libs/src/smm_api/libsmmapi.la
+./smm/src/Makefile.in-
+--
+./smm/src/Makefile.am-					 $(addebug_LDFLAGS)
+./smm/src/Makefile.am-libsmmd_la_LIBADD = \
+./smm/src/Makefile.am-					$(addebug_LIBS) \
+./smm/src/Makefile.am-					$(top_builddir)/log/src/liblog.la \
+./smm/src/Makefile.am:					$(top_builddir)/ippc/src/libippc.la \
+./smm/src/Makefile.am-					$(top_builddir)/mainloop/src/libmainloop.la \
+./smm/src/Makefile.am-					$(top_builddir)/routing-libs/src/libroutinglibs.la \
+./smm/src/Makefile.am-					$(top_builddir)/routing-libs/src/smm_api/libsmmapi.la
+./smm/src/Makefile.am-libsmmd_la_SOURCES = \
+--
+./isis/cli/Makefile-LDFLAGS = -lxml2 -lz -lpthread -lm  -L/home/fogdev/cisco-kunpeng-sdk-20130208/lib   -L/home/fogdev/armroot/lib  -L/home/fogdev/armroot/lib -lffi
+./isis/cli/Makefile-LIBOBJS =  ${LIBOBJDIR}lstat$U.o ${LIBOBJDIR}malloc$U.o ${LIBOBJDIR}memcmp$U.o ${LIBOBJDIR}mktime$U.o ${LIBOBJDIR}realloc$U.o ${LIBOBJDIR}stat$U.o ${LIBOBJDIR}strnlen$U.o
+./isis/cli/Makefile-LIBS = \
+./isis/cli/Makefile-	   $(linuxutil_LIBS) \
+./isis/cli/Makefile:	   $(top_builddir)/ippc/src/libippc.la
+./isis/cli/Makefile-
+./isis/cli/Makefile-LIBTOOL = $(SHELL) $(top_builddir)/libtool
+./isis/cli/Makefile-LIPO = 
+./isis/cli/Makefile-LN_S = ln -s
+--
+./isis/cli/Makefile.in-LDFLAGS = @LDFLAGS@
+./isis/cli/Makefile.in-LIBOBJS = @LIBOBJS@
+./isis/cli/Makefile.in-LIBS = \
+./isis/cli/Makefile.in-	   $(linuxutil_LIBS) \
+./isis/cli/Makefile.in:	   $(top_builddir)/ippc/src/libippc.la
+./isis/cli/Makefile.in-
+./isis/cli/Makefile.in-LIBTOOL = @LIBTOOL@
+./isis/cli/Makefile.in-LIPO = @LIPO@
+./isis/cli/Makefile.in-LN_S = @LN_S@
+--
+./isis/cli/Makefile.am-AM_LDFLAGS = \
+./isis/cli/Makefile.am-			 $(linuxutil_LDFLAGS)
+./isis/cli/Makefile.am-LIBS = \
+./isis/cli/Makefile.am-	   $(linuxutil_LIBS) \
+./isis/cli/Makefile.am:	   $(top_builddir)/ippc/src/libippc.la
+./isis/cli/Makefile.am-cfg_bin_isis_SOURCES = isis_cfg.c
+./isis/cli/Makefile.am-exec_clear_isis_SOURCES = isis_clear.c
+./isis/cli/Makefile.am-exec_debug_isis_SOURCES = isis_debug.c
+./isis/cli/Makefile.am-exec_show_isis_SOURCES = isis_show.c
+--
+./urib/cli/Makefile-LIBS = \
+./urib/cli/Makefile-	   $(dslib_LIBS) \
+./urib/cli/Makefile-	   $(top_builddir)/log/src/liblog.la \
+./urib/cli/Makefile-	   $(top_builddir)/common-libs/src/libcommonlibs.la \
+./urib/cli/Makefile:	   $(top_builddir)/ippc/src/libippc.la \
+./urib/cli/Makefile-	   $(top_builddir)/routing-libs/src/libroutinglibs.la \
+./urib/cli/Makefile-	   $(top_builddir)/mainloop/src/libmainloop.la
+./urib/cli/Makefile-
+./urib/cli/Makefile-LIBTOOL = $(SHELL) $(top_builddir)/libtool
+--
+./urib/cli/Makefile.in-LIBS = \
+./urib/cli/Makefile.in-	   $(dslib_LIBS) \
+./urib/cli/Makefile.in-	   $(top_builddir)/log/src/liblog.la \
+./urib/cli/Makefile.in-	   $(top_builddir)/common-libs/src/libcommonlibs.la \
+./urib/cli/Makefile.in:	   $(top_builddir)/ippc/src/libippc.la \
+./urib/cli/Makefile.in-	   $(top_builddir)/routing-libs/src/libroutinglibs.la \
+./urib/cli/Makefile.in-	   $(top_builddir)/mainloop/src/libmainloop.la
+./urib/cli/Makefile.in-
+./urib/cli/Makefile.in-LIBTOOL = @LIBTOOL@
+--
+./urib/cli/Makefile.am-LIBS = \
+./urib/cli/Makefile.am-	   $(dslib_LIBS) \
+./urib/cli/Makefile.am-	   $(top_builddir)/log/src/liblog.la \
+./urib/cli/Makefile.am-	   $(top_builddir)/common-libs/src/libcommonlibs.la \
+./urib/cli/Makefile.am:	   $(top_builddir)/ippc/src/libippc.la \
+./urib/cli/Makefile.am-	   $(top_builddir)/routing-libs/src/libroutinglibs.la \
+./urib/cli/Makefile.am-	   $(top_builddir)/mainloop/src/libmainloop.la
+./urib/cli/Makefile.am-exec_debug_urib_SOURCES = urib_debug.c
+./urib/cli/Makefile.am-urib_cfg_SOURCES = urib_cfg.c
+--
+./desci/src/Makefile-			 $(libxml2_LDFLAGS) \
+./desci/src/Makefile-LIBADD = \
+./desci/src/Makefile-		 $(libxml2_LIBS) \
+./desci/src/Makefile-		 $(top_builddir)/log/src/liblog.la \
+./desci/src/Makefile:		 $(top_builddir)/ippc/src/libippc.la \
+./desci/src/Makefile-		 $(top_builddir)/routing-libs/src/libroutinglibs.la
+./desci/src/Makefile-
+./desci/src/Makefile-lib_LTLIBRARIES = libdesci.la
+./desci/src/Makefile-libdesci_la_SOURCES = \
+--
+./desci/src/Makefile.in-			 $(libxml2_LDFLAGS) \
+./desci/src/Makefile.in-LIBADD = \
+./desci/src/Makefile.in-		 $(libxml2_LIBS) \
+./desci/src/Makefile.in-		 $(top_builddir)/log/src/liblog.la \
+./desci/src/Makefile.in:		 $(top_builddir)/ippc/src/libippc.la \
+./desci/src/Makefile.in-		 $(top_builddir)/routing-libs/src/libroutinglibs.la
+./desci/src/Makefile.in-
+./desci/src/Makefile.in-lib_LTLIBRARIES = libdesci.la
+./desci/src/Makefile.in-libdesci_la_SOURCES = \
+--
+./desci/src/Makefile.am-			 $(libxml2_LDFLAGS) \
+./desci/src/Makefile.am-LIBADD = \
+./desci/src/Makefile.am-		 $(libxml2_LIBS) \
+./desci/src/Makefile.am-		 $(top_builddir)/log/src/liblog.la \
+./desci/src/Makefile.am:		 $(top_builddir)/ippc/src/libippc.la \
+./desci/src/Makefile.am-		 $(top_builddir)/routing-libs/src/libroutinglibs.la
+./desci/src/Makefile.am-lib_LTLIBRARIES = libdesci.la
+./desci/src/Makefile.am-libdesci_la_SOURCES = \
+./desci/src/Makefile.am-					  desc.c \
+--
+./proximity/src/Makefile-proxd_DEPENDENCIES = $(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
+./proximity/src/Makefile-	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
+./proximity/src/Makefile-	$(top_builddir)/log/src/liblog.la \
+./proximity/src/Makefile-	$(top_builddir)/mbean/src/libmbean.la \
+./proximity/src/Makefile:	$(top_builddir)/ippc/src/libippc.la \
+./proximity/src/Makefile-	$(top_builddir)/mainloop/src/libmainloop.la \
+./proximity/src/Makefile-	$(top_builddir)/routing-libs/src/tx/libtx.la \
+./proximity/src/Makefile-	$(top_builddir)/service-registry/src/libsvcregd.la
+./proximity/src/Makefile-DEFAULT_INCLUDES = -I. -I$(top_builddir)/include
+--
+./proximity/src/Makefile-		$(addebug_LIBS) \
+./proximity/src/Makefile-		$(dslib_LIBS) \
+./proximity/src/Makefile-		$(top_builddir)/log/src/liblog.la \
+./proximity/src/Makefile-		$(top_builddir)/mbean/src/libmbean.la \
+./proximity/src/Makefile:		$(top_builddir)/ippc/src/libippc.la \
+./proximity/src/Makefile-		$(top_builddir)/mainloop/src/libmainloop.la \
+./proximity/src/Makefile-		$(top_builddir)/routing-libs/src/tx/libtx.la \
+./proximity/src/Makefile-		$(top_builddir)/service-registry/src/libsvcregd.la
+./proximity/src/Makefile-
+--
+./proximity/src/Makefile.in-proxd_DEPENDENCIES = $(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
+./proximity/src/Makefile.in-	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
+./proximity/src/Makefile.in-	$(top_builddir)/log/src/liblog.la \
+./proximity/src/Makefile.in-	$(top_builddir)/mbean/src/libmbean.la \
+./proximity/src/Makefile.in:	$(top_builddir)/ippc/src/libippc.la \
+./proximity/src/Makefile.in-	$(top_builddir)/mainloop/src/libmainloop.la \
+./proximity/src/Makefile.in-	$(top_builddir)/routing-libs/src/tx/libtx.la \
+./proximity/src/Makefile.in-	$(top_builddir)/service-registry/src/libsvcregd.la
+./proximity/src/Makefile.in-DEFAULT_INCLUDES = -I.@am__isrc@ -I$(top_builddir)/include
+--
+./proximity/src/Makefile.in-		$(addebug_LIBS) \
+./proximity/src/Makefile.in-		$(dslib_LIBS) \
+./proximity/src/Makefile.in-		$(top_builddir)/log/src/liblog.la \
+./proximity/src/Makefile.in-		$(top_builddir)/mbean/src/libmbean.la \
+./proximity/src/Makefile.in:		$(top_builddir)/ippc/src/libippc.la \
+./proximity/src/Makefile.in-		$(top_builddir)/mainloop/src/libmainloop.la \
+./proximity/src/Makefile.in-		$(top_builddir)/routing-libs/src/tx/libtx.la \
+./proximity/src/Makefile.in-		$(top_builddir)/service-registry/src/libsvcregd.la
+./proximity/src/Makefile.in-
+--
+./proximity/src/Makefile.am-		$(addebug_LIBS) \
+./proximity/src/Makefile.am-		$(dslib_LIBS) \
+./proximity/src/Makefile.am-		$(top_builddir)/log/src/liblog.la \
+./proximity/src/Makefile.am-		$(top_builddir)/mbean/src/libmbean.la \
+./proximity/src/Makefile.am:		$(top_builddir)/ippc/src/libippc.la \
+./proximity/src/Makefile.am-		$(top_builddir)/mainloop/src/libmainloop.la \
+./proximity/src/Makefile.am-		$(top_builddir)/routing-libs/src/tx/libtx.la \
+./proximity/src/Makefile.am-		$(top_builddir)/service-registry/src/libsvcregd.la
+./proximity/src/Makefile.am-bin_PROGRAMS = proxd
+--
+./proximity/cli/Makefile-LDFLAGS = -lxml2 -lz -lpthread -lm  -L/home/fogdev/cisco-kunpeng-sdk-20130208/lib   -L/home/fogdev/armroot/lib  -L/home/fogdev/armroot/lib -lffi
+./proximity/cli/Makefile-LIBOBJS =  ${LIBOBJDIR}lstat$U.o ${LIBOBJDIR}malloc$U.o ${LIBOBJDIR}memcmp$U.o ${LIBOBJDIR}mktime$U.o ${LIBOBJDIR}realloc$U.o ${LIBOBJDIR}stat$U.o ${LIBOBJDIR}strnlen$U.o
+./proximity/cli/Makefile-LIBS = \
+./proximity/cli/Makefile-	   $(linuxutil_LIBS) \
+./proximity/cli/Makefile:	   $(top_builddir)/ippc/src/libippc.la
+./proximity/cli/Makefile-
+./proximity/cli/Makefile-LIBTOOL = $(SHELL) $(top_builddir)/libtool
+./proximity/cli/Makefile-LIPO = 
+./proximity/cli/Makefile-LN_S = ln -s
+--
+./proximity/cli/Makefile.in-LDFLAGS = @LDFLAGS@
+./proximity/cli/Makefile.in-LIBOBJS = @LIBOBJS@
+./proximity/cli/Makefile.in-LIBS = \
+./proximity/cli/Makefile.in-	   $(linuxutil_LIBS) \
+./proximity/cli/Makefile.in:	   $(top_builddir)/ippc/src/libippc.la
+./proximity/cli/Makefile.in-
+./proximity/cli/Makefile.in-LIBTOOL = @LIBTOOL@
+./proximity/cli/Makefile.in-LIPO = @LIPO@
+./proximity/cli/Makefile.in-LN_S = @LN_S@
+--
+./proximity/cli/Makefile.am-AM_LDFLAGS = \
+./proximity/cli/Makefile.am-			 $(linuxutil_LDFLAGS)
+./proximity/cli/Makefile.am-LIBS = \
+./proximity/cli/Makefile.am-	   $(linuxutil_LIBS) \
+./proximity/cli/Makefile.am:	   $(top_builddir)/ippc/src/libippc.la
+./proximity/cli/Makefile.am-prox_clear_SOURCES = prox_clear.c
+./proximity/cli/Makefile.am-prox_show_SOURCES = prox_show.c
+./proximity/cli/Makefile.am-prox_cfg_SOURCES = prox_cfg.c
+./proximity/cli/Makefile.am-prox_debug_SOURCES = prox_debug.c
+--
+./proximity/tests/Makefile-prox_api_util_OBJECTS = $(am_prox_api_util_OBJECTS)
+./proximity/tests/Makefile-prox_api_util_LDADD = $(LDADD)
+./proximity/tests/Makefile-am__DEPENDENCIES_1 =
+./proximity/tests/Makefile-prox_api_util_DEPENDENCIES = $(am__DEPENDENCIES_1) \
+./proximity/tests/Makefile:	$(top_builddir)/ippc/src/libippc.la \
+./proximity/tests/Makefile-	$(top_builddir)/mainloop/src/libmainloop.la \
+./proximity/tests/Makefile-	$(top_builddir)/urib/src/liburibd.la
+./proximity/tests/Makefile-DEFAULT_INCLUDES = -I. -I$(top_builddir)/include
+./proximity/tests/Makefile-depcomp = $(SHELL) $(top_srcdir)/depcomp
+--
+./proximity/tests/Makefile-
+./proximity/tests/Makefile-AM_LDFLAGS = $(gsoap_LDFLAGS)
+./proximity/tests/Makefile-LDADD = \
+./proximity/tests/Makefile-		$(gsoap_LIBS) \
+./proximity/tests/Makefile:		$(top_builddir)/ippc/src/libippc.la \
+./proximity/tests/Makefile-		$(top_builddir)/mainloop/src/libmainloop.la \
+./proximity/tests/Makefile-		$(top_builddir)/urib/src/liburibd.la
+./proximity/tests/Makefile-
+./proximity/tests/Makefile-prox_api_util_SOURCES = \
+--
+./proximity/tests/Makefile.in-prox_api_util_OBJECTS = $(am_prox_api_util_OBJECTS)
+./proximity/tests/Makefile.in-prox_api_util_LDADD = $(LDADD)
+./proximity/tests/Makefile.in-am__DEPENDENCIES_1 =
+./proximity/tests/Makefile.in-prox_api_util_DEPENDENCIES = $(am__DEPENDENCIES_1) \
+./proximity/tests/Makefile.in:	$(top_builddir)/ippc/src/libippc.la \
+./proximity/tests/Makefile.in-	$(top_builddir)/mainloop/src/libmainloop.la \
+./proximity/tests/Makefile.in-	$(top_builddir)/urib/src/liburibd.la
+./proximity/tests/Makefile.in-DEFAULT_INCLUDES = -I.@am__isrc@ -I$(top_builddir)/include
+./proximity/tests/Makefile.in-depcomp = $(SHELL) $(top_srcdir)/depcomp
+--
+./proximity/tests/Makefile.in-
+./proximity/tests/Makefile.in-AM_LDFLAGS = $(gsoap_LDFLAGS)
+./proximity/tests/Makefile.in-LDADD = \
+./proximity/tests/Makefile.in-		$(gsoap_LIBS) \
+./proximity/tests/Makefile.in:		$(top_builddir)/ippc/src/libippc.la \
+./proximity/tests/Makefile.in-		$(top_builddir)/mainloop/src/libmainloop.la \
+./proximity/tests/Makefile.in-		$(top_builddir)/urib/src/liburibd.la
+./proximity/tests/Makefile.in-
+./proximity/tests/Makefile.in-prox_api_util_SOURCES = \
+--
+./proximity/tests/Makefile.am-			-Wno-shadow
+./proximity/tests/Makefile.am-AM_LDFLAGS = $(gsoap_LDFLAGS)
+./proximity/tests/Makefile.am-LDADD = \
+./proximity/tests/Makefile.am-		$(gsoap_LIBS) \
+./proximity/tests/Makefile.am:		$(top_builddir)/ippc/src/libippc.la \
+./proximity/tests/Makefile.am-		$(top_builddir)/mainloop/src/libmainloop.la \
+./proximity/tests/Makefile.am-		$(top_builddir)/urib/src/liburibd.la
+./proximity/tests/Makefile.am-bin_PROGRAMS = prox_api_util
+./proximity/tests/Makefile.am-prox_api_util_SOURCES = \
+--
+./ip/cli/Makefile-LDFLAGS = -lxml2 -lz -lpthread -lm  -L/home/fogdev/cisco-kunpeng-sdk-20130208/lib   -L/home/fogdev/armroot/lib  -L/home/fogdev/armroot/lib -lffi
+./ip/cli/Makefile-LIBOBJS =  ${LIBOBJDIR}lstat$U.o ${LIBOBJDIR}malloc$U.o ${LIBOBJDIR}memcmp$U.o ${LIBOBJDIR}mktime$U.o ${LIBOBJDIR}realloc$U.o ${LIBOBJDIR}stat$U.o ${LIBOBJDIR}strnlen$U.o
+./ip/cli/Makefile-LIBS = \
+./ip/cli/Makefile-       $(linuxutil_LIBS) \
+./ip/cli/Makefile:	   $(top_builddir)/ippc/src/libippc.la
+./ip/cli/Makefile-
+./ip/cli/Makefile-LIBTOOL = $(SHELL) $(top_builddir)/libtool
+./ip/cli/Makefile-LIPO = 
+./ip/cli/Makefile-LN_S = ln -s
+--
+./ip/cli/Makefile.in-LDFLAGS = @LDFLAGS@
+./ip/cli/Makefile.in-LIBOBJS = @LIBOBJS@
+./ip/cli/Makefile.in-LIBS = \
+./ip/cli/Makefile.in-       $(linuxutil_LIBS) \
+./ip/cli/Makefile.in:	   $(top_builddir)/ippc/src/libippc.la
+./ip/cli/Makefile.in-
+./ip/cli/Makefile.in-LIBTOOL = @LIBTOOL@
+./ip/cli/Makefile.in-LIPO = @LIPO@
+./ip/cli/Makefile.in-LN_S = @LN_S@
+--
+./ip/cli/Makefile.am-            $(linuxutil_LDFLAGS) \
+./ip/cli/Makefile.am-            $(dslib_LDFLAGS)
+./ip/cli/Makefile.am-LIBS = \
+./ip/cli/Makefile.am-       $(linuxutil_LIBS) \
+./ip/cli/Makefile.am:	   $(top_builddir)/ippc/src/libippc.la
+./ip/cli/Makefile.am-libip_cli_util_la_SOURCES = ip_cli_util.c
+./ip/cli/Makefile.am-libip_cli_ippc_la_SOURCES = ip_ippc.c
+./ip/cli/Makefile.am-exec_show_ip_SOURCES = ip_show.c
+./ip/cli/Makefile.am-exec_show_ip_LDADD = libip_cli_ippc.la
