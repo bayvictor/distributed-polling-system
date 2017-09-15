@@ -1,1 +1,0 @@
-wget -O `norm.sh $1 | sed 's|_$||g'` $1

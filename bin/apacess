@@ -1,1 +1,0 @@
-tail -f /var/logs/apache2/access.log

@@ -1,3 +1,0 @@
-#gzip -cd file.gz | dd ibs=1024 count=10 to uncompress just the first 10 KiB
-
-gzip -cd $1 | dd ibs=1024 count=10 #to uncompress just the first 10 KiB

@@ -1,3 +1,0 @@
-psql -V
-mysql -V
-

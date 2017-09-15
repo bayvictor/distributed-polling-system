@@ -1,9 +1,0 @@
-echo "usage: $0 <old_str> <new_str>"
-echo "e.g.: $0 "
-echo "^C to break, anykey to continue..."; read readline
-
-export oldstr=$1
-export newstr=$2
-grep -rl ${oldstr} * | xargs sed -i 's/"${oldstr}"/"${newstr}"/g'
-
-

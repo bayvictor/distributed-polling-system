@@ -1,0 +1,3 @@
+
+sudo mount -t vboxsf   D_DRIVE /d
+sudo mount -t vboxsf  C_DRIVE /c  

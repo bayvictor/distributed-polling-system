@@ -1,1 +1,0 @@
-tree -d|cut -d' ' -f2|sed '1d;;;s/^$//g;s/^/mkdir /g;;'

@@ -1,9 +1,0 @@
-{
-    "public_ip": "192.168.122.1",
-    "private_ip": "192.168.0.109",
-    "ssh_user": "vhuang",
-    "ssh_key_filename": "/home/vhuang/.ssh/id_rsa",
-
-    "agents_user": "vhuang",
-    "resources_prefix": ""
-}

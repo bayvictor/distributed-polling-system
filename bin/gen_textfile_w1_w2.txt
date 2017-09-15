@@ -1,7 +1,0 @@
-# cp list_of_all_zipfiles_20131129_1159AM.txt.w1.freq.txt test.txt
-cat $1 | wordfreq > $1.w1
-
- sed 's/^\(.*\) \(.*\)$/\2 \1/g' $1.w1 |sort > $1.w1.swap
-
-
-
