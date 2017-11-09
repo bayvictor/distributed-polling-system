@@ -1,1 +1,0 @@
-rundll32.exe dfshim.dll,ShArpMaintain DellSystemDetect.application, Culture=neutral, PublicKeyToken=6d0a76327dca4869, processorArchitecture=msil

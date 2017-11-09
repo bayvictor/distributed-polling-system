@@ -1,1 +1,0 @@
-tr '[:upper:]' '[:lower:]' <  > .out 

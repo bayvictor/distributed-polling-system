@@ -1,7 +1,0 @@
-#make DEBUG=1 to activate debug compiling...
-ifeq (DEBUG, 1)
-    CFLAGS =  -I/usr/include/p11-kit-1  -DHAVE_LIBGNUTLS  -DDEBUG
-else
-    CFLAGS=  -I/usr/include/p11-kit-1  -DHAVE_LIBGNUTLS -DNDEBUG
-endif
-

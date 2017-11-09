@@ -1,3 +1,0 @@
-./configure --prefix=${HOME}/armroot  
-make;make install
-

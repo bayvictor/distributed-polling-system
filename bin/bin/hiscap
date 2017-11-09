@@ -1,3 +1,0 @@
-mkdir ~/diary 
-history>~/diary/`hostname`__`timestamp`.hsl.txt
- 
