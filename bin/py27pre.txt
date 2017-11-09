@@ -1,2 +1,0 @@
- source /d/py27pre/Scripts/activate
- 
